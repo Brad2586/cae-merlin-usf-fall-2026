@@ -1,0 +1,25 @@
+{
+  "xml_path": "config/variables.xml",
+  "mapping_path": "config/mapping.xml",
+  "gguf_model_path_lenient": "Models/GGUF-LenientModel.Q4_K_M.gguf",
+  "gguf_model_path_strict": "Models/GGUF-StrictModel.Q4_K_M.gguf",
+  "whisper_path": "Models/Whisper-Large-V3-Turbo",
+  "model_paths": [
+    "Models/wakeword/merlin.tflite",
+    "Models/wakeword/merlin2.tflite",
+    "Models/wakeword/hey_merlin.tflite"
+  ],
+  "BASE_MODEL_PATH": "Models/RedPajama-INCITE-Base-3B-v1",
+  "LORA_MODEL_PATH_STRICT": "LoRA_Training/Strict/RedPajama-INCITE-Base-3B-v1",
+  "LORA_MODEL_PATH_LENIENT": "LoRA_Training/Lenient/RedPajama-INCITE-Base-3B-v1",
+  "MERGED_MODEL_PATH_LENIENT": "Models/llamamodel_lenient",
+  "MERGED_MODEL_PATH_STRICT": "Models/llamamodel_strict",
+  "DATASET_PATH_LENIENT": "DataSet/Lenient/Data_Lenient.jsonl",
+  "DATASET_PATH_STRICT": "DataSet/Strict/Data_Strict.jsonl",
+  "MOCK_COMMANDS_PATH": "config/mock_commands.json",
+  "TRAINING_OUTPUT_DIR_LENIENT": "LoRA_Training/Lenient/RedPajama-INCITE-Base-3B-v1",
+  "TRAINING_OUTPUT_DIR_STRICT": "LoRA_Training/Strict/RedPajama-INCITE-Base-3B-v1",
+  "TTS_VOICE_PATH": "Models/TTS-Model/en_US-hfc_male-medium.onnx",
+  "LOGS_PATH": "Logs/",
+  "VARIATIONS_PATH": "config/whisperVariations.json"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<variables>
+
+  <!-- 4-element boolean array for engine flameout malfunctions -->
+  <!-- Note: common_name/alias describe the "family" of variables; per-engine
+       names are defined in mapping.xml commands. -->
+  <variable
+      name="MALF.FLAME_OUT"
+      type="boolean"
+      dims="4"
+      default="0 0 0 0"
+      common_name="Engine Flameout Malfunction" />
+
+  <variable name="MALF_IF.TOGGLE_REQ" type="int32" common_name="Malfunction Toggle Request" />
+  <variable name="MALF_IF.TOT_FRZ_REQ" type="int32" common_name="Total Freeze Request" />
+  <variable name="MODE_IF.ALT_FRZ_REQ"   type="int32" common_name="Altitude Freeze Request" />
+  <variable name="MODE_IF.FLT_FRZ_REQ"   type="int32" common_name="Flight Freeze Request" />
+  <variable name="MODE_IF.POS_FRZ_REQ"   type="int32" common_name="Position Freeze Request" />
+  <variable name="MODE_IF.HDG_FRZ_REQ"   type="int32" common_name="Heading Freeze Request" />
+  <variable name="MODE_IF.AIRSPD_FRZ_REQ" type="int32" common_name="Airspeed Freeze Request" />
+  <variable name="MODE_IF.FUEL_FRZ_REQ"  type="int32" common_name="Fuel Freeze Request" />
+  <variable name="MODE_IF.ATT_FRZ_REQ"   type="int32" common_name="Attitude Freeze Request" />
+
+</variables>

@@ -1,0 +1,12 @@
+Copyright (c) 2026 CAE USA Inc., All Rights Reserved
+
+The software and software documentation contained herein is
+proprietary to CAE USA and use of this information is expressly
+limited to support of the product with which it is delivered. The
+use, disclosure, reproduction, or transfer of this information to
+another party or destination; is strictly prohibited without the
+prior written permission of CAE USA, may be subject to
+restrictions under U.S. Customs Laws, and may be subject to ITAR,
+22 CFR 120-130. For U.S. government customers, use and disclosure of
+this information is subject to the restrictions of FAR 52.227-19 and
+DFARS 252.227-7013.

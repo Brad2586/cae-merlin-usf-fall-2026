@@ -1,0 +1,609 @@
+{"input":"activate engine 1 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"activate engine fire malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"deactivate engine 1 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["false"]}}
+{"input":"deactivate engine fire malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["false"]}}
+{"input":"activate engine 2 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"]}}
+{"input":"activate engine fire malfunction 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"]}}
+{"input":"deactivate engine 2 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"]}}
+{"input":"deactivate engine fire malfunction 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"]}}
+{"input":"activate engine 3 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"activate engine fire malfunction 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"deactivate engine 3 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["false"]}}
+{"input":"deactivate engine fire malfunction 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["false"]}}
+{"input":"activate engine 4 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"]}}
+{"input":"activate engine fire malfunction 4","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"]}}
+{"input":"deactivate engine 4 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["false"]}}
+{"input":"deactivate engine fire malfunction 4","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["false"]}}
+{"input":"turn total freeze on","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"toggle on total freeze","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"toggle total freeze on","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"turn on total freeze","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"turn total freeze off","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"toggle off total freeze","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"toggle total freeze off","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"turn off total freeze","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"turn on approach","output":{"Type":"command","parameters_keys":["APPROACH"],"parameters_values":["true"]}}
+{"input":"turn on the approach","output":{"Type":"command","parameters_keys":["APPROACH"],"parameters_values":["true"]}}
+{"input":"turn off approach","output":{"Type":"command","parameters_keys":["APPROACH"],"parameters_values":["false"]}}
+{"input":"turn off the approach","output":{"Type":"command","parameters_keys":["APPROACH"],"parameters_values":["false"]}}
+{"input":"turn on localizer and glideslope","output":{"Type":"command","parameters_keys":["LOC_GS"],"parameters_values":["true"]}}
+{"input":"on localizer on glideslope","output":{"Type":"command","parameters_keys":["LOC_GS"],"parameters_values":["true"]}}
+{"input":"turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["LOC_GS"],"parameters_values":["false"]}}
+{"input":"activate motor 1 malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"activate engine malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"engine 1 is broken","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"set malfunction engine 1 fire true","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"engine 1 on fire","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"deactivate motor 1 malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["false"]}}
+{"input":"deactivate engine  malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["false"]}}
+{"input":"engine 1 is fixed","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["false"]}}
+{"input":"set malfunction engine 1 fire false","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["false"]}}
+{"input":"activate motor 2 malfunction","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"]}}
+{"input":"activate engine malfunction 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"]}}
+{"input":"engine 2 is broken","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"]}}
+{"input":"set malfunction engine 2 fire true","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"]}}
+{"input":"deactivate motor 2 malfunction","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"]}}
+{"input":"deactivate engine malfunction 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"]}}
+{"input":"engine 2 is fixed","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"]}}
+{"input":"set malfunction engine 2 fire false","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"]}}
+{"input":"activate motor 3 malfunction","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"activate engine malfunction 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"engine 3 is broken","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"set malfunction engine 3 fire true","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"engine 3 on fire","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"deactivate motor 3 malfunction","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["false"]}}
+{"input":"deactivate engine malfunction 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["false"]}}
+{"input":"engine 3 is fixed","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["false"]}}
+{"input":"set malfunction engine 3 fire false","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["false"]}}
+{"input":"activate motor 4 malfunction","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"]}}
+{"input":"activate engine malfunction 4","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"]}}
+{"input":"engine 4 is broken","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"]}}
+{"input":"set malfunction engine 4 fire true","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"]}}
+{"input":"deactivate motor 4 malfunction","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["false"]}}
+{"input":"deactivate engine malfunction 4","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["false"]}}
+{"input":"engine 4 is fixed","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["false"]}}
+{"input":"set malfunction engine 4 fire false","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["false"]}}
+{"input":"on total freeze","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"turn the total freeze on","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"total freeze on","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"total freeze true","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"freeze off","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"off total freeze","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"turn the total freeze off","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"total freeze off","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"total freeze false","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"freeze on","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"activate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true"]}}
+{"input":"turn on all engine fire malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true"]}}
+{"input":"activate all engine fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true"]}}
+{"input":"turn on all engine fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true"]}}
+{"input":"deactivate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"turn off all engine fire malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"deactivate all engine fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"turn off all engine fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"activate all engine malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true"]}}
+{"input":"turn on all engine malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true"]}}
+{"input":"activate all engine malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true"]}}
+{"input":"turn on all engine malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true"]}}
+{"input":"deactivate all engine malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"turn off all engine malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"deactivate all engine malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"turn off all engine malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"clear all malfunctions","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","false"]}}
+{"input":"set ICAO to KADW","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KADW"]}}
+{"input":"set ICAO to KAFF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KAFF"]}}
+{"input":"set ICAO to KAYX","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KAYX"]}}
+{"input":"set ICAO to KBAB","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBAB"]}}
+{"input":"set ICAO to KBAD","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBAD"]}}
+{"input":"set ICAO to KBIX","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBIX"]}}
+{"input":"set ICAO to KBLV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBLV"]}}
+{"input":"set ICAO to KCBM","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCBM"]}}
+{"input":"set ICAO to KCHS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCHS"]}}
+{"input":"set ICAO to KCKA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCKA"]}}
+{"input":"set ICAO to KCVS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCVS"]}}
+{"input":"set ICAO to KDLF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDLF"]}}
+{"input":"set ICAO to KDMA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDMA"]}}
+{"input":"set ICAO to KDOV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDOV"]}}
+{"input":"set ICAO to KDYS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDYS"]}}
+{"input":"set ICAO to KEDW","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KEDW"]}}
+{"input":"set ICAO to KEND","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KEND"]}}
+{"input":"set ICAO to KFFO","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KFFO"]}}
+{"input":"set ICAO to KGFA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGFA"]}}
+{"input":"set ICAO to KGSB","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGSB"]}}
+{"input":"set ICAO to KGXF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGXF"]}}
+{"input":"set ICAO to KHIF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KHIF"]}}
+{"input":"set ICAO to KHMN","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KHMN"]}}
+{"input":"set ICAO to KLRF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLRF"]}}
+{"input":"set ICAO to KLSV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLSV"]}}
+{"input":"set ICAO to KLTS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLTS"]}}
+{"input":"set ICAO to KLUF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLUF"]}}
+{"input":"set ICAO to KRCA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KRCA"]}}
+{"input":"set ICAO to KSKF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KSKF"]}}
+{"input":"set ICAO to KSUU","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KSUU"]}}
+{"input":"set the ICAO to KADW","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KADW"]}}
+{"input":"set the ICAO to KAFF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KAFF"]}}
+{"input":"set the ICAO to KAYX","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KAYX"]}}
+{"input":"set the ICAO to KBAB","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBAB"]}}
+{"input":"set the ICAO to KBAD","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBAD"]}}
+{"input":"set the ICAO to KBIX","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBIX"]}}
+{"input":"set the ICAO to KBLV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBLV"]}}
+{"input":"set the ICAO to KCBM","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCBM"]}}
+{"input":"set the ICAO to KCHS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCHS"]}}
+{"input":"set the ICAO to KCKA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCKA"]}}
+{"input":"set the ICAO to KCVS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCVS"]}}
+{"input":"set the ICAO to KDLF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDLF"]}}
+{"input":"set the ICAO to KDMA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDMA"]}}
+{"input":"set the ICAO to KDOV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDOV"]}}
+{"input":"set the ICAO to KDYS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDYS"]}}
+{"input":"set the ICAO to KEDW","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KEDW"]}}
+{"input":"set the ICAO to KEND","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KEND"]}}
+{"input":"set the ICAO to KFFO","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KFFO"]}}
+{"input":"set the ICAO to KGFA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGFA"]}}
+{"input":"set the ICAO to KGSB","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGSB"]}}
+{"input":"set the ICAO to KGXF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGXF"]}}
+{"input":"set the ICAO to KHIF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KHIF"]}}
+{"input":"set the ICAO to KHMN","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KHMN"]}}
+{"input":"set the ICAO to KLRF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLRF"]}}
+{"input":"set the ICAO to KLSV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLSV"]}}
+{"input":"set the ICAO to KLTS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLTS"]}}
+{"input":"set the ICAO to KLUF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLUF"]}}
+{"input":"set the ICAO to KRCA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KRCA"]}}
+{"input":"set the ICAO to KSKF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KSKF"]}}
+{"input":"set the ICAO to KSUU","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KSUU"]}}
+{"input":"what ICAO should I set? KADW","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KADW"]}}
+{"input":"what ICAO should I set? KAFF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KAFF"]}}
+{"input":"what ICAO should I set? KAYX","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KAYX"]}}
+{"input":"what ICAO should I set? KBAB","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBAB"]}}
+{"input":"what ICAO should I set? KBAD","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBAD"]}}
+{"input":"what ICAO should I set? KBIX","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBIX"]}}
+{"input":"what ICAO should I set? KBLV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KBLV"]}}
+{"input":"what ICAO should I set? KCBM","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCBM"]}}
+{"input":"what ICAO should I set? KCHS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCHS"]}}
+{"input":"what ICAO should I set? KCKA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCKA"]}}
+{"input":"what ICAO should I set? KCVS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KCVS"]}}
+{"input":"what ICAO should I set? KDLF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDLF"]}}
+{"input":"what ICAO should I set? KDMA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDMA"]}}
+{"input":"what ICAO should I set? KDOV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDOV"]}}
+{"input":"what ICAO should I set? KDYS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KDYS"]}}
+{"input":"what ICAO should I set? KEDW","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KEDW"]}}
+{"input":"what ICAO should I set? KEND","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KEND"]}}
+{"input":"what ICAO should I set? KFFO","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KFFO"]}}
+{"input":"what ICAO should I set? KGFA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGFA"]}}
+{"input":"what ICAO should I set? KGSB","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGSB"]}}
+{"input":"what ICAO should I set? KGXF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KGXF"]}}
+{"input":"what ICAO should I set? KHIF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KHIF"]}}
+{"input":"what ICAO should I set? KHMN","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KHMN"]}}
+{"input":"what ICAO should I set? KLRF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLRF"]}}
+{"input":"what ICAO should I set? KLSV","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLSV"]}}
+{"input":"what ICAO should I set? KLTS","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLTS"]}}
+{"input":"what ICAO should I set? KLUF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KLUF"]}}
+{"input":"what ICAO should I set? KRCA","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KRCA"]}}
+{"input":"what ICAO should I set? KSKF","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KSKF"]}}
+{"input":"what ICAO should I set? KSUU","output":{"Type":"command","parameters_keys":["ICAO"],"parameters_values":["KSUU"]}}
+{"input":"set distance to 0","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["0"]}}
+{"input":"set distance to 6","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["6"]}}
+{"input":"set distance to 12","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["12"]}}
+{"input":"set distance to 5.14","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["5.14"]}}
+{"input":"set distance to 8.63","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["8.63"]}}
+{"input":"set distance to 11.77","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["11.77"]}}
+{"input":"set distance to 6.52","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["6.52"]}}
+{"input":"set distance to 0.06","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["0.06"]}}
+{"input":"set distance to 0.47","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["0.47"]}}
+{"input":"what distance should I set? 0","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["0"]}}
+{"input":"what distance should I set? 6","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["6"]}}
+{"input":"what distance should I set? 12","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["12"]}}
+{"input":"what distance should I set? 1.07","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["1.07"]}}
+{"input":"what distance should I set? 3.65","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["3.65"]}}
+{"input":"what distance should I set? 5.22","output":{"Type":"command","parameters_keys":["DISTANCE"],"parameters_values":["5.22"]}}
+{"input":"set bearing to 0","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["0"]}}
+{"input":"set bearing to 180","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["180"]}}
+{"input":"set bearing to 360","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["360"]}}
+{"input":"set bearing to 330.71","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["330.71"]}}
+{"input":"set bearing to 305.99","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["305.99"]}}
+{"input":"set bearing to 320.65","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["320.65"]}}
+{"input":"set the bearing to 0","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["0"]}}
+{"input":"set the bearing to 180","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["180"]}}
+{"input":"set the bearing to 360","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["360"]}}
+{"input":"set the bearing to 275.44","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["275.44"]}}
+{"input":"set the bearing to 122.5","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["122.5"]}}
+{"input":"set the bearing to 313.45","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["313.45"]}}
+{"input":"what bearing should I set? 0","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["0"]}}
+{"input":"what bearing should I set? 180","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["180"]}}
+{"input":"what bearing should I set? 360","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["360"]}}
+{"input":"what bearing should I set? 79.01","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["79.01"]}}
+{"input":"what bearing should I set? 267.4","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["267.4"]}}
+{"input":"what bearing should I set? 28.45","output":{"Type":"command","parameters_keys":["BEARING"],"parameters_values":["28.45"]}}
+{"input":"set range to 0","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["0"]}}
+{"input":"set range to 2500","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["2500"]}}
+{"input":"set range to 5000","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["5000"]}}
+{"input":"set range to 4793.77","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["4793.77"]}}
+{"input":"set range to 986.36","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["986.36"]}}
+{"input":"set range to 4392.85","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["4392.85"]}}
+{"input":"set range to 169.39","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["169.39"]}}
+{"input":"set range to 3665.23","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["3665.23"]}}
+{"input":"set range to 1148.62","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["1148.62"]}}
+{"input":"what range should I set? 0","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["0"]}}
+{"input":"what range should I set? 2500","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["2500"]}}
+{"input":"what range should I set? 5000","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["5000"]}}
+{"input":"what range should I set? 3730.95","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["3730.95"]}}
+{"input":"what range should I set? 3237.1","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["3237.1"]}}
+{"input":"what range should I set? 2623.85","output":{"Type":"command","parameters_keys":["RANGE"],"parameters_values":["2623.85"]}}
+{"input":"which engine has the fire malfunction? 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"which engine has the fire malfunction? engine 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["true"]}}
+{"input":"which engine has the fire malfunction? 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"]}}
+{"input":"which engine has the fire malfunction? engine 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"]}}
+{"input":"which engine has the fire malfunction? 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"which engine has the fire malfunction? engine 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["true"]}}
+{"input":"which engine has the fire malfunction? 4","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"]}}
+{"input":"which engine has the fire malfunction? engine 4","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"]}}
+{"input":"which engine fire malfunction should be disabled? 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["false"]}}
+{"input":"which engine fire malfunction should be disabled? engine 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF"],"parameters_values":["false"]}}
+{"input":"which engine fire malfunction should be disabled? 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"]}}
+{"input":"which engine fire malfunction should be disabled? engine 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"]}}
+{"input":"which engine fire malfunction should be disabled? 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["false"]}}
+{"input":"which engine fire malfunction should be disabled? engine 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF"],"parameters_values":["false"]}}
+{"input":"which engine fire malfunction should be disabled? 4","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["false"]}}
+{"input":"which engine fire malfunction should be disabled? engine 4","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["false"]}}
+{"input":"total freeze on or off? on","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"]}}
+{"input":"total freeze on or off? off","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["false"]}}
+{"input":"glideslope and localizer on or off? on","output":{"Type":"command","parameters_keys":["LOC_GS"],"parameters_values":["true"]}}
+{"input":"glideslope and localizer on or off? off","output":{"Type":"command","parameters_keys":["LOC_GS"],"parameters_values":["false"]}}
+{"input":"activate engine fire malfunction","output":{"Type":"clarification","message":"which engine has the fire malfunction?"}}
+{"input":"turn on engine fire malfunction","output":{"Type":"clarification","message":"which engine has the fire malfunction?"}}
+{"input":"engine fire malfunction on","output":{"Type":"clarification","message":"which engine has the fire malfunction?"}}
+{"input":"total freeze","output":{"Type":"clarification","message":"total freeze on or off?"}}
+{"input":"toggle total freeze","output":{"Type":"clarification","message":"total freeze on or off?"}}
+{"input":"ios total freeze","output":{"Type":"clarification","message":"total freeze on or off?"}}
+{"input":"toggle ios total freeze","output":{"Type":"clarification","message":"total freeze on or off?"}}
+{"input":"deactivate engine fire malfunction","output":{"Type":"clarification","message":"which engine fire malfunction should be disabled"}}
+{"input":"turn off engine fire malfunction","output":{"Type":"clarification","message":"which engine fire malfunction should be disabled"}}
+{"input":"engine fire malfunction off","output":{"Type":"clarification","message":"which engine fire malfunction should be disabled"}}
+{"input":"remove the engine fire malfunction","output":{"Type":"clarification","message":"which engine fire malfunction should be disabled"}}
+{"input":"set mode to","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"change mode to","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"toggle mode","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"set ICAO to","output":{"Type":"clarification","message":"what ICAO should I set?"}}
+{"input":"set the ICAO to","output":{"Type":"clarification","message":"what ICAO should I set?"}}
+{"input":"set distance to","output":{"Type":"clarification","message":"what distance should I set?"}}
+{"input":"set the distance to","output":{"Type":"clarification","message":"what distance should I set?"}}
+{"input":"localizer and glideslope on","output":{"Type":"clarification","message":"glideslope and localizer on or off?"}}
+{"input":"localizer and glideslope off","output":{"Type":"clarification","message":"glideslope and localizer on or off?"}}
+{"input":"set bearing to","output":{"Type":"clarification","message":"what bearing should I set?"}}
+{"input":"set the bearing to","output":{"Type":"clarification","message":"what bearing should I set?"}}
+{"input":"set range to","output":{"Type":"clarification","message":"what range should I set?"}}
+{"input":"set the range to","output":{"Type":"clarification","message":"what range should I set?"}}
+{"input":"gear up","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"gear down","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"enable hyperdrive","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"thank you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"thank you thank you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"malfunction 1","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"malfunction 2","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"4","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"3","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"2","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"1","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"activate self-destruct sequence","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"set engine to maximum overdrive","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"open the black box","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"please stop time","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"turn on unicorn mode","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"turn off unicorn mode","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"fly to the moon","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"fire","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"malfunction","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"quit","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"exit","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"freeze","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"fly to outerspace","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"fly to the sun","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"fly to saturn","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"stop time","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"pause the simulator","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"hold everything","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"lock the sim","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"frozen mode","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"full freeze mode","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"time freeze","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"no","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"which engine has the fire malfunction? thank you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"total freeze on or off? thank you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"which engine fire malfunction should be disabled? thank you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"which engine has the fire malfunction? you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"total freeze on or off? you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"which engine fire malfunction should be disabled? you","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"which engine has the fire malfunction? never mind","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"which engine has the fire malfunction? cancel","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"total freeze on or off? never mind","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"1000 foot final localizer glideslope","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"put me on the ils 1000 feet out","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"which engine has the fire malfunction? yes","output":{"Type":"error","message":"error, command not recognized"}}
+{"input":"exit the program","output":{"Type":"exit"}}
+{"input":"please exit the program","output":{"Type":"exit"}}
+{"input":"close the program","output":{"Type":"exit"}}
+{"input":"set mode to lenient","output":{"Type":"mode_lenient"}}
+{"input":"change mode to lenient","output":{"Type":"mode_lenient"}}
+{"input":"toggle lenient mode","output":{"Type":"mode_lenient"}}
+{"input":"lenient mode or strict mode? lenient","output":{"Type":"mode_lenient"}}
+{"input":"lenient mode or strict mode? lenient mode","output":{"Type":"mode_lenient"}}
+{"input":"set mode to strict","output":{"Type":"mode_strict"}}
+{"input":"change mode to strict","output":{"Type":"mode_strict"}}
+{"input":"toggle strict mode","output":{"Type":"mode_strict"}}
+{"input":"lenient mode or strict mode? strict","output":{"Type":"mode_strict"}}
+{"input":"lenient mode or strict mode? strict mode","output":{"Type":"mode_strict"}}
+{"input":"deactivate engine engine 1 and 2 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF"],"parameters_values":["false","false"]}}
+{"input":"activate engine 3 fire malfunction and activate engine fire malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF"],"parameters_values":["true","true"]}}
+{"input":"activate engine fire malfunction 1 and deactivate engine 4 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_4_MALF"],"parameters_values":["true","false"]}}
+{"input":"toggle total freeze off and activate engine 1 fire malfunction","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","ENGINE_1_MALF"],"parameters_values":["false","true"]}}
+{"input":"deactivate engine 1 fire malfunction and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","APPROACH"],"parameters_values":["false","false"]}}
+{"input":"activate engine 1 fire malfunction and on localizer on glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","LOC_GS"],"parameters_values":["true","true"]}}
+{"input":"deactivate engine 3 fire malfunction and deactivate engine fire malfunction 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF"],"parameters_values":["false","false"]}}
+{"input":"activate engine 4 fire malfunction and activate engine fire malfunction 2","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_4_MALF"],"parameters_values":["true","true"]}}
+{"input":"toggle on total freeze and deactivate engine fire malfunction 2","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","ENGINE_2_MALF"],"parameters_values":["true","false"]}}
+{"input":"turn off the approach and activate engine fire malfunction 2","output":{"Type":"command","parameters_keys":["APPROACH","ENGINE_2_MALF"],"parameters_values":["false","true"]}}
+{"input":"deactivate engine 2 fire malfunction and turn on localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","LOC_GS"],"parameters_values":["false","true"]}}
+{"input":"deactivate engine 4 fire malfunction and deactivate engine fire malfunction 3","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false"]}}
+{"input":"activate engine fire malfunction 3 and toggle total freeze on","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true"]}}
+{"input":"deactivate engine 3 fire malfunction and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","APPROACH"],"parameters_values":["false","false"]}}
+{"input":"deactivate engine 3 fire malfunction and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","LOC_GS"],"parameters_values":["false","false"]}}
+{"input":"deactivate engine fire malfunction 4 and toggle total freeze off","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"]}}
+{"input":"deactivate engine 4 fire malfunction and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","APPROACH"],"parameters_values":["false","true"]}}
+{"input":"turn on localizer and glideslope and deactivate engine fire malfunction 4","output":{"Type":"command","parameters_keys":["LOC_GS","ENGINE_4_MALF"],"parameters_values":["true","false"]}}
+{"input":"turn total freeze on and turn on approach","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["true","true"]}}
+{"input":"turn total freeze on and on localizer on glideslope","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS"],"parameters_values":["true","true"]}}
+{"input":"turn off approach and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["APPROACH","LOC_GS"],"parameters_values":["false","false"]}}
+{"input":"deactivate engine fire malfunction 3 and activate engine 2 fire malfunction and activate engine fire malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","ENGINE_1_MALF","ENGINE_2_MALF"],"parameters_values":["false","true","true"]}}
+{"input":"deactivate engine 2 fire malfunction and deactivate engine fire malfunction 4 and activate engine 1 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_4_MALF","ENGINE_1_MALF"],"parameters_values":["false","false","true"]}}
+{"input":"deactivate engine 1 fire malfunction and turn off total freeze and activate engine 2 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE","ENGINE_2_MALF"],"parameters_values":["false","false","true"]}}
+{"input":"deactivate engine engine 1 and 2 fire malfunction and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","APPROACH"],"parameters_values":["false","false","true"]}}
+{"input":"activate engine fire malfunction 1 and activate engine fire malfunction 2 and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","LOC_GS"],"parameters_values":["true","true","false"]}}
+{"input":"activate engine engine 1 and 3 fire malfunction and activate engine fire malfunction 4","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true"]}}
+{"input":"activate engine 1 fire malfunction and activate engine fire malfunction 3 and toggle on total freeze","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true","true"]}}
+{"input":"activate engine 1 fire malfunction and activate engine fire malfunction 3 and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","APPROACH"],"parameters_values":["true","true","true"]}}
+{"input":"deactivate engine 1 fire malfunction and deactivate engine fire malfunction 3 and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","LOC_GS"],"parameters_values":["false","false","false"]}}
+{"input":"activate engine 1 fire malfunction and activate engine fire malfunction 4 and toggle off total freeze","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true","false"]}}
+{"input":"activate engine 1 fire malfunction and deactivate engine 4 fire malfunction and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_4_MALF","APPROACH"],"parameters_values":["true","false","false"]}}
+{"input":"activate engine 1 fire malfunction and on localizer on glideslope and deactivate engine fire malfunction 4","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","LOC_GS","ENGINE_4_MALF"],"parameters_values":["true","true","false"]}}
+{"input":"deactivate engine 1 fire malfunction and toggle off total freeze and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["false","false","false"]}}
+{"input":"activate engine fire malfunction 1 and on localizer on glideslope and turn off total freeze","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","LOC_GS","IOS_TOTAL_FREEZE"],"parameters_values":["true","true","false"]}}
+{"input":"turn off approach and turn off localizer and glideslope and activate engine 1 fire malfunction","output":{"Type":"command","parameters_keys":["APPROACH","LOC_GS","ENGINE_1_MALF"],"parameters_values":["false","false","true"]}}
+{"input":"deactivate engine engine 2 and 3 fire malfunction and toggle off total freeze","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","false"]}}
+{"input":"deactivate engine engine 2 and 3 fire malfunction and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","APPROACH"],"parameters_values":["false","false","false"]}}
+{"input":"activate engine 2 fire malfunction and deactivate engine 3 fire malfunction and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","LOC_GS"],"parameters_values":["true","false","false"]}}
+{"input":"deactivate engine 2 fire malfunction and activate engine fire malfunction 4 and toggle total freeze on","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","true","true"]}}
+{"input":"deactivate engine fire malfunction 2 and deactivate engine fire malfunction 4 and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_4_MALF","APPROACH"],"parameters_values":["false","false","false"]}}
+{"input":"turn off localizer and glideslope and activate engine 2 fire malfunction and activate engine fire malfunction 4","output":{"Type":"command","parameters_keys":["LOC_GS","ENGINE_2_MALF","ENGINE_4_MALF"],"parameters_values":["false","true","true"]}}
+{"input":"turn total freeze off and activate engine fire malfunction 2 and turn on approach","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","ENGINE_2_MALF","APPROACH"],"parameters_values":["false","true","true"]}}
+{"input":"toggle on total freeze and on localizer on glideslope and deactivate engine fire malfunction 2","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","ENGINE_2_MALF"],"parameters_values":["true","true","false"]}}
+{"input":"turn off approach and turn off localizer and glideslope and activate engine fire malfunction 2","output":{"Type":"command","parameters_keys":["APPROACH","LOC_GS","ENGINE_2_MALF"],"parameters_values":["false","false","true"]}}
+{"input":"deactivate engine fire malfunction 3 and deactivate engine fire malfunction 4 and toggle off total freeze","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","false"]}}
+{"input":"turn off approach and activate engine 3 fire malfunction and activate engine fire malfunction 4","output":{"Type":"command","parameters_keys":["APPROACH","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","true","true"]}}
+{"input":"deactivate engine 3 fire malfunction and turn off localizer and glideslope and activate engine 4 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","LOC_GS","ENGINE_4_MALF"],"parameters_values":["false","false","true"]}}
+{"input":"turn total freeze off and turn off approach and activate engine fire malfunction 3","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","APPROACH","ENGINE_3_MALF"],"parameters_values":["false","false","true"]}}
+{"input":"activate engine fire malfunction 3 and toggle off total freeze and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","IOS_TOTAL_FREEZE","LOC_GS"],"parameters_values":["true","false","false"]}}
+{"input":"activate engine fire malfunction 3 and turn on localizer and glideslope and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","LOC_GS","APPROACH"],"parameters_values":["true","true","false"]}}
+{"input":"activate engine fire malfunction 4 and toggle on total freeze and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["true","true","true"]}}
+{"input":"activate engine 4 fire malfunction and turn total freeze on and on localizer on glideslope","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS"],"parameters_values":["true","true","true"]}}
+{"input":"turn off approach and activate engine fire malfunction 4 and turn on localizer and glideslope","output":{"Type":"command","parameters_keys":["APPROACH","ENGINE_4_MALF","LOC_GS"],"parameters_values":["false","true","true"]}}
+{"input":"turn total freeze off and turn off localizer and glideslope and turn on approach","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["false","false","true"]}}
+{"input":"deactivate engine engine 3 and 4 fire malfunction and deactivate engine fire malfunction 2 and activate engine fire malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","ENGINE_1_MALF"],"parameters_values":["false","false","false","true"]}}
+{"input":"deactivate engine 1 fire malfunction and deactivate engine fire malfunction 3 and activate engine 2 fire malfunction and turn on total freeze","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","ENGINE_2_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","true","true"]}}
+{"input":"deactivate engine fire malfunction 2 and turn off approach and activate engine 3 fire malfunction and activate engine fire malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","APPROACH","ENGINE_1_MALF","ENGINE_3_MALF"],"parameters_values":["false","false","true","true"]}}
+{"input":"activate engine 3 fire malfunction and activate engine fire malfunction 2 and deactivate engine fire malfunction 1 and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_1_MALF","LOC_GS"],"parameters_values":["true","true","false","false"]}}
+{"input":"deactivate engine 1 fire malfunction and deactivate engine fire malfunction 4 and activate engine 2 fire malfunction and toggle total freeze on","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_4_MALF","ENGINE_2_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","true","true"]}}
+{"input":"activate engine 1 fire malfunction and deactivate engine 4 fire malfunction and deactivate engine fire malfunction 2 and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_4_MALF","APPROACH"],"parameters_values":["true","false","false","false"]}}
+{"input":"activate engine fire malfunction 1 and activate engine fire malfunction 2 and activate engine fire malfunction 4 and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_4_MALF","LOC_GS"],"parameters_values":["true","true","true","false"]}}
+{"input":"activate engine fire malfunction 1 and turn total freeze on and deactivate engine fire malfunction 2 and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE","ENGINE_2_MALF","APPROACH"],"parameters_values":["true","true","false","false"]}}
+{"input":"activate engine 1 fire malfunction and deactivate engine fire malfunction 2 and toggle off total freeze and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","IOS_TOTAL_FREEZE","LOC_GS"],"parameters_values":["true","false","false","false"]}}
+{"input":"activate engine 1 fire malfunction and turn on the approach and turn on localizer and glideslope and deactivate engine 2 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","APPROACH","LOC_GS","ENGINE_2_MALF"],"parameters_values":["true","true","true","false"]}}
+{"input":"activate engine fire malfunction 4 and deactivate engine 3 fire malfunction and deactivate engine fire malfunction 1 and toggle total freeze off","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","ENGINE_1_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false","false","false"]}}
+{"input":"deactivate engine fire malfunction 1 and activate engine engine 3 and 4 fire malfunction and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","ENGINE_4_MALF","APPROACH"],"parameters_values":["false","true","true","true"]}}
+{"input":"deactivate engine fire malfunction 4 and turn off localizer and glideslope and activate engine engine 1 and 3 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","LOC_GS","ENGINE_1_MALF","ENGINE_3_MALF"],"parameters_values":["false","false","true","true"]}}
+{"input":"activate engine fire malfunction 1 and toggle on total freeze and deactivate engine fire malfunction 3 and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE","ENGINE_3_MALF","APPROACH"],"parameters_values":["true","true","false","false"]}}
+{"input":"deactivate engine 3 fire malfunction and turn off total freeze and turn off localizer and glideslope and activate engine fire malfunction 1","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","IOS_TOTAL_FREEZE","LOC_GS","ENGINE_1_MALF"],"parameters_values":["false","false","false","true"]}}
+{"input":"deactivate engine 3 fire malfunction and turn off localizer and glideslope and activate engine fire malfunction 1 and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","LOC_GS","ENGINE_1_MALF","APPROACH"],"parameters_values":["false","false","true","true"]}}
+{"input":"activate engine 1 fire malfunction and turn total freeze on and turn on approach and deactivate engine 4 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE","APPROACH","ENGINE_4_MALF"],"parameters_values":["true","true","true","false"]}}
+{"input":"turn on total freeze and deactivate engine fire malfunction 1 and deactivate engine fire malfunction 4 and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","ENGINE_1_MALF","ENGINE_4_MALF","LOC_GS"],"parameters_values":["true","false","false","false"]}}
+{"input":"activate engine 1 fire malfunction and turn on approach and deactivate engine 4 fire malfunction and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","APPROACH","ENGINE_4_MALF","LOC_GS"],"parameters_values":["true","true","false","false"]}}
+{"input":"turn off the approach and turn off localizer and glideslope and activate engine 1 fire malfunction and toggle on total freeze","output":{"Type":"command","parameters_keys":["APPROACH","LOC_GS","ENGINE_1_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","true","true"]}}
+{"input":"deactivate engine 4 fire malfunction and deactivate engine fire malfunction 2 and activate engine 3 fire malfunction and turn total freeze on","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_4_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","true","true"]}}
+{"input":"deactivate engine fire malfunction 2 and activate engine 3 fire malfunction and activate engine fire malfunction 4 and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","APPROACH"],"parameters_values":["false","true","true","true"]}}
+{"input":"activate engine 4 fire malfunction and on localizer on glideslope and deactivate engine engine 2 and 3 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","LOC_GS","ENGINE_2_MALF","ENGINE_3_MALF"],"parameters_values":["true","true","false","false"]}}
+{"input":"activate engine engine 2 and 3 fire malfunction and toggle on total freeze and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["true","true","true","false"]}}
+{"input":"toggle off total freeze and activate engine 3 fire malfunction and activate engine fire malfunction 2 and turn on localizer and glideslope","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","ENGINE_2_MALF","ENGINE_3_MALF","LOC_GS"],"parameters_values":["false","true","true","true"]}}
+{"input":"activate engine fire malfunction 3 and turn on approach and deactivate engine fire malfunction 2 and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","APPROACH","ENGINE_2_MALF","LOC_GS"],"parameters_values":["true","true","false","false"]}}
+{"input":"activate engine fire malfunction 2 and turn total freeze on and turn on the approach and deactivate engine 4 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","IOS_TOTAL_FREEZE","APPROACH","ENGINE_4_MALF"],"parameters_values":["true","true","true","false"]}}
+{"input":"deactivate engine 4 fire malfunction and deactivate engine fire malfunction 2 and turn off localizer and glideslope and toggle on total freeze","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_4_MALF","LOC_GS","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","false","true"]}}
+{"input":"deactivate engine fire malfunction 4 and turn off approach and activate engine fire malfunction 2 and turn on localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","APPROACH","ENGINE_2_MALF","LOC_GS"],"parameters_values":["false","false","true","true"]}}
+{"input":"activate engine 2 fire malfunction and toggle total freeze off and turn off the approach and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","IOS_TOTAL_FREEZE","APPROACH","LOC_GS"],"parameters_values":["true","false","false","false"]}}
+{"input":"deactivate engine fire malfunction 4 and activate engine fire malfunction 3 and toggle total freeze on and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["false","true","true","true"]}}
+{"input":"activate engine fire malfunction 3 and on localizer on glideslope and deactivate engine 4 fire malfunction and toggle off total freeze","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","LOC_GS","ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true","false","false"]}}
+{"input":"deactivate engine 4 fire malfunction and activate engine fire malfunction 3 and turn on approach and turn on localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","ENGINE_3_MALF","APPROACH","LOC_GS"],"parameters_values":["false","true","true","true"]}}
+{"input":"activate engine fire malfunction 3 and turn on the approach and turn on localizer and glideslope and toggle off total freeze","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","APPROACH","LOC_GS","IOS_TOTAL_FREEZE"],"parameters_values":["true","true","true","false"]}}
+{"input":"activate engine 4 fire malfunction and toggle total freeze on and turn off the approach and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE","APPROACH","LOC_GS"],"parameters_values":["true","true","false","false"]}}
+{"input":"deactivate engine fire malfunction 2 and deactivate engine fire malfunction 3 and activate engine engine 1 and 4 fire malfunction and turn total freeze on","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_1_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","true","true","true"]}}
+{"input":"deactivate engine 4 fire malfunction and deactivate engine fire malfunction 1 and deactivate engine fire malfunction 3 and activate engine 2 fire malfunction and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","ENGINE_4_MALF","ENGINE_2_MALF","APPROACH"],"parameters_values":["false","false","false","true","true"]}}
+{"input":"activate engine engine 2 and 3 fire malfunction and activate engine fire malfunction 1 and deactivate engine 4 fire malfunction and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","LOC_GS"],"parameters_values":["true","true","true","false","false"]}}
+{"input":"deactivate engine engine 2 and 3 fire malfunction and activate engine 1 fire malfunction and turn on total freeze and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_1_MALF","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["false","false","true","true","true"]}}
+{"input":"deactivate engine fire malfunction 1 and deactivate engine fire malfunction 2 and turn off localizer and glideslope and activate engine fire malfunction 3 and toggle on total freeze","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","LOC_GS","ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","false","true","true"]}}
+{"input":"activate engine 1 fire malfunction and activate engine fire malfunction 3 and deactivate engine 2 fire malfunction and turn off the approach and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","ENGINE_2_MALF","APPROACH","LOC_GS"],"parameters_values":["true","true","false","false","false"]}}
+{"input":"turn off the approach and activate engine engine 2 and 4 fire malfunction and activate engine fire malfunction 1 and toggle total freeze on","output":{"Type":"command","parameters_keys":["APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","true","true","true","true"]}}
+{"input":"deactivate engine engine 1 and 4 fire malfunction and toggle total freeze off and turn off localizer and glideslope and activate engine 2 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","ENGINE_2_MALF"],"parameters_values":["false","false","false","false","true"]}}
+{"input":"activate engine 2 fire malfunction and turn on the approach and deactivate engine 4 fire malfunction and deactivate engine fire malfunction 1 and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","APPROACH","ENGINE_1_MALF","ENGINE_4_MALF","LOC_GS"],"parameters_values":["true","true","false","false","false"]}}
+{"input":"deactivate engine fire malfunction 1 and toggle total freeze off and turn off approach and activate engine 2 fire malfunction and turn on localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE","APPROACH","ENGINE_2_MALF","LOC_GS"],"parameters_values":["false","false","false","true","true"]}}
+{"input":"activate engine fire malfunction 1 and activate engine fire malfunction 3 and turn on the approach and deactivate engine 4 fire malfunction and turn off total freeze","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","APPROACH","ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true","true","false","false"]}}
+{"input":"activate engine 4 fire malfunction and turn on localizer and glideslope and deactivate engine 3 fire malfunction and deactivate engine fire malfunction 1 and turn total freeze off","output":{"Type":"command","parameters_keys":["ENGINE_4_MALF","LOC_GS","ENGINE_1_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true","false","false","false"]}}
+{"input":"turn off the approach and turn off localizer and glideslope and activate engine 4 fire malfunction and activate engine fire malfunction 1 and activate engine fire malfunction 3","output":{"Type":"command","parameters_keys":["APPROACH","LOC_GS","ENGINE_1_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","true","true","true"]}}
+{"input":"activate engine 1 fire malfunction and turn total freeze on and turn on the approach and deactivate engine 3 fire malfunction and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE","APPROACH","ENGINE_3_MALF","LOC_GS"],"parameters_values":["true","true","true","false","false"]}}
+{"input":"deactivate engine engine 1 and 4 fire malfunction and turn off approach and toggle on total freeze and on localizer on glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_4_MALF","APPROACH","IOS_TOTAL_FREEZE","LOC_GS"],"parameters_values":["false","false","false","true","true"]}}
+{"input":"activate engine engine 2 and 3 fire malfunction and deactivate engine 4 fire malfunction and toggle off total freeze and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["true","true","false","false","false"]}}
+{"input":"deactivate engine engine 2 and 3 fire malfunction and toggle total freeze off and activate engine 4 fire malfunction and on localizer on glideslope","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE","ENGINE_4_MALF","LOC_GS"],"parameters_values":["false","false","false","true","true"]}}
+{"input":"activate engine engine 3 and 4 fire malfunction and turn on localizer and glideslope and deactivate engine 2 fire malfunction and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","ENGINE_4_MALF","LOC_GS","ENGINE_2_MALF","APPROACH"],"parameters_values":["true","true","true","false","false"]}}
+{"input":"activate engine fire malfunction 3 and turn on approach and deactivate engine fire malfunction 2 and turn total freeze off and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","APPROACH","ENGINE_2_MALF","IOS_TOTAL_FREEZE","LOC_GS"],"parameters_values":["true","true","false","false","false"]}}
+{"input":"deactivate engine fire malfunction 2 and turn off localizer and glideslope and activate engine fire malfunction 4 and turn total freeze on and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","LOC_GS","ENGINE_4_MALF","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["false","false","true","true","true"]}}
+{"input":"activate engine fire malfunction 3 and activate engine fire malfunction 4 and toggle on total freeze and turn off the approach and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","APPROACH","LOC_GS"],"parameters_values":["true","true","true","false","false"]}}
+{"input":"deactivate engine fire malfunction 2 and turn total freeze off and turn off the approach and activate engine engine 1, 3 and 4 fire malfunction","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","IOS_TOTAL_FREEZE","APPROACH","ENGINE_1_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","true","true","true"]}}
+{"input":"deactivate engine engine 1 and 2 fire malfunction and deactivate engine fire malfunction 3 and turn off localizer and glideslope and activate engine fire malfunction 4 and toggle on total freeze","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","LOC_GS","ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false","false","false","true","true"]}}
+{"input":"deactivate engine 4 fire malfunction and deactivate engine fire malfunction 1 and deactivate engine fire malfunction 2 and deactivate engine fire malfunction 3 and turn on the approach and turn on localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","APPROACH","LOC_GS"],"parameters_values":["false","false","false","false","true","true"]}}
+{"input":"deactivate engine fire malfunction 2 and turn off localizer and glideslope and activate engine 1 fire malfunction and activate engine fire malfunction 3 and turn on total freeze and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","LOC_GS","ENGINE_1_MALF","ENGINE_3_MALF","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["false","false","true","true","true","true"]}}
+{"input":"deactivate engine fire malfunction 1 and deactivate engine fire malfunction 2 and deactivate engine fire malfunction 4 and turn off localizer and glideslope and toggle total freeze on and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_4_MALF","LOC_GS","IOS_TOTAL_FREEZE","APPROACH"],"parameters_values":["false","false","false","false","true","true"]}}
+{"input":"activate engine engine 1 and 3 fire malfunction and turn on approach and deactivate engine 4 fire malfunction and turn off total freeze and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF","APPROACH","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS"],"parameters_values":["true","true","true","false","false","false"]}}
+{"input":"deactivate engine fire malfunction 2 and turn off total freeze and turn off localizer and glideslope and activate engine engine 3 and 4 fire malfunction and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_2_MALF","IOS_TOTAL_FREEZE","LOC_GS","ENGINE_3_MALF","ENGINE_4_MALF","APPROACH"],"parameters_values":["false","false","false","true","true","true"]}}
+{"input":"deactivate engine 4 fire malfunction and deactivate engine fire malfunction 1 and deactivate engine fire malfunction 2 and deactivate engine fire malfunction 3 and turn off total freeze and turn off approach and turn off localizer and glideslope","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","APPROACH","LOC_GS"],"parameters_values":["false","false","false","false","false","false","false"]}}
+{"input":"toggle total freeze on and on localizer on glideslope and turn on approach and activate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","true","true","true","true"]}}
+{"input":"turn total freeze on and turn on localizer and glideslope and turn off the approach and activate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","false","true","true","true","true"]}}
+{"input":"activate all engine fire malfunctions and toggle total freeze on and turn off localizer and glideslope and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","true","false","true"]}}
+{"input":"activate all engine fire malfunctions and toggle total freeze on and turn off localizer and glideslope and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","true","false","false"]}}
+{"input":"activate all engine fire malfunctions and toggle total freeze off and on localizer on glideslope and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","false","true","true"]}}
+{"input":"toggle total freeze off and turn on localizer and glideslope and turn off approach and activate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","true","false","true","true","true","true"]}}
+{"input":"turn off total freeze and turn off localizer and glideslope and turn on approach and activate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","true","true","true","true","true"]}}
+{"input":"turn total freeze off and turn off localizer and glideslope and turn off the approach and activate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","false","true","true","true","true"]}}
+{"input":"turn on total freeze and on localizer on glideslope and turn on approach and deactivate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","false","false","false","false"]}}
+{"input":"deactivate all engine fire malfunctions and turn on total freeze and on localizer on glideslope and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["false","false","false","false","true","true","false"]}}
+{"input":"toggle on total freeze and turn off localizer and glideslope and turn on approach and deactivate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","false","true","false","false","false","false"]}}
+{"input":"toggle on total freeze and turn off localizer and glideslope and turn off the approach and deactivate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","false","false","false","false","false","false"]}}
+{"input":"deactivate all engine fire malfunctions and turn total freeze off and turn on localizer and glideslope and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["false","false","false","false","false","true","true"]}}
+{"input":"deactivate all engine fire malfunctions and turn total freeze off and on localizer on glideslope and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["false","false","false","false","false","true","false"]}}
+{"input":"turn total freeze off and turn off localizer and glideslope and turn on the approach and deactivate all engine fire malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","true","false","false","false","false"]}}
+{"input":"deactivate all engine fire malfunctions and turn total freeze off and turn off localizer and glideslope and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["false","false","false","false","false","false","false"]}}
+{"input":"activate all engine malfunctions and turn total freeze on and on localizer on glideslope and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","true","true","true"]}}
+{"input":"turn on total freeze and on localizer on glideslope and turn off the approach and activate all engine malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","false","true","true","true","true"]}}
+{"input":"activate all engine malfunctions and turn total freeze on and turn off localizer and glideslope and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","true","false","true"]}}
+{"input":"activate all engine malfunctions and toggle total freeze on and turn off localizer and glideslope and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","true","false","false"]}}
+{"input":"activate all engine malfunctions and turn total freeze off and on localizer on glideslope and turn on the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","false","true","true"]}}
+{"input":"activate all engine malfunctions and toggle total freeze off and turn on localizer and glideslope and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","false","true","false"]}}
+{"input":"toggle total freeze off and turn off localizer and glideslope and turn on the approach and activate all engine malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","true","true","true","true","true"]}}
+{"input":"activate all engine malfunctions and toggle total freeze off and turn off localizer and glideslope and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["true","true","true","true","false","false","false"]}}
+{"input":"toggle total freeze on and on localizer on glideslope and turn on the approach and deactivate all engine malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","true","false","false","false","false"]}}
+{"input":"turn on total freeze and on localizer on glideslope and turn off approach and deactivate all engine malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","true","false","false","false","false","false"]}}
+{"input":"toggle on total freeze and turn off localizer and glideslope and turn on approach and deactivate all engine malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["true","false","true","false","false","false","false"]}}
+{"input":"deactivate all engine malfunctions and turn total freeze on and turn off localizer and glideslope and turn off the approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["false","false","false","false","true","false","false"]}}
+{"input":"deactivate all engine malfunctions and turn off total freeze and turn on localizer and glideslope and turn on approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["false","false","false","false","false","true","true"]}}
+{"input":"turn off total freeze and on localizer on glideslope and turn off the approach and deactivate all engine malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","true","false","false","false","false","false"]}}
+{"input":"toggle total freeze off and turn off localizer and glideslope and turn on approach and deactivate all engine malfunctions","output":{"Type":"command","parameters_keys":["IOS_TOTAL_FREEZE","LOC_GS","APPROACH","ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF"],"parameters_values":["false","false","true","false","false","false","false"]}}
+{"input":"deactivate all engine malfunctions and toggle total freeze off and turn off localizer and glideslope and turn off approach","output":{"Type":"command","parameters_keys":["ENGINE_1_MALF","ENGINE_2_MALF","ENGINE_3_MALF","ENGINE_4_MALF","IOS_TOTAL_FREEZE","LOC_GS","APPROACH"],"parameters_values":["false","false","false","false","false","false","false"]}}
+{"input":"2 and time freeze","output":{"Type":"error","message":"command not recognized"}}
+{"input":"put me on approach to KADW 1.4 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KADW","1.4","true","true"]}}
+{"input":"put me on approach to KAFF 8.53 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KAFF","8.53","true","true"]}}
+{"input":"put me on approach to KAYX 7.75 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KAYX","7.75","true","true"]}}
+{"input":"put me on approach to KBAB 9.72 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KBAB","9.72","true","true"]}}
+{"input":"put me on approach to KBAD 1.4 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KBAD","1.4","true","true"]}}
+{"input":"put me on approach to KBIX 9.99 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KBIX","9.99","true","true"]}}
+{"input":"put me on approach to KBLV 10.14 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KBLV","10.14","true","true"]}}
+{"input":"put me on approach to KCBM 3.76 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KCBM","3.76","true","true"]}}
+{"input":"put me on approach to KCHS 9.07 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KCHS","9.07","true","true"]}}
+{"input":"put me on approach to KCKA 10.44 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KCKA","10.44","true","true"]}}
+{"input":"put me on approach to KCVS 2.01 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KCVS","2.01","true","true"]}}
+{"input":"put me on approach to KDLF 6.17 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KDLF","6.17","true","true"]}}
+{"input":"put me on approach to KDMA 5.1 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KDMA","5.1","true","true"]}}
+{"input":"put me on approach to KDOV 1.85 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KDOV","1.85","true","true"]}}
+{"input":"put me on approach to KDYS 3.21 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KDYS","3.21","true","true"]}}
+{"input":"put me on approach to KEDW 10.18 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KEDW","10.18","true","true"]}}
+{"input":"put me on approach to KEND 1.58 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KEND","1.58","true","true"]}}
+{"input":"put me on approach to KFFO 5.99 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KFFO","5.99","true","true"]}}
+{"input":"put me on approach to KGFA 3.29 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KGFA","3.29","true","true"]}}
+{"input":"put me on approach to KGSB 0.07 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KGSB","0.07","true","true"]}}
+{"input":"put me on approach to KGXF 2.91 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KGXF","2.91","true","true"]}}
+{"input":"put me on approach to KHIF 3.1 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KHIF","3.1","true","true"]}}
+{"input":"put me on approach to KHMN 0.83 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KHMN","0.83","true","true"]}}
+{"input":"put me on approach to KLRF 7.36 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KLRF","7.36","true","true"]}}
+{"input":"put me on approach to KLSV 0.98 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KLSV","0.98","true","true"]}}
+{"input":"put me on approach to KLTS 7.53 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KLTS","7.53","true","true"]}}
+{"input":"put me on approach to KLUF 1.37 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KLUF","1.37","true","true"]}}
+{"input":"put me on approach to KRCA 8.12 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KRCA","8.12","true","true"]}}
+{"input":"put me on approach to KSKF 2.07 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KSKF","2.07","true","true"]}}
+{"input":"put me on approach to KSUU 11.32 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KSUU","11.32","true","true"]}}
+{"input":"put me on approach to KCVS 3.26 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KCVS","3.26","true","true"]}}
+{"input":"put me on approach to KCVS 3.78 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KCVS","3.78","true","true"]}}
+{"input":"put me on approach to KDYS 2.02 nautical miles out on localizer on glideslope","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","APPROACH"],"parameters_values":["KDYS","2.02","true","true"]}}
+{"input":"put me on approach to KADW range 4228.28 nautical miles bearing 344.24 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KADW","4228.28","344.24","true"]}}
+{"input":"put me on approach to KAFF range 1272.36 nautical miles bearing 183.86 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KAFF","1272.36","183.86","true"]}}
+{"input":"put me on approach to KAYX range 945.27 nautical miles bearing 358.83 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KAYX","945.27","358.83","true"]}}
+{"input":"put me on approach to KBAB range 4887.38 nautical miles bearing 101 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KBAB","4887.38","101","true"]}}
+{"input":"put me on approach to KBAD range 309.04 nautical miles bearing 53.08 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KBAD","309.04","53.08","true"]}}
+{"input":"put me on approach to KBIX range 3745.62 nautical miles bearing 292.13 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KBIX","3745.62","292.13","true"]}}
+{"input":"put me on approach to KBLV range 305.39 nautical miles bearing 323.08 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KBLV","305.39","323.08","true"]}}
+{"input":"put me on approach to KCBM range 301.43 nautical miles bearing 53.35 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KCBM","301.43","53.35","true"]}}
+{"input":"put me on approach to KCHS range 2066.56 nautical miles bearing 186.95 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KCHS","2066.56","186.95","true"]}}
+{"input":"put me on approach to KCKA range 3198.17 nautical miles bearing 309.04 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KCKA","3198.17","309.04","true"]}}
+{"input":"put me on approach to KCVS range 3207.07 nautical miles bearing 11.61 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KCVS","3207.07","11.61","true"]}}
+{"input":"put me on approach to KDLF range 3642.43 nautical miles bearing 176.2 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KDLF","3642.43","176.2","true"]}}
+{"input":"put me on approach to KDMA range 3592.99 nautical miles bearing 60.66 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KDMA","3592.99","60.66","true"]}}
+{"input":"put me on approach to KDOV range 704.44 nautical miles bearing 292.41 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KDOV","704.44","292.41","true"]}}
+{"input":"put me on approach to KDYS range 2663.97 nautical miles bearing 322.67 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KDYS","2663.97","322.67","true"]}}
+{"input":"put me on approach to KEDW range 873.74 nautical miles bearing 39.57 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KEDW","873.74","39.57","true"]}}
+{"input":"put me on approach to KEND range 3295.21 nautical miles bearing 35.87 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KEND","3295.21","35.87","true"]}}
+{"input":"put me on approach to KFFO range 15.46 nautical miles bearing 63.1 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KFFO","15.46","63.1","true"]}}
+{"input":"put me on approach to KGFA range 1223.74 nautical miles bearing 274.72 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KGFA","1223.74","274.72","true"]}}
+{"input":"put me on approach to KGSB range 4082.09 nautical miles bearing 88.52 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KGSB","4082.09","88.52","true"]}}
+{"input":"put me on approach to KGXF range 1403.3 nautical miles bearing 283.85 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KGXF","1403.3","283.85","true"]}}
+{"input":"put me on approach to KHIF range 2759.1 nautical miles bearing 336.23 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KHIF","2759.1","336.23","true"]}}
+{"input":"put me on approach to KHMN range 4392.26 nautical miles bearing 108.83 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KHMN","4392.26","108.83","true"]}}
+{"input":"put me on approach to KLRF range 3076.3 nautical miles bearing 99.11 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KLRF","3076.3","99.11","true"]}}
+{"input":"put me on approach to KLSV range 4415.18 nautical miles bearing 67.99 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KLSV","4415.18","67.99","true"]}}
+{"input":"put me on approach to KLTS range 4291.45 nautical miles bearing 295.16 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KLTS","4291.45","295.16","true"]}}
+{"input":"put me on approach to KLUF range 3376.83 nautical miles bearing 229.07 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KLUF","3376.83","229.07","true"]}}
+{"input":"put me on approach to KRCA range 2633.45 nautical miles bearing 292.83 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KRCA","2633.45","292.83","true"]}}
+{"input":"put me on approach to KSKF range 1138.66 nautical miles bearing 275.41 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KSKF","1138.66","275.41","true"]}}
+{"input":"put me on approach to KSUU range 3960.66 nautical miles bearing 7.4 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KSUU","3960.66","7.4","true"]}}
+{"input":"put me on approach to KLTS range 826.15 nautical miles bearing 269.2 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KLTS","826.15","269.2","true"]}}
+{"input":"put me on approach to KBAD range 4863.42 nautical miles bearing 230.12 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KBAD","4863.42","230.12","true"]}}
+{"input":"put me on approach to KBAD range 4807.23 nautical miles bearing 321.97 degrees","output":{"Type":"command","parameters_keys":["ICAO","RANGE","BEARING","APPROACH"],"parameters_values":["KBAD","4807.23","321.97","true"]}}
+{"input":"clear the approach","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","BEARING","RANGE","APPROACH"],"parameters_values":["","","","","",""]}}
+{"input":"clear the landing approach","output":{"Type":"command","parameters_keys":["ICAO","DISTANCE","LOC_GS","BEARING","RANGE","APPROACH"],"parameters_values":["","","","","",""]}}
+{"input":"activate engine fire malfunction and turn total freeze on and deactivate engine 4 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","true"],"message":"which engine has the fire malfunction?"}}
+{"input":"turn total freeze on and deactivate engine 4 fire malfunction and turn on engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","true"],"message":"which engine has the fire malfunction?"}}
+{"input":"turn total freeze on and engine fire malfunction on and deactivate engine 4 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","true"],"message":"which engine has the fire malfunction?"}}
+{"input":"toggle total freeze off and deactivate engine 3 fire malfunction and activate engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"deactivate engine 3 fire malfunction and turn on engine fire malfunction and toggle total freeze off","output":{"Type":"clarification","parameters_keys":["ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"deactivate engine 3 fire malfunction and toggle total freeze off and engine fire malfunction on","output":{"Type":"clarification","parameters_keys":["ENGINE_3_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"deactivate engine 4 fire malfunction and activate engine fire malfunction and turn off total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"turn on engine fire malfunction and deactivate engine 4 fire malfunction and turn off total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"engine fire malfunction on and deactivate engine 4 fire malfunction and turn off total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"deactivate engine 2 fire malfunction and activate engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"],"message":"which engine has the fire malfunction?"}}
+{"input":"deactivate engine 2 fire malfunction and turn on engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"],"message":"which engine has the fire malfunction?"}}
+{"input":"engine fire malfunction on and deactivate engine 2 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"],"message":"which engine has the fire malfunction?"}}
+{"input":"activate engine fire malfunction and turn off total freeze and deactivate engine 1 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"deactivate engine 1 fire malfunction and turn on engine fire malfunction and turn off total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"engine fire malfunction on and turn off total freeze and deactivate engine 1 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["false","false"],"message":"which engine has the fire malfunction?"}}
+{"input":"deactivate engine 2 fire malfunction and total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"],"message":"total freeze on or off?"}}
+{"input":"toggle total freeze and deactivate engine 2 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"],"message":"total freeze on or off?"}}
+{"input":"deactivate engine 2 fire malfunction and ios total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"],"message":"total freeze on or off?"}}
+{"input":"deactivate engine 2 fire malfunction and toggle ios total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["false"],"message":"total freeze on or off?"}}
+{"input":"activate engine 2 fire malfunction and total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"],"message":"total freeze on or off?"}}
+{"input":"toggle total freeze and activate engine 2 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"],"message":"total freeze on or off?"}}
+{"input":"ios total freeze and activate engine 2 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"],"message":"total freeze on or off?"}}
+{"input":"activate engine 2 fire malfunction and toggle ios total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF"],"parameters_values":["true"],"message":"total freeze on or off?"}}
+{"input":"activate engine 4 fire malfunction and total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"],"message":"total freeze on or off?"}}
+{"input":"toggle total freeze and activate engine 4 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"],"message":"total freeze on or off?"}}
+{"input":"ios total freeze and activate engine 4 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"],"message":"total freeze on or off?"}}
+{"input":"activate engine 4 fire malfunction and toggle ios total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF"],"parameters_values":["true"],"message":"total freeze on or off?"}}
+{"input":"deactivate engine fire malfunction 2 and activate engine fire malfunction 3 and total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF"],"parameters_values":["false","true"],"message":"total freeze on or off?"}}
+{"input":"toggle total freeze and activate engine fire malfunction 3 and deactivate engine fire malfunction 2","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF"],"parameters_values":["false","true"],"message":"total freeze on or off?"}}
+{"input":"ios total freeze and deactivate engine fire malfunction 2 and activate engine fire malfunction 3","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF"],"parameters_values":["false","true"],"message":"total freeze on or off?"}}
+{"input":"deactivate engine fire malfunction 2 and toggle ios total freeze and activate engine fire malfunction 3","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF","ENGINE_3_MALF"],"parameters_values":["false","true"],"message":"total freeze on or off?"}}
+{"input":"activate engine 1 fire malfunction and total freeze and deactivate engine 3 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF"],"parameters_values":["true","false"],"message":"total freeze on or off?"}}
+{"input":"toggle total freeze and deactivate engine 3 fire malfunction and activate engine 1 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF"],"parameters_values":["true","false"],"message":"total freeze on or off?"}}
+{"input":"deactivate engine 3 fire malfunction and activate engine 1 fire malfunction and ios total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF"],"parameters_values":["true","false"],"message":"total freeze on or off?"}}
+{"input":"toggle ios total freeze and activate engine 1 fire malfunction and deactivate engine 3 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","ENGINE_3_MALF"],"parameters_values":["true","false"],"message":"total freeze on or off?"}}
+{"input":"activate engine 2 fire malfunction and turn off total freeze and deactivate engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"turn off engine fire malfunction and activate engine 2 fire malfunction and turn off total freeze","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"activate engine 2 fire malfunction and turn off total freeze and engine fire malfunction off","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"activate engine 2 fire malfunction and turn off total freeze and remove the engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_2_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"activate engine 4 fire malfunction and deactivate engine fire malfunction and toggle total freeze off","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"toggle total freeze off and activate engine 4 fire malfunction and turn off engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"engine fire malfunction off and activate engine 4 fire malfunction and toggle total freeze off","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"activate engine 4 fire malfunction and remove the engine fire malfunction and toggle total freeze off","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"toggle total freeze on and activate engine fire malfunction 4 and deactivate engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"turn off engine fire malfunction and toggle total freeze on and activate engine fire malfunction 4","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"toggle total freeze on and engine fire malfunction off and activate engine fire malfunction 4","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"remove the engine fire malfunction and toggle total freeze on and activate engine fire malfunction 4","output":{"Type":"clarification","parameters_keys":["ENGINE_4_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","true"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"turn on total freeze and deactivate engine fire malfunction","output":{"Type":"clarification","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"turn on total freeze and turn off engine fire malfunction","output":{"Type":"clarification","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"engine fire malfunction off and turn on total freeze","output":{"Type":"clarification","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"turn on total freeze and remove the engine fire malfunction","output":{"Type":"clarification","parameters_keys":["IOS_TOTAL_FREEZE"],"parameters_values":["true"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"turn total freeze off and activate engine 1 fire malfunction and deactivate engine fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"activate engine 1 fire malfunction and turn off engine fire malfunction and turn total freeze off","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"turn total freeze off and engine fire malfunction off and activate engine 1 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}
+{"input":"remove the engine fire malfunction and turn total freeze off and activate engine 1 fire malfunction","output":{"Type":"clarification","parameters_keys":["ENGINE_1_MALF","IOS_TOTAL_FREEZE"],"parameters_values":["true","false"],"message":"which engine fire malfunction should be disabled"}}

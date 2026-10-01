@@ -1,0 +1,29 @@
+{
+  "variations": {
+    "engine": ["engine", "in gen", "in jin", "in gin", "and gin", "engin", "injun", "engines"],
+    "1": ["one", "won", "1", "wun"],
+    "2": ["two", "too", "2", "tu"],
+    "3": ["three", "tree", "3", "free"],
+    "4": ["four", "4", "were", "form", "fore"],
+    "malfunction": ["malfunction", "my function", "mail function", "mal function", "malf function", "malf form"],
+    "approach": ["approach", "a proach", "a pro",  "a preach", "approached"],
+    "freeze": ["freeze", "breeze", "frees", "please", "freed"],
+    "glideslope": ["glideslope", "glide slope", "wide slope", "light slope", "my slope", "glad slope"],
+    "fire": ["fire", "fireman", "firewall", "fireball"],
+    "fire malfunction": ["fireman function", "fire my function", "firewall function", "fireball function", "pharma function", "phryma function", "firemaw function", "firmware function", "firearm malfunction", "FireMofunction"],
+    "fire malfunctions": ["firemall functions", "firearm functions"],
+    "strict": ["strict", "district", "start", "correct", "strixt", "struck"],
+    "lenient": ["lenient", "linea", "convenient", "selenient", "linny", "lenny"],
+    "activate": ["activate", "to be", "activity", "to the"],
+    "deactivate": ["deactivate"],
+    "activate engine": ["The V-Engine"],
+    "exit": ["that's it"],
+    "localizer": ["localizer", "local riser", "local user", "vocalizer", "low calizer", "local eyes her"],
+    "nautical": ["nautical", "not a cool", "knotical", "naughty cal", "not ical"],
+    "bearing": ["bearing", "baring", "bearings", "bearin"],
+    "airport": ["airport", "air port", "airports"],
+    "distance": ["distance", "distant", "distances"],
+    "degrees": ["degrees", "degrease", "degree", "degreed"],
+    "range": ["range", "ranch", "ranger", "ranges"]
+  }
+}

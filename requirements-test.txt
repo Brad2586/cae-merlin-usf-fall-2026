@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+setuptools<81
+torch==2.5.1+cu121
+torchaudio==2.5.1+cu121
+faster-whisper==1.2.1
+numpy==2.4.6
+PyAudio==0.2.14
+webrtcvad==2.0.10
+openwakeword==0.6.0
+pywin32==312

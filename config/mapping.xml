@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mappings>
+
+    <!-- Engine 1 Fire Malfunction -->
+    <command>
+        <name>Activate Engine 1 Fire Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 1 Fire Malfunction</common_name>
+        <alias>ENGINE_1_MALF</alias>
+        <value>331</value>
+        <index>0</index>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Deactivate Engine 1 Fire Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 1 Fire Malfunction</common_name>
+        <alias>ENGINE_1_MALF</alias>
+        <value>331</value>
+        <index>0</index>
+        <time>0.3</time>
+    </command>
+
+    <!-- Engine 2 Fire Malfunction -->
+    <command>
+        <name>Activate Engine 2 Fire Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 2 Fire Malfunction</common_name>
+        <alias>ENGINE_2_MALF</alias>
+        <value>332</value>
+        <index>1</index>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Deactivate Engine 2 Fire Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 2 Fire Malfunction</common_name>
+        <alias>ENGINE_2_MALF</alias>
+        <value>332</value>
+        <index>1</index>
+        <time>0.3</time>
+    </command>
+
+    <!-- Engine 3 Fire Malfunction -->
+    <command>
+        <name>Activate Engine 3 Fire Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 3 Fire Malfunction</common_name>
+        <alias>ENGINE_3_MALF</alias>
+        <value>333</value>
+        <index>2</index>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Deactivate Engine 3 Fire Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 3 Fire Malfunction</common_name>
+        <alias>ENGINE_3_MALF</alias>
+        <value>333</value>
+        <index>2</index>
+        <time>0.3</time>
+    </command>
+
+    <!-- Engine 4 Fire Malfunction -->
+    <command>
+        <name>Activate Engine 4 Fire Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 4 Fire Malfunction</common_name>
+        <alias>ENGINE_4_MALF</alias>
+        <value>334</value>
+        <index>3</index>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Deactivate Engine 4 Fire Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 4 Fire Malfunction</common_name>
+        <alias>ENGINE_4_MALF</alias>
+        <value>334</value>
+        <index>3</index>
+        <time>0.3</time>
+    </command>
+
+    <!-- Total freeze -->
+    <command>
+        <name>Enable Total Freeze</name>
+        <variable>MODE_IF.TOT_FRZ_REQ</variable>
+        <common_name>Total Freeze</common_name>
+        <alias>IOS_TOTAL_FREEZE</alias>
+        <value>1</value>
+    </command>
+    <command>
+        <name>Disable Total Freeze</name>
+        <variable>MODE_IF.TOT_FRZ_REQ</variable>
+        <common_name>Total Freeze</common_name>
+        <alias>IOS_TOTAL_FREEZE</alias>
+        <value>0</value>
+    </command>
+
+    <!-- Altitude Freeze -->
+    <command>
+        <name>Enable Altitude Freeze</name>
+        <variable>MODE_IF.ALT_FRZ_REQ</variable>
+        <common_name>Altitude Freeze</common_name>
+        <alias>IOS_ALTITUDE_FREEZE</alias>
+        <value>1</value>
+    </command>
+    <command>
+        <name>Disable Altitude Freeze</name>
+        <variable>MODE_IF.ALT_FRZ_REQ</variable>
+        <common_name>Altitude Freeze</common_name>
+        <alias>IOS_ALTITUDE_FREEZE</alias>
+        <value>0</value>
+    </command>
+
+    <!-- Flight Freeze -->
+    <command>
+        <name>Enable Flight Freeze</name>
+        <variable>MODE_IF.FLT_FRZ_REQ</variable>
+        <common_name>Flight Freeze</common_name>
+        <alias>IOS_FLIGHT_FREEZE</alias>
+        <value>1</value>
+    </command>
+    <command>
+        <name>Disable Flight Freeze</name>
+        <variable>MODE_IF.FLT_FRZ_REQ</variable>
+        <common_name>Flight Freeze</common_name>
+        <alias>IOS_FLIGHT_FREEZE</alias>
+        <value>0</value>
+    </command>
+
+    <!-- Position Freeze -->
+    <command>
+        <name>Enable Position Freeze</name>
+        <variable>MODE_IF.POS_FRZ_REQ</variable>
+        <common_name>Position Freeze</common_name>
+        <alias>IOS_POSITION_FREEZE</alias>
+        <value>1</value>
+    </command>
+    <command>
+        <name>Disable Position Freeze</name>
+        <variable>MODE_IF.POS_FRZ_REQ</variable>
+        <common_name>Position Freeze</common_name>
+        <alias>IOS_POSITION_FREEZE</alias>
+        <value>0</value>
+    </command>
+
+    <!-- Heading Freeze -->
+    <command>
+        <name>Enable Heading Freeze</name>
+        <variable>MODE_IF.HDG_FRZ_REQ</variable>
+        <common_name>Heading Freeze</common_name>
+        <alias>IOS_HEADING_FREEZE</alias>
+        <value>1</value>
+    </command>
+    <command>
+        <name>Disable Heading Freeze</name>
+        <variable>MODE_IF.HDG_FRZ_REQ</variable>
+        <common_name>Heading Freeze</common_name>
+        <alias>IOS_HEADING_FREEZE</alias>
+        <value>0</value>
+    </command>
+
+    <!-- Airspeed Freeze -->
+    <command>
+        <name>Enable Airspeed Freeze</name>
+        <variable>MODE_IF.AIRSPD_FRZ_REQ</variable>
+        <common_name>Airspeed Freeze</common_name>
+        <alias>IOS_AIRSPEED_FREEZE</alias>
+        <value>1</value>
+    </command>
+    <command>
+        <name>Disable Airspeed Freeze</name>
+        <variable>MODE_IF.AIRSPD_FRZ_REQ</variable>
+        <common_name>Airspeed Freeze</common_name>
+        <alias>IOS_AIRSPEED_FREEZE</alias>
+        <value>0</value>
+    </command>
+
+    <!-- Fuel Freeze -->
+    <command>
+        <name>Enable Fuel Freeze</name>
+        <variable>MODE_IF.FUEL_FRZ_REQ</variable>
+        <common_name>Fuel Freeze</common_name>
+        <alias>IOS_FUEL_FREEZE</alias>
+        <value>1</value>
+    </command>
+    <command>
+        <name>Disable Fuel Freeze</name>
+        <variable>MODE_IF.FUEL_FRZ_REQ</variable>
+        <common_name>Fuel Freeze</common_name>
+        <alias>IOS_FUEL_FREEZE</alias>
+        <value>0</value>
+    </command>
+
+    <!-- Attitude Freeze -->
+    <command>
+        <name>Enable Attitude Freeze</name>
+        <variable>MODE_IF.ATT_FRZ_REQ</variable>
+        <common_name>Attitude Freeze</common_name>
+        <alias>IOS_ATTITUDE_FREEZE</alias>
+        <value>1</value>
+        <index>0</index>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Disable Attitude Freeze</name>
+        <variable>MODE_IF.ATT_FRZ_REQ</variable>
+        <common_name>Attitude Freeze</common_name>
+        <alias>IOS_ATTITUDE_FREEZE</alias>
+        <value>0</value>
+        <index>0</index>
+        <time>0.3</time>
+    </command>
+
+</mappings>

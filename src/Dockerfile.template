@@ -1,0 +1,23 @@
+ARG ARTIFACTORY_HOSTNAME=artifactory.caemilusa.com
+
+# Base on <BASE IMAGE NAME / DESCRIPTION>
+# <WHY BASE IMAGE WAS CHOSEN>
+# <LINK TO BASE IMAGE>
+FROM ${ARTIFACTORY_HOSTNAME}/<artifactory-repository-remote>/<base-image>:<base-image-tag>
+
+# Set env vars for later reference
+# ARG ARTIFACTORY_HOSTNAME=artifactory.caemilusa.com
+# ENV ARTIFACTORY_HOSTNAME=${ARTIFACTORY_HOSTNAME}
+
+# Add additional package streams, and redirect all package streams to Artifactory
+# COPY packageSteamConfigFiles targetLocationForPackageStreamConfigFiles
+# RUN <edit package stream files that already exist in base image>
+
+# Install additional requirements
+# RUN <installation steps>
+
+# Update all possible packages from base image
+# RUN <update steps>
+
+# Set up working directory
+# WORKDIR /app

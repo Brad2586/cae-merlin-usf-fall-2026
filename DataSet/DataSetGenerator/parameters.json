@@ -1,0 +1,529 @@
+
+{
+    "parameters": [
+            { "key": "ENGINE_1_MALF", "default": "" },
+            { "key": "ENGINE_2_MALF", "default": "" },
+            { "key": "ENGINE_3_MALF", "default": "" },
+            { "key": "ENGINE_4_MALF", "default": "" },
+            { "key": "IOS_TOTAL_FREEZE", "default": "" },
+            { "key": "IOS_ALTITUDE_FREEZE",  "default": "" },
+            { "key": "IOS_FLIGHT_FREEZE",    "default": "" },
+            { "key": "IOS_POSITION_FREEZE",  "default": "" },
+            { "key": "IOS_HEADING_FREEZE",   "default": "" },
+            { "key": "IOS_AIRSPEED_FREEZE",  "default": "" },
+            { "key": "IOS_FUEL_FREEZE",      "default": "" },
+            { "key": "IOS_ATTITUDE_FREEZE",      "default": "" }
+    ],
+    "type": [
+            "command",
+            "clarification",
+            "error",
+            "mode_strict",
+            "exit",
+            "mode_lenient"
+    ],
+    "messages":[
+            "which engine has the fire malfunction?",
+            "error, command not recognized",
+            "exiting program",
+            "total freeze on or off?",
+            "which engine fire malfunction should be disabled?",
+            "lenient mode or strict mode?",
+            "total freeze on or off?",
+            "altitude freeze on or off?",
+            "flight freeze on or off?",
+            "position freeze on or off?",
+            "heading freeze on or off?",
+            "airspeed freeze on or off?",
+            "fuel freeze on or off?",
+            "attitude freeze on or off?"
+    ],
+    "single_default":{
+        "command_boolean":{
+            "default":[
+                { "key": "ENGINE_1_MALF", "value": "true", "input": ["activate engine 1 fire malfunction", "activate engine fire malfunction 1"] },
+                { "key": "ENGINE_1_MALF", "value": "false", "input": ["deactivate engine 1 fire malfunction", "deactivate engine fire malfunction 1"] },
+                { "key": "ENGINE_2_MALF", "value": "true", "input": ["activate engine 2 fire malfunction", "activate engine fire malfunction 2"] },
+                { "key": "ENGINE_2_MALF", "value": "false", "input": ["deactivate engine 2 fire malfunction", "deactivate engine fire malfunction 2"] },
+                { "key": "ENGINE_3_MALF", "value": "true", "input": ["activate engine 3 fire malfunction", "activate engine fire malfunction 3"] },
+                { "key": "ENGINE_3_MALF", "value": "false", "input": ["deactivate engine 3 fire malfunction", "deactivate engine fire malfunction 3"] },
+                { "key": "ENGINE_4_MALF", "value": "true", "input": ["activate engine 4 fire malfunction", "activate engine fire malfunction 4"] },
+                { "key": "ENGINE_4_MALF", "value": "false", "input": ["deactivate engine 4 fire malfunction", "deactivate engine fire malfunction 4"] },
+                { "key": "IOS_TOTAL_FREEZE", "value": "true", "input": ["turn total freeze on", "toggle on total freeze", "toggle total freeze on", "turn on total freeze"] },
+                { "key": "IOS_TOTAL_FREEZE", "value": "false", "input": ["turn total freeze off", "toggle off total freeze", "toggle total freeze off", "turn off total freeze"] },
+                { "key": "IOS_ALTITUDE_FREEZE", "value": "true", "input": [ "freeze altitude", "altitude freeze on", "enable altitude freeze" ] },
+                { "key": "IOS_ALTITUDE_FREEZE", "value": "false", "input": [ "unfreeze altitude", "altitude freeze off", "disable altitude freeze" ] },
+                { "key": "IOS_FLIGHT_FREEZE", "value": "true", "input": [ "freeze flight", "flight freeze on", "enable flight freeze" ] },
+                { "key": "IOS_FLIGHT_FREEZE", "value": "false", "input": [ "unfreeze flight", "flight freeze off", "disable flight freeze" ] },
+                { "key": "IOS_POSITION_FREEZE", "value": "true",  "input": [ "freeze position", "position freeze on", "enable position freeze" ] },
+                { "key": "IOS_POSITION_FREEZE", "value": "false", "input": [ "unfreeze position", "position freeze off", "disable position freeze" ] },
+                { "key": "IOS_HEADING_FREEZE", "value": "true",  "input": [ "freeze heading", "heading freeze on", "enable heading freeze" ] },
+                { "key": "IOS_HEADING_FREEZE", "value": "false",  "input": [ "unfreeze heading", "heading freeze off", "disable heading freeze" ] },
+                { "key": "IOS_AIRSPEED_FREEZE", "value": "true", "input": [ "freeze airspeed", "airspeed freeze on", "enable airspeed freeze" ] },
+                { "key": "IOS_AIRSPEED_FREEZE", "value": "false","input": [ "unfreeze airspeed", "airspeed freeze off", "disable airspeed freeze" ] },
+                { "key": "IOS_FUEL_FREEZE", "value": "true", "input": [ "freeze fuel", "fuel freeze on", "enable fuel freeze" ] },
+                { "key": "IOS_FUEL_FREEZE", "value": "false", "input": [ "unfreeze fuel", "fuel freeze off", "disable fuel freeze" ] },
+                { "key": "IOS_ATTITUDE_FREEZE", "value": "true", "input": [ "freeze attitude", "attitude freeze on", "enable attitude freeze" ] },
+                { "key": "IOS_ATTITUDE_FREEZE", "value": "false","input": [ "unfreeze attitude", "attitude freeze off", "disable attitude freeze" ] }
+            ],
+            "clarification_response":[
+                { "key": "ENGINE_1_MALF", "value": "true", "input": ["which engine has the fire malfunction? 1", "which engine has the fire malfunction? engine 1"] },
+                { "key": "ENGINE_2_MALF", "value": "true", "input": ["which engine has the fire malfunction? 2", "which engine has the fire malfunction? engine 2"] },
+                { "key": "ENGINE_3_MALF", "value": "true", "input": ["which engine has the fire malfunction? 3", "which engine has the fire malfunction? engine 3"] },
+                { "key": "ENGINE_4_MALF", "value": "true", "input": ["which engine has the fire malfunction? 4", "which engine has the fire malfunction? engine 4"] }, 
+                { "key": "ENGINE_1_MALF", "value": "false", "input": ["which engine fire malfunction should be disabled? 1", "which engine fire malfunction should be disabled? engine 1"] },
+                { "key": "ENGINE_2_MALF", "value": "false", "input": ["which engine fire malfunction should be disabled? 2", "which engine fire malfunction should be disabled? engine 2"] },
+                { "key": "ENGINE_3_MALF", "value": "false", "input": ["which engine fire malfunction should be disabled? 3", "which engine fire malfunction should be disabled? engine 3"] },
+                { "key": "ENGINE_4_MALF", "value": "false", "input": ["which engine fire malfunction should be disabled? 4", "which engine fire malfunction should be disabled? engine 4"] },
+                { "key": "IOS_TOTAL_FREEZE", "value": "true", "input": ["total freeze on or off? on", "total freeze on or off? on"]},
+                { "key": "IOS_TOTAL_FREEZE", "value": "false", "input": ["total freeze on or off? off", "total freeze on or off? off"]},
+                { "key": "IOS_TOTAL_FREEZE", "value": "true",
+                    "input": [
+                    "total freeze on or off? on",
+                    "total freeze on or off? turn it on",
+                    "total freeze on or off? total freeze on"
+                    ] },
+                { "key": "IOS_TOTAL_FREEZE", "value": "false",
+                    "input": [
+                    "total freeze on or off? off",
+                    "total freeze on or off? turn it off",
+                    "total freeze on or off? total freeze off"
+                    ] },
+
+                { "key": "IOS_ALTITUDE_FREEZE", "value": "true",
+                    "input": [
+                    "altitude freeze on or off? on",
+                    "altitude freeze on or off? altitude freeze on"
+                    ] },
+                { "key": "IOS_ALTITUDE_FREEZE", "value": "false",
+                    "input": [
+                    "altitude freeze on or off? off",
+                    "altitude freeze on or off? altitude freeze off"
+                    ] },
+
+                { "key": "IOS_FLIGHT_FREEZE", "value": "true",
+                    "input": [
+                    "flight freeze on or off? on",
+                    "flight freeze on or off? flight freeze on"
+                    ] },
+                { "key": "IOS_FLIGHT_FREEZE", "value": "false",
+                    "input": [
+                    "flight freeze on or off? off",
+                    "flight freeze on or off? flight freeze off"
+                    ] },
+
+                { "key": "IOS_POSITION_FREEZE", "value": "true",
+                    "input": [
+                    "position freeze on or off? on",
+                    "position freeze on or off? position freeze on"
+                    ] },
+                { "key": "IOS_POSITION_FREEZE", "value": "false",
+                    "input": [
+                    "position freeze on or off? off",
+                    "position freeze on or off? position freeze off"
+                    ] },
+
+                { "key": "IOS_HEADING_FREEZE", "value": "true",
+                    "input": [
+                    "heading freeze on or off? on",
+                    "heading freeze on or off? heading freeze on"
+                    ] },
+                { "key": "IOS_HEADING_FREEZE", "value": "false",
+                    "input": [
+                    "heading freeze on or off? off",
+                    "heading freeze on or off? heading freeze off"
+                    ] },
+
+                { "key": "IOS_AIRSPEED_FREEZE", "value": "true",
+                    "input": [
+                    "airspeed freeze on or off? on",
+                    "airspeed freeze on or off? airspeed freeze on"
+                    ] },
+                { "key": "IOS_AIRSPEED_FREEZE", "value": "false",
+                    "input": [
+                    "airspeed freeze on or off? off",
+                    "airspeed freeze on or off? airspeed freeze off"
+                    ] },
+
+                { "key": "IOS_FUEL_FREEZE", "value": "true",
+                    "input": [
+                    "fuel freeze on or off? on",
+                    "fuel freeze on or off? fuel freeze on"
+                    ] },
+                { "key": "IOS_FUEL_FREEZE", "value": "false",
+                    "input": [
+                    "fuel freeze on or off? off",
+                    "fuel freeze on or off? fuel freeze off"
+                    ] },
+
+                { "key": "IOS_ATTITUDE_FREEZE", "value": "true",
+                    "input": [
+                    "attitude freeze on or off? on",
+                    "attitude freeze on or off? attitude freeze on"
+                    ] },
+                { "key": "IOS_ATTITUDE_FREEZE", "value": "false",
+                    "input": [
+                    "attitude freeze on or off? off",
+                    "attitude freeze on or off? attitude freeze off"
+                    ] }
+            ],
+            "strict":[
+                
+            ],
+            "lenient":[
+                { "key": "ENGINE_1_MALF", "value": "true", "input": ["activate motor 1 malfunction", "activate engine malfunction 1", "engine 1 is broken", "set malfunction engine 1 fire true", "engine 1 on fire"] },
+                { "key": "ENGINE_1_MALF", "value": "false", "input": ["deactivate motor 1 malfunction", "deactivate engine  malfunction 1", "engine 1 is fixed", "set malfunction engine 1 fire false"] },
+                { "key": "ENGINE_2_MALF", "value": "true", "input": ["activate motor 2 malfunction", "activate engine malfunction 2", "engine 2 is broken", "set malfunction engine 2 fire true"] },
+                { "key": "ENGINE_2_MALF", "value": "false", "input": ["deactivate motor 2 malfunction", "deactivate engine malfunction 2", "engine 2 is fixed", "set malfunction engine 2 fire false"] },
+                { "key": "ENGINE_3_MALF", "value": "true", "input": ["activate motor 3 malfunction", "activate engine malfunction 3", "engine 3 is broken", "set malfunction engine 3 fire true", "engine 3 on fire"] },
+                { "key": "ENGINE_3_MALF", "value": "false", "input": ["deactivate motor 3 malfunction", "deactivate engine malfunction 3", "engine 3 is fixed", "set malfunction engine 3 fire false"] },
+                { "key": "ENGINE_4_MALF", "value": "true", "input": ["activate motor 4 malfunction", "activate engine malfunction 4", "engine 4 is broken", "set malfunction engine 4 fire true"] },
+                { "key": "ENGINE_4_MALF", "value": "false", "input": ["deactivate motor 4 malfunction", "deactivate engine malfunction 4", "engine 4 is fixed", "set malfunction engine 4 fire false"] },
+                { "key": "IOS_TOTAL_FREEZE", "value": "true", "input": ["on total freeze", "turn the total freeze on", "total freeze on", "total freeze true", "freeze on"]},
+                { "key": "IOS_TOTAL_FREEZE", "value": "false", "input": ["off total freeze", "turn the total freeze off", "total freeze off", "total freeze false", "freeze off"]},
+                { "key": "IOS_ALTITUDE_FREEZE", "value": "true", "input": ["freeze the altitude", "lock altitude", "hold altitude frozen"] },
+                { "key": "IOS_ALTITUDE_FREEZE", "value": "false", "input": ["unfreeze the altitude", "unlock altitude", "altitude should move again"] },
+                { "key": "IOS_FLIGHT_FREEZE", "value": "true","input": ["freeze the flight", "lock the flight state", "freeze entire flight"] },
+                { "key": "IOS_FLIGHT_FREEZE", "value": "false", "input": ["unfreeze the flight", "unlock the flight state", "resume normal flight"] },
+                { "key": "IOS_POSITION_FREEZE", "value": "true","input": ["freeze the position", "lock position", "don't move the aircraft position"] },
+                { "key": "IOS_POSITION_FREEZE", "value": "false","input": ["unfreeze the position", "unlock position", "allow position to change"] },
+                { "key": "IOS_HEADING_FREEZE", "value": "true","input": ["freeze the heading", "lock heading", "keep heading fixed"] },
+                { "key": "IOS_HEADING_FREEZE", "value": "false", "input": ["unfreeze the heading", "unlock heading", "allow heading to change"] },
+                { "key": "IOS_AIRSPEED_FREEZE", "value": "true", "input": ["freeze the airspeed", "lock airspeed", "keep speed frozen"] },
+                { "key": "IOS_AIRSPEED_FREEZE", "value": "false", "input": ["unfreeze the airspeed", "unlock airspeed", "let speed change again"] },
+                { "key": "IOS_FUEL_FREEZE", "value": "true","input": ["freeze the fuel", "lock fuel", "stop fuel from changing"] },
+                { "key": "IOS_FUEL_FREEZE", "value": "false",  "input": ["unfreeze the fuel", "unlock fuel", "allow fuel to change"] },
+                { "key": "IOS_ATTITUDE_FREEZE", "value": "true","input": ["freeze the attitude", "lock attitude", "keep attitude fixed"] },
+                { "key": "IOS_ATTITUDE_FREEZE", "value": "false","input": ["unfreeze the attitude", "unlock attitude", "allow attitude to change"] }
+            ]
+        },
+        "command_char":{
+            "default":[],
+            "strict":[],
+            "lenient":[]
+        },
+        "command_float":{
+            "default":[],
+            "strict":[],
+            "lenient":[]
+        },
+        "command_double":{
+            "default":[],
+            "strict":[],
+            "lenient":[]
+        },    
+        "error":{
+            "message": "error, command not recognized",
+            "default":[
+                {
+                    "input": [
+                        "gear up", "gear down",
+                        " ", "enable hyperdrive",
+                        "you", "thank you", "thank you thank you",
+                        "4", "3", "2", "1",
+                        "activate self-destruct sequence",
+                        "set engine to maximum overdrive", "open the black box",
+                        "please stop time", "turn on unicorn mode", "turn off unicorn mode",
+                        "fly to the moon", "fire", "malfunction", "quit", "exit",
+                        "fly to outerspace", "fly to the sun", "fly to saturn",
+                        "stop time", "pause the simulator", "hold everything",
+                        "lock the sim", "frozen mode",
+                        "no",
+                        "which engine has the fire malfunction? thank you",
+                        "total freeze on or off? thank you",
+                        "which engine fire malfunction should be disabled? thank you",
+                        "which engine has the fire malfunction? you",
+                        "total freeze on or off? you",
+                        "which engine fire malfunction should be disabled? you",
+                        "which engine has the fire malfunction? never mind",
+                        "which engine has the fire malfunction? cancel",
+                        "total freeze on or off? never mind",
+                        "1000 foot final localizer glideslope",
+                        "put me on the ils 1000 feet out",
+                        "which engine has the fire malfunction? yes"
+                    ]
+                }
+            ],
+            "strict":[
+                {
+                    "input": [
+                        "toggle on freeze",
+                        "activate engine 1 malfunction now", "immediately turn on engine 4 malfunction",
+                        "activate engine 1 malfunction plus activate engine 2 malfunction",
+                        "enable engine 3 malfunction", "trigger engine 1 malfunction",
+                        "enable total freeze",
+                        "turn on engine 1 malfunction and turn on engine malfunction 2",
+                        "deactivate engine 1 malfucntion", "deactivate engine 2 malfunction",
+                        "deactivate engine 3 malfunction", "deactivate engine 4 malfunction",
+                        "activate engine 1 malfucntion", "activate engine 2 malfunction",
+                        "activate engine 3 malfunction", "activate engine 4 malfunction",
+                        "turn on engine 1 malfunction",
+                        "turn on engine 3 malfunction", "turn on engine 4 malfunction"
+                    ]
+                }
+            ],
+            "lenient":[]
+        },
+        "clarification":{
+            "default":[
+                {
+                    "message": "which engine has the fire malfunction?",
+                    "input": [
+                        "activate engine fire malfunction", "turn on engine fire malfunction",
+                        "engine fire malfunction on"
+                    ]
+                },
+                {
+                    "message": "total freeze on or off?",
+                    "input": [
+                        "total freeze", "toggle total freeze",
+                        "ios total freeze", "toggle ios total freeze"
+                    ]
+                },
+                {
+                    "message": "which engine fire malfunction should be disabled",
+                    "input": [
+                        "deactivate engine fire malfunction", "turn off engine fire malfunction",
+                        "engine fire malfunction off", "remove the engine fire malfunction"
+                    ]
+                },
+                {
+                    "message": "lenient mode or strict mode?",
+                    "input": [
+                        "set mode to", "change mode to", "toggle mode"
+                    ]
+                },
+                {
+                    "message": "altitude freeze on or off?",
+                    "input": [
+                        "altitude freeze", "toggle altitude freeze",
+                        "ios altitude freeze", "toggle ios altitude freeze"
+                    ]
+                },
+                {
+                    "message": "flight freeze on or off?",
+                    "input": [
+                        "flight freeze", "toggle flight freeze",
+                        "ios flight freeze", "toggle ios flight freeze"
+                    ]
+                },
+                {
+                    "message": "position freeze on or off?",
+                    "input": [
+                        "position freeze", "toggle position freeze",
+                        "ios position freeze", "toggle ios position freeze"
+                    ]
+                },
+                {
+                    "message": "heading freeze on or off?",
+                    "input": [
+                        "heading freeze", "toggle heading freeze",
+                        "ios heading freeze", "toggle ios heading freeze"
+                    ]
+                },
+                {
+                    "message": "airspeed freeze on or off?",
+                    "input": [
+                        "airspeed freeze", "toggle airspeed freeze",
+                        "ios airspeed freeze", "toggle ios airspeed freeze"
+                    ]
+                },
+                {
+                    "message": "fuel freeze on or off?",
+                    "input": [
+                        "fuel freeze", "toggle fuel freeze",
+                        "ios fuel freeze", "toggle ios fuel freeze"
+                    ]
+                },
+                {
+                    "message": "attitude freeze on or off?",
+                    "input": [
+                        "attitude freeze", "toggle attitude freeze",
+                        "ios attitude freeze", "toggle ios attitude freeze"
+                    ]
+                }
+            ],
+            "strict":[],
+            "lenient":[
+                {
+                    "message": "which engine has the fire malfunction?",
+                    "input": [
+                        "activate engine fire", "engine fire malfunction", "engine fire malfunction"
+                    ]
+                },
+                {
+                    "message": "total freeze on or off?",
+                    "input":[
+                        "freeze",
+                        "freeze mode",
+                        "total freeze mode",
+                        "toggle freeze",
+                        "set total freeze",
+                        "change total freeze",
+                        "total freeze setting",
+                        "freeze setting"
+                    ]   
+                }
+            ]
+        },
+        "mode":{
+            "default":[                
+                { 
+                    "type": "mode_lenient", 
+                    "input": ["set mode to lenient", "change mode to lenient", "toggle lenient mode", "lenient mode or strict mode? lenient", "lenient mode or strict mode? lenient mode"]
+                },
+                { 
+                    "type": "mode_strict", 
+                    "input": ["set mode to strict", "change mode to strict", "toggle strict mode", "lenient mode or strict mode? strict", "lenient mode or strict mode? strict mode"]
+                }
+            ],
+            "strict":[],
+            "lenient":[]
+        },
+        "exit":{
+            "default":[
+                {
+                    "input": [
+                        "exit the program",
+                        "please exit the program"
+                    ]
+                }
+            ],
+            "strict":[],
+            "lenient":[
+                {
+                    "input": [
+                        "exit",
+                        "close the program",
+                        "please stop the program",
+                        "stop the program"
+                    ]
+                }
+            ]
+        }
+    }, 
+    "multi_default":{
+        "all_engine":{
+            "default":[
+                {
+                    "keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"],
+                    "values": ["true", "true", "true", "true"],
+                    "input": [
+                        "activate all engine fire malfunctions",
+                        "turn on all engine fire malfunctions",
+                        "activate all engine fire malfunction",
+                        "turn on all engine fire malfunction"
+                    ]
+                },
+                {
+                    "keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"],
+                    "values": ["false", "false", "false", "false"],
+                    "input": [
+                        "deactivate all engine fire malfunctions",
+                        "turn off all engine fire malfunctions",
+                        "deactivate all engine fire malfunction",
+                        "turn off all engine fire malfunction"
+                    ]
+                }
+            ],
+            "strict":[],
+            "lenient":[
+                {
+                    "keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"],
+                    "values": ["true", "true", "true", "true"],
+                    "input": [
+                        "activate all engine malfunctions",
+                        "turn on all engine malfunctions",
+                        "activate all engine malfunction",
+                        "turn on all engine malfunction"
+                    ]
+                },
+                {
+                    "keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"],
+                    "values": ["false", "false", "false", "false"],
+                    "input": [
+                        "deactivate all engine malfunctions",
+                        "turn off all engine malfunctions",
+                        "deactivate all engine malfunction",
+                        "turn off all engine malfunction",
+                        "clear all malfunctions"
+                    ]
+                }
+            ]
+        },
+        "error":{
+            "default":[
+                {
+                    "message": "multiple missing values, please try again"
+                }
+            ],
+            "strict":[],
+            "lenient":[]
+        },
+        "clarification":{
+            "default":[
+                {
+                    "message": "which engine has the fire malfunction?",
+                    "input": [
+                        "activate engine fire malfunction", "turn on engine fire malfunction",
+                        "engine fire malfunction on"
+                    ],
+                    "allowed": [
+                        { "key": "ENGINE_1_MALF", "value": "false", "input": ["deactivate engine 1 fire malfunction", "deactivate engine fire malfunction 1"] },
+                        { "key": "ENGINE_2_MALF", "value": "false", "input": ["deactivate engine 2 fire malfunction", "deactivate engine fire malfunction 2"] },
+                        { "key": "ENGINE_3_MALF", "value": "false", "input": ["deactivate engine 3 fire malfunction", "deactivate engine fire malfunction 3"] },
+                        { "key": "ENGINE_4_MALF", "value": "false", "input": ["deactivate engine 4 fire malfunction", "deactivate engine fire malfunction 4"] },
+                        { "key": "IOS_TOTAL_FREEZE", "value": "true", "input": ["turn total freeze on", "toggle on total freeze", "toggle total freeze on", "turn on total freeze"] },
+                        { "key": "IOS_TOTAL_FREEZE", "value": "false", "input": ["turn total freeze off", "toggle off total freeze", "toggle total freeze off", "turn off total freeze"] }
+                    ]
+                },
+                {
+                    "message": "total freeze on or off?",
+                    "input": [
+                        "total freeze", "toggle total freeze",
+                        "ios total freeze", "toggle ios total freeze"
+                    ],
+                    "allowed": [
+                        { "key": "ENGINE_1_MALF", "value": "true", "input": ["activate engine 1 fire malfunction", "activate engine fire malfunction 1"] },
+                        { "key": "ENGINE_1_MALF", "value": "false", "input": ["deactivate engine 1 fire malfunction", "deactivate engine fire malfunction 1"] },
+                        { "key": "ENGINE_2_MALF", "value": "true", "input": ["activate engine 2 fire malfunction", "activate engine fire malfunction 2"] },
+                        { "key": "ENGINE_2_MALF", "value": "false", "input": ["deactivate engine 2 fire malfunction", "deactivate engine fire malfunction 2"] },
+                        { "key": "ENGINE_3_MALF", "value": "true", "input": ["activate engine 3 fire malfunction", "activate engine fire malfunction 3"] },
+                        { "key": "ENGINE_3_MALF", "value": "false", "input": ["deactivate engine 3 fire malfunction", "deactivate engine fire malfunction 3"] },
+                        { "key": "ENGINE_4_MALF", "value": "true", "input": ["activate engine 4 fire malfunction", "activate engine fire malfunction 4"] },
+                        { "key": "ENGINE_4_MALF", "value": "false", "input": ["deactivate engine 4 fire malfunction", "deactivate engine fire malfunction 4"] }
+                    ]
+                },
+                {
+                    "message": "which engine fire malfunction should be disabled",
+                    "input": [
+                        "deactivate engine fire malfunction", "turn off engine fire malfunction",
+                        "engine fire malfunction off", "remove the engine fire malfunction"
+                    ],
+                    "allowed": [
+                        { "key": "ENGINE_1_MALF", "value": "true", "input": ["activate engine 1 fire malfunction", "activate engine fire malfunction 1"] },
+                        { "key": "ENGINE_2_MALF", "value": "true", "input": ["activate engine 2 fire malfunction", "activate engine fire malfunction 2"] },
+                        { "key": "ENGINE_3_MALF", "value": "true", "input": ["activate engine 3 fire malfunction", "activate engine fire malfunction 3"] },
+                        { "key": "ENGINE_4_MALF", "value": "true", "input": ["activate engine 4 fire malfunction", "activate engine fire malfunction 4"] },
+                        { "key": "IOS_TOTAL_FREEZE", "value": "true", "input": ["turn total freeze on", "toggle on total freeze", "toggle total freeze on", "turn on total freeze"] },
+                        { "key": "IOS_TOTAL_FREEZE", "value": "false", "input": ["turn total freeze off", "toggle off total freeze", "toggle total freeze off", "turn off total freeze"] }
+                    ]
+                }
+
+                
+            ],
+            "strict":[],
+            "lenient":[]
+        },
+        "mode":{
+            "default":[],
+            "strict":[],
+            "lenient":[]
+        },
+        "exit":{
+            "default":[],
+            "strict":[],
+            "lenient":[]
+        }
+    }
+}

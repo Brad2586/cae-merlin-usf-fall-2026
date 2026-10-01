@@ -1,0 +1,14 @@
+{
+    "files": [
+        {
+            // Comments are not valid JSON. All comments should be removed before use.
+            // Docs: https://jfrog.com/help/r/jfrog-applications-and-cli-documentation/generic-files
+            // Schema: https://jfrog.com/help/r/jfrog-applications-and-cli-documentation/using-file-specs#download-command-spec-schema
+            "pattern": "<PATH/TO/ARTIFACT>",
+            "target": "generic-prod/${GITHUB_REPO}/${GITHUB_REPO}-${VERSION}${BUILD_INFO}.zip",
+            "archive": "zip",
+            "flat": "true",
+            "recursive": "true"
+        }
+    ]
+}

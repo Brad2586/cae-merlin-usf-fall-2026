@@ -1,0 +1,14 @@
+{   
+    "_comment": "valid values are 'strict' or 'lenient', for tts_mode, valid values are, 'minimal', 'normal', 'fast', fast will say all of the bulk messages and shorten when possible, minimal will only ask for clarification and errors, normal will give all output.",
+    "mode": "strict",
+    "tts_mode": "normal",
+    "variable_range":{
+        "char": {
+        },
+        "float":{
+        },
+        "double":{
+            "VOLUME": [0, 1]
+        } 
+    }
+}

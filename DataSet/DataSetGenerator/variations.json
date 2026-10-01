@@ -1,0 +1,38 @@
+{
+  "variations": {
+    "engine": ["engine", "in gen", "in jin", "in gin", "and gin"],
+    "1": ["one", "won", "1"],
+    "2": ["two", "too", "to", "2"],
+    "3": ["three", "tree", "3", "free"],
+    "4": ["four", "for", "4", "were", "form"],
+    "malfunction": ["malfunction", "my function", "malfunction"],
+    "approach": ["approach", "a proach", "a pro"],
+    "freeze": ["freeze", "breeze", "frees"],
+    "glideslope": ["glideslope", "glide slope", "wide slope"],
+    "fire": ["fire", "fireman", "firewall", "fireball"],
+    "fire malfunction": ["fireman function", "fire my function", "firewall function", "fireball function", "pharma function", "phryma function", "firemaw function"],
+    "strict": ["strict", "district", "start", "correct"],
+    "lenient": ["lenient", "linea", "convenient", "selenient"],
+    "activate": ["activate","turn on", "to be", "activity", "to the"],
+    "deactivate": ["deactivate", "turn off"],
+    "false": ["falls"],
+    "on": ["own"],
+    "off": ["of"]
+  },
+  "char": {
+    "ICAO":[
+      "KADW", "KAFF", "KAYX", "KBAB", "KBAD", "KBIX",
+      "KBLV", "KCBM", "KCHS", "KCKA", "KCVS", "KDLF",
+      "KDMA", "KDOV", "KDYS", "KEDW", "KEND", "KFFO",
+      "KGFA", "KGSB", "KGXF", "KHIF", "KHMN", "KLRF",
+      "KLSV", "KLTS", "KLUF", "KRCA", "KSKF", "KSUU"
+    ]
+  },
+  "float":{
+    "DISTANCE": [0, 12],
+    "BEARING": [0, 360.0]
+  },
+  "double":{
+    "RANGE": [0, 5000.0]
+  }
+}

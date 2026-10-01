@@ -1,0 +1,51 @@
+# Local Python environment and generated Python files
+.venv/
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Runtime output and editor-local files
+Logs/
+.vscode/
+.idea/
+.github/
+
+# CAE-delivered executables, documents, and packaged artifacts
+ExesAndDocToUSF/
+*.exe
+*.dll
+*.zip
+*.7z
+*.rar
+*.mp4
+*.pptx
+*.docx
+
+# Models, checkpoints, and binary model artifacts
+Models/
+LoRA_Training/
+*.gguf
+*.onnx
+*.tflite
+*.safetensors
+
+# Audio recordings and generated datasets
+*.wav
+*.mp3
+DataSet/**/*.jsonl
+DataSet/AudioDataSet/input_wavs/
+DataSet/AudioDataSet/wav_outputs/
+DataSet/AudioDataSet/transcriptions.txt
+Tests/**/validationLogs.txt
+Tests/**/validationResults.txt
+
+# Generated repository-analysis artifacts
+changed_files.txt
+commit_diff.txt
+fixData.txt
+randomOutput.txt
+
+# Misnamed source-control configuration files from the transfer archive
+.gitconfig
+.gitattributes copy
+.gitignore copy

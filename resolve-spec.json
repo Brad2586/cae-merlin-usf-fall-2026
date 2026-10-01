@@ -1,0 +1,59 @@
+{
+    "files": [
+        {
+            "pattern": "generic-sandbox/IosSpeechToCBD/faster-whisper-small.en.zip",
+            "target": "/",
+            "recursive": "true",
+            "explode": "true",
+            "flat": "true"
+        },
+        {
+            
+            "pattern": "generic-sandbox/IosSpeechToCBD/llama-binaries.zip",
+            "target": "/",
+            "recursive": "true",
+            "explode": "true",
+            "flat": "true"
+        },
+        {
+            
+            "pattern": "generic-sandbox/IosSpeechToCBD/RedPajama-INCITE-Base-3B-v1.zip",
+            "target": "Models/",
+            "recursive": "true",
+            "explode": "true",
+            "flat": "true"
+        },
+        {
+            
+            "pattern": "generic-sandbox/IosSpeechToCBD/RedPajama-Lenient/RedPajama-INCITE-Base-3B-v1.zip",
+            "target": "LoRA_Training/Lenient/",
+            "recursive": "true",
+            "explode": "true",
+            "flat": "true"
+        },
+        {
+            
+            "pattern": "generic-sandbox/IosSpeechToCBD/RedPajama-Strict/RedPajama-INCITE-Base-3B-v1.zip",
+            "target": "LoRA_Training/Strict/",
+            "recursive": "true",
+            "explode": "true",
+            "flat": "true"
+        },
+        {
+            
+            "pattern": "generic-sandbox/IosSpeechToCBD/llamamodel_lenient.zip",
+            "target": "Models/",
+            "recursive": "true",
+            "explode": "true",
+            "flat": "true"
+        },
+        {
+            
+            "pattern": "generic-sandbox/IosSpeechToCBD/llamamodel_strict.zip",
+            "target": "Models/",
+            "recursive": "true",
+            "explode": "true",
+            "flat": "true"
+        }
+    ]
+}
