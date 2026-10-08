@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{129C3131-A5F1-3772-8E57-642BA83FBBC0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <EnforceProcessCountAcrossBuilds>true</EnforceProcessCountAcrossBuilds>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>llama-common</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">llama-common.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">llama-common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">llama-common.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">llama-common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">llama-common.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">llama-common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">llama-common.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">llama-common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LLAMA_SUBPROCESS;_CRT_SECURE_NO_WARNINGS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="Debug";llama_common_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LLAMA_SUBPROCESS;_CRT_SECURE_NO_WARNINGS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"Debug\";llama_common_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\rylan\Desktop\CAE\llama.cpp\build\common
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/Debug/exports.def C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>Debug\llama-common-base.lib;..\vendor\cpp-httplib\Debug\cpp-httplib.lib;..\src\Debug\llama.lib;..\ggml\src\Debug\ggml.lib;..\ggml\src\Debug\ggml-cpu.lib;..\ggml\src\Debug\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/Debug/llama-common.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/bin/Debug/llama-common.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>0.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_SUBPROCESS;_CRT_SECURE_NO_WARNINGS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="Release";llama_common_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_SUBPROCESS;_CRT_SECURE_NO_WARNINGS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"Release\";llama_common_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\rylan\Desktop\CAE\llama.cpp\build\common
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/Release/exports.def C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>Release\llama-common-base.lib;..\vendor\cpp-httplib\Release\cpp-httplib.lib;..\src\Release\llama.lib;..\ggml\src\Release\ggml.lib;..\ggml\src\Release\ggml-cpu.lib;..\ggml\src\Release\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/Release/llama-common.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/bin/Release/llama-common.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>0.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_SUBPROCESS;_CRT_SECURE_NO_WARNINGS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="MinSizeRel";llama_common_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_SUBPROCESS;_CRT_SECURE_NO_WARNINGS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"MinSizeRel\";llama_common_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\rylan\Desktop\CAE\llama.cpp\build\common
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/MinSizeRel/exports.def C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\llama-common-base.lib;..\vendor\cpp-httplib\MinSizeRel\cpp-httplib.lib;..\src\MinSizeRel\llama.lib;..\ggml\src\MinSizeRel\ggml.lib;..\ggml\src\MinSizeRel\ggml-cpu.lib;..\ggml\src\MinSizeRel\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/MinSizeRel/llama-common.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/bin/MinSizeRel/llama-common.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>0.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_SUBPROCESS;_CRT_SECURE_NO_WARNINGS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="RelWithDebInfo";llama_common_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_SUBPROCESS;_CRT_SECURE_NO_WARNINGS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"RelWithDebInfo\";llama_common_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\rylan\Desktop\CAE\llama.cpp\build\common
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/RelWithDebInfo/exports.def C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\llama-common-base.lib;..\vendor\cpp-httplib\RelWithDebInfo\cpp-httplib.lib;..\src\RelWithDebInfo\llama.lib;..\ggml\src\RelWithDebInfo\ggml.lib;..\ggml\src\RelWithDebInfo\ggml-cpu.lib;..\ggml\src\RelWithDebInfo\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/RelWithDebInfo/llama-common.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/llama-common.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/bin/RelWithDebInfo/llama-common.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>0.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindThreads.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\.git\index;C:\Users\rylan\Desktop\CAE\llama.cpp\common\build-info.cpp.in;C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\sources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindThreads.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\.git\index;C:\Users\rylan\Desktop\CAE\llama.cpp\common\build-info.cpp.in;C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\sources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindThreads.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\.git\index;C:\Users\rylan\Desktop\CAE\llama.cpp\common\build-info.cpp.in;C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\sources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindThreads.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\.git\index;C:\Users\rylan\Desktop\CAE\llama.cpp\common\build-info.cpp.in;C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\sources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\parsers.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\parsers.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\cohere2moe.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\deepseek.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\functionary-v3-2.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\gemma4.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\gigachat-v3.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\gpt-oss.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\kimi-k2.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\kimi-k3.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\lfm2.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\minicpm5.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\minimax-m3.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\ministral3.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\muse-glimmer.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\qwen3-coder.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\arg.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\arg.h" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\base64.hpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-auto-parser-generator.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-auto-parser-helpers.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-auto-parser.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-diff-analyzer.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-peg-parser.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-peg-parser.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\common.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\common.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\console.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\console.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\debug.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\debug.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\download.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\download.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\fit.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\fit.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\hf-cache.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\hf-cache.h" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\http.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\imatrix-loader.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\imatrix-loader.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json-schema-to-grammar.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json-schema.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json-schema.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\llguidance.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\log.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\log.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-cache.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-cache.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-map.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-map.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-mod.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-mod.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\peg-parser.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\peg-parser.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\preset.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\preset.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\reasoning-budget.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\reasoning-budget.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\sampling.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\sampling.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\speculative.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\speculative.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\subproc.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\subproc.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\trie.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\trie.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\unicode.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\unicode.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\lexer.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\lexer.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\parser.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\parser.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\runtime.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\runtime.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\value.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\value.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\string.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\string.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\caps.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\caps.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ZERO_CHECK.vcxproj">
+      <Project>{E91CF6CD-EDC6-3A1A-AF0D-62FFD42C4E37}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\vendor\cpp-httplib\cpp-httplib.vcxproj">
+      <Project>{8C3B0189-E1ED-3908-88B7-F3A79E0AD868}</Project>
+      <Name>cpp-httplib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml.vcxproj">
+      <Project>{712D0449-BE83-34B6-B245-84BF0E158B1B}</Project>
+      <Name>ggml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml-base.vcxproj">
+      <Project>{F7EB6896-1113-3297-B427-1A7210146B38}</Project>
+      <Name>ggml-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml-cpu.vcxproj">
+      <Project>{B2540801-F0E7-3DF8-A957-BEEC4A491C1C}</Project>
+      <Name>ggml-cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\llama.vcxproj">
+      <Project>{ACD8036B-127F-3E64-A9EF-50AD6CE2FD24}</Project>
+      <Name>llama</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\llama-common-base.vcxproj">
+      <Project>{7B292F44-A4E3-3AE5-BEB8-E1B24B86ABD6}</Project>
+      <Name>llama-common-base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

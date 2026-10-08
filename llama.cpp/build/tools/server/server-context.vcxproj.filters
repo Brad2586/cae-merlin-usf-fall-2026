@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-chat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-mcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-schema.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-chat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-mcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-schema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1B5B7460-71AD-3AF8-BB20-54D3F807DD2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{78F34F25-87C7-3E8F-BF64-CDD6DFFED3D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

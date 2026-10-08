@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd-audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd-image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd-helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd-helper-gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\clip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\cogvlm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\conformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\deepseek4v.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\dots3note.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\dotsocr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\exaone4_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\gemma4a.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\gemma4v.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\gemma4ua.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\gemma4uv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\glm4v.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\granite-speech.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\granite4-vision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\hunyuanvl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\internvl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\kimivl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\kimik25.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\nemotron-v2-vl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\muse-glimmer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\llama4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\llava.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\minicpmv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\paddleocr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\pixtral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\qwen2vl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\minimax-m3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\qwen3vl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\mimovl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\qwen3a.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\mimo-audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\qwen3tts-spkenc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\qwen3tts-gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\pockettts-seanet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\pockettts-spkenc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\pockettts-gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\step3vl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\siglip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\whisper-enc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\deepseekocr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\deepseekocr2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\mobilenetv5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\youtuvl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\yasa2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\parakeet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd-internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd-helper-common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\mtmd-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\clip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\clip-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\clip-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\clip-graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\models\models.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1B5B7460-71AD-3AF8-BB20-54D3F807DD2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{78F34F25-87C7-3E8F-BF64-CDD6DFFED3D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

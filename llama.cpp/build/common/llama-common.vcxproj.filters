@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\parsers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\cohere2moe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\deepseek.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\functionary-v3-2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\gemma4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\gigachat-v3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\gpt-oss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\kimi-k2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\kimi-k3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\lfm2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\minicpm5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\minimax-m3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\ministral3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\muse-glimmer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\qwen3-coder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\arg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-auto-parser-generator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-auto-parser-helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-diff-analyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-peg-parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\download.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\fit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\hf-cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\imatrix-loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json-schema-to-grammar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json-schema.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\llguidance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-mod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\peg-parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\preset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\reasoning-budget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\sampling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\speculative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\subproc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\trie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\unicode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\lexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\runtime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\value.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\caps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\parsers\parsers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\arg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\base64.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-auto-parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat-peg-parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\chat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\download.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\fit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\hf-cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\http.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\imatrix-loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json-schema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\ngram-mod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\peg-parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\preset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\reasoning-budget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\sampling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\speculative.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\subproc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\trie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\unicode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\lexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\runtime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\jinja\caps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rylan\Desktop\CAE\llama.cpp\common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1B5B7460-71AD-3AF8-BB20-54D3F807DD2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{78F34F25-87C7-3E8F-BF64-CDD6DFFED3D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

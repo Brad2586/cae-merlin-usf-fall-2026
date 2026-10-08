@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A532887B-9E39-3B40-9FD6-28CF09E3B9DE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <EnforceProcessCountAcrossBuilds>true</EnforceProcessCountAcrossBuilds>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>server-context</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">server-context.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">server-context</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">server-context.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">server-context</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">server-context.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">server-context</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">server-context.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">server-context</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;LLAMA_SUBPROCESS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;LLAMA_SUBPROCESS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;LLAMA_SUBPROCESS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;LLAMA_SUBPROCESS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;LLAMA_SUBPROCESS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;LLAMA_SUBPROCESS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;LLAMA_SUBPROCESS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;LLAMA_SUBPROCESS;LLAMA_SHARED;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\..\mtmd;C:\Users\rylan\Desktop\CAE\llama.cpp;C:\Users\rylan\Desktop\CAE\llama.cpp\common\.;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\nlohmann\..;C:\Users\rylan\Desktop\CAE\llama.cpp\vendor\sheredom\..;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\tools\mtmd\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/tools/server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/tools/server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/tools/server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/tools/server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/tools/server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/tools/server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/tools/server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/tools/server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-chat.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-chat.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-task.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-task.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-queue.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-queue.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-common.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-common.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-context.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-context.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-stream.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-stream.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-tools.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-tools.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-mcp.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-mcp.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-schema.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\tools\server\server-schema.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ZERO_CHECK.vcxproj">
+      <Project>{E91CF6CD-EDC6-3A1A-AF0D-62FFD42C4E37}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml.vcxproj">
+      <Project>{712D0449-BE83-34B6-B245-84BF0E158B1B}</Project>
+      <Name>ggml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml-base.vcxproj">
+      <Project>{F7EB6896-1113-3297-B427-1A7210146B38}</Project>
+      <Name>ggml-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml-cpu.vcxproj">
+      <Project>{B2540801-F0E7-3DF8-A957-BEEC4A491C1C}</Project>
+      <Name>ggml-cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\llama.vcxproj">
+      <Project>{ACD8036B-127F-3E64-A9EF-50AD6CE2FD24}</Project>
+      <Name>llama</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\llama-common.vcxproj">
+      <Project>{129C3131-A5F1-3772-8E57-642BA83FBBC0}</Project>
+      <Name>llama-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\llama-common-base.vcxproj">
+      <Project>{7B292F44-A4E3-3AE5-BEB8-E1B24B86ABD6}</Project>
+      <Name>llama-common-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\mtmd\mtmd.vcxproj">
+      <Project>{8F62DB9E-0E1C-39C6-B244-780F47C5CD8A}</Project>
+      <Name>mtmd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACD8036B-127F-3E64-A9EF-50AD6CE2FD24}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <EnforceProcessCountAcrossBuilds>true</EnforceProcessCountAcrossBuilds>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>llama</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">llama.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">llama</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">llama.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">llama</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">llama.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">llama</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">llama.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">llama</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LLAMA_BUILD;LLAMA_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="Debug";llama_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LLAMA_BUILD;LLAMA_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"Debug\";llama_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ggml\src\Debug\ggml.lib;..\ggml\src\Debug\ggml-cpu.lib;..\ggml\src\Debug\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/Debug/llama.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/bin/Debug/llama.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>0.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_BUILD;LLAMA_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="Release";llama_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_BUILD;LLAMA_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"Release\";llama_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ggml\src\Release\ggml.lib;..\ggml\src\Release\ggml-cpu.lib;..\ggml\src\Release\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/Release/llama.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/bin/Release/llama.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>0.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_BUILD;LLAMA_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="MinSizeRel";llama_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_BUILD;LLAMA_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"MinSizeRel\";llama_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ggml\src\MinSizeRel\ggml.lib;..\ggml\src\MinSizeRel\ggml-cpu.lib;..\ggml\src\MinSizeRel\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/MinSizeRel/llama.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/bin/MinSizeRel/llama.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>0.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_BUILD;LLAMA_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR="RelWithDebInfo";llama_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LLAMA_BUILD;LLAMA_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;GGML_SHARED;GGML_BACKEND_SHARED;CMAKE_INTDIR=\"RelWithDebInfo\";llama_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rylan\Desktop\CAE\llama.cpp\src\.;C:\Users\rylan\Desktop\CAE\llama.cpp\build\src;C:\Users\rylan\Desktop\CAE\llama.cpp\src\..\include;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ggml\src\RelWithDebInfo\ggml.lib;..\ggml\src\RelWithDebInfo\ggml-cpu.lib;..\ggml\src\RelWithDebInfo\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/RelWithDebInfo/llama.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/rylan/Desktop/CAE/llama.cpp/build/bin/RelWithDebInfo/llama.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>0.4</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_9_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_8_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_7_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_6_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_5_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_4_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_3_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_2_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_1_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\CMakeFiles\llama.dir\Unity\unity_0_cxx.cxx" IncludeInUnityFile="false" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\include\llama.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-adapter.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-arch.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-batch.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-chat.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-context.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-cparams.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-grammar.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-graph.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-hparams.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-impl.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-io.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-kv-cache.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-kv-cache-iswa.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-kv-cache-dsa.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-kv-cache-dsa-iswa.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-kv-cache-msa.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-kv-cache-dsv4.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-memory.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-memory-hybrid.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-memory-hybrid-iswa.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-memory-hybrid-idx.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-memory-recurrent.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-mmap.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-model-loader.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-model-saver.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-model.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-quant.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-sampler.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\llama-vocab.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\unicode-data.cpp" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\unicode.cpp" />
+    <ClInclude Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\unicode.h" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\afmoe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\apertus.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\arcee.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\arctic.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\arwkv7.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\baichuan.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\bailingmoe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\bailingmoe2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\bailingmoe3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\bert.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\bitnet.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\bloom.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\chameleon.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\chatglm.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\clip.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\codeshell.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\cogvlm.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\cohere2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\cohere2moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\command-r.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\dbrx.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\deci.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\deepseek.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\deepseek2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\deepseek2ocr.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\deepseek32.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\deepseek4.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\delta-net-base.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\dflash.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\dots1.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\dots3note.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\dream.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\eagle3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\ernie4-5-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\ernie4-5.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\eurobert.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\exaone-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\exaone.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\exaone4.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\falcon-h1.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\falcon.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gemma-embedding.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gemma.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gemma2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gemma3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gemma3n.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gemma4-assistant.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gemma4.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\glm-dsa.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\glm4-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\glm4.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gpt2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\gptneox.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\granite-hybrid.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\granite-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\granite-swa.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\granite-switch.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\granite.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\grok.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\grovemoe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\hrm-text.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\hunyuan-dense.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\hunyuan-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\hunyuan-vl.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\hy-v3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\hy-v4.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\internlm2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\jais.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\jais2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\jamba.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\jina-bert-v2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\jina-bert-v3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\kimi-k3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\kimi-linear.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\laguna.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\lfm2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\lfm2moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\llada-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\llada.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\llama-embed.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\llama.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\llama4.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\maincoder.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\mamba-base.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\mamba.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\mamba2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\maple.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\mellum.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\mimo2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\minicpm.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\minicpm3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\minimax-01.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\minimax-m2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\minimax-m3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\mistral3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\mistral4.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\modern-bert.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\mpt.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\muse-glimmer.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\nanbeige.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\nemotron-h-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\nemotron-h.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\nemotron.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\neo-bert.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\nomic-bert-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\nomic-bert.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\olmo.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\olmo2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\olmoe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\openai-moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\openelm.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\orion.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\paddleocr.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\pangu-embed.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\phi2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\phi3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\phimoe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\plamo.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\plamo2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\plamo3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\plm.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\pockettts.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen2moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen2vl.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen35.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen35moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen3moe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen3next.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen3tts.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen3vl.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen3vlmoe.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\qwen4exp.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\refact.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\rnd1.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\rwkv6-base.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\rwkv6.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\rwkv6qwen2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\rwkv7-base.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\rwkv7.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\seed-oss.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\smallthinker.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\smollm3.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\spark2-5.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\stablelm.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\starcoder.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\starcoder2.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\step35.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\t5.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\t5encoder.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\talkie.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\wavtokenizer-dec.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+    <ClCompile Include="C:\Users\rylan\Desktop\CAE\llama.cpp\src\models\xverse.cpp" IncludeInUnityFile="true" CustomUnityFile="true" UnityFilesDirectory="C:/Users/rylan/Desktop/CAE/llama.cpp/build/src/CMakeFiles/llama.dir/Unity" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ZERO_CHECK.vcxproj">
+      <Project>{E91CF6CD-EDC6-3A1A-AF0D-62FFD42C4E37}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml.vcxproj">
+      <Project>{712D0449-BE83-34B6-B245-84BF0E158B1B}</Project>
+      <Name>ggml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml-base.vcxproj">
+      <Project>{F7EB6896-1113-3297-B427-1A7210146B38}</Project>
+      <Name>ggml-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml-cpu.vcxproj">
+      <Project>{B2540801-F0E7-3DF8-A957-BEEC4A491C1C}</Project>
+      <Name>ggml-cpu</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

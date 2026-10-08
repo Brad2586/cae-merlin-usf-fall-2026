@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8CFDDB9B-FDAF-305D-869A-D6FEB2B39380}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <EnforceProcessCountAcrossBuilds>true</EnforceProcessCountAcrossBuilds>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rylan\Desktop\CAE\llama.cpp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.4\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Templates\CTestScript.cmake.in;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeCCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeCXXCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeRCCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeSystem.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\build-info.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\common.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\git-vars.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\license.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\llama-config.cmake.in;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\llama.pc.in;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\cmake\common.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.4\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Templates\CTestScript.cmake.in;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeCCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeCXXCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeRCCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeSystem.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\build-info.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\common.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\git-vars.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\license.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\llama-config.cmake.in;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\llama.pc.in;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\cmake\common.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.4\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Templates\CTestScript.cmake.in;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeCCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeCXXCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeRCCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeSystem.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\build-info.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\common.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\git-vars.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\license.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\llama-config.cmake.in;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\llama.pc.in;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\cmake\common.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rylan/Desktop/CAE/llama.cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rylan/Desktop/CAE/llama.cpp -BC:/Users/rylan/Desktop/CAE/llama.cpp/build --check-stamp-file C:/Users/rylan/Desktop/CAE/llama.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.4\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Templates\CTestScript.cmake.in;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeCCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeCXXCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeRCCompiler.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\4.4.3\CMakeSystem.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\build-info.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\common.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\git-vars.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\license.cmake;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\llama-config.cmake.in;C:\Users\rylan\Desktop\CAE\llama.cpp\cmake\llama.pc.in;C:\Users\rylan\Desktop\CAE\llama.cpp\ggml\cmake\common.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rylan\Desktop\CAE\llama.cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ZERO_CHECK.vcxproj">
+      <Project>{E91CF6CD-EDC6-3A1A-AF0D-62FFD42C4E37}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\vendor\cpp-httplib\cpp-httplib.vcxproj">
+      <Project>{8C3B0189-E1ED-3908-88B7-F3A79E0AD868}</Project>
+      <Name>cpp-httplib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml.vcxproj">
+      <Project>{712D0449-BE83-34B6-B245-84BF0E158B1B}</Project>
+      <Name>ggml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml-base.vcxproj">
+      <Project>{F7EB6896-1113-3297-B427-1A7210146B38}</Project>
+      <Name>ggml-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\ggml\src\ggml-cpu.vcxproj">
+      <Project>{B2540801-F0E7-3DF8-A957-BEEC4A491C1C}</Project>
+      <Name>ggml-cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\src\llama.vcxproj">
+      <Project>{ACD8036B-127F-3E64-A9EF-50AD6CE2FD24}</Project>
+      <Name>llama</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\app\llama-app.vcxproj">
+      <Project>{D4DF3FB9-7DDA-303F-816A-EB5A1B212E6E}</Project>
+      <Name>llama-app</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\batched\llama-batched.vcxproj">
+      <Project>{C9E23255-0E03-374B-87FB-E62F5D837F8D}</Project>
+      <Name>llama-batched</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\batched-bench\llama-batched-bench.vcxproj">
+      <Project>{8AA19545-6557-313C-8ED2-65D54406EE31}</Project>
+      <Name>llama-batched-bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\batched-bench\llama-batched-bench-impl.vcxproj">
+      <Project>{2696F445-1CA7-38DB-A3D2-80D24DECE29B}</Project>
+      <Name>llama-batched-bench-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\llama-bench\llama-bench.vcxproj">
+      <Project>{A90248B4-A7D2-3F81-9927-E65BB523E0F8}</Project>
+      <Name>llama-bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\llama-bench\llama-bench-impl.vcxproj">
+      <Project>{76E277A0-2277-3EAA-A816-2AB25D53434C}</Project>
+      <Name>llama-bench-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\cli\llama-cli.vcxproj">
+      <Project>{076DB295-7C49-3B1F-B0A3-09315F5ED110}</Project>
+      <Name>llama-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\cli\llama-cli-impl.vcxproj">
+      <Project>{3CD5F309-C59C-36F3-8C30-E0088F070DBE}</Project>
+      <Name>llama-cli-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\llama-common.vcxproj">
+      <Project>{129C3131-A5F1-3772-8E57-642BA83FBBC0}</Project>
+      <Name>llama-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\common\llama-common-base.vcxproj">
+      <Project>{7B292F44-A4E3-3AE5-BEB8-E1B24B86ABD6}</Project>
+      <Name>llama-common-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\completion\llama-completion.vcxproj">
+      <Project>{D52D5ABB-7DE2-3E4C-807A-686F6C280196}</Project>
+      <Name>llama-completion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\completion\llama-completion-impl.vcxproj">
+      <Project>{9C7B01BF-1D2E-373E-988D-566382A711EA}</Project>
+      <Name>llama-completion-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\convert-llama2c-to-ggml\llama-convert-llama2c-to-ggml.vcxproj">
+      <Project>{84593AD9-1A71-39CE-A42A-F245689DBEAB}</Project>
+      <Name>llama-convert-llama2c-to-ggml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\cvector-generator\llama-cvector-generator.vcxproj">
+      <Project>{BE69697E-2B82-3E37-9EA8-6A16854729D6}</Project>
+      <Name>llama-cvector-generator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\debug\llama-debug.vcxproj">
+      <Project>{BDEF78F8-DB23-3956-BE87-06015A151EE3}</Project>
+      <Name>llama-debug</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\diffusion\llama-diffusion.vcxproj">
+      <Project>{166ECAA8-239F-330D-91FA-84B809921CFF}</Project>
+      <Name>llama-diffusion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\diffusion\llama-diffusion-cli.vcxproj">
+      <Project>{76FD437D-1B26-3A26-A6A3-2C173B2D8D34}</Project>
+      <Name>llama-diffusion-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\embedding\llama-embedding.vcxproj">
+      <Project>{4D4FB46F-2AB1-304A-833B-DC92C2230C21}</Project>
+      <Name>llama-embedding</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\eval-callback\llama-eval-callback.vcxproj">
+      <Project>{418596D7-05BD-3ED5-87E2-1B5BA7340B34}</Project>
+      <Name>llama-eval-callback</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\export-lora\llama-export-lora.vcxproj">
+      <Project>{25C3E284-DBEA-33A9-A5C6-30FDA4B65319}</Project>
+      <Name>llama-export-lora</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\training\llama-finetune.vcxproj">
+      <Project>{ACB91CCB-5810-366F-8FB5-287E37991978}</Project>
+      <Name>llama-finetune</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\fit-params\llama-fit-params.vcxproj">
+      <Project>{F842977F-D07E-364D-B1DD-34CB0BF06C3B}</Project>
+      <Name>llama-fit-params</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\fit-params\llama-fit-params-impl.vcxproj">
+      <Project>{B62F34B9-14F8-3953-872F-34FC648E7934}</Project>
+      <Name>llama-fit-params-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\mtmd\llama-gemma3-cli.vcxproj">
+      <Project>{4DE59244-832F-39D1-BD0F-20692507954E}</Project>
+      <Name>llama-gemma3-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\gen-docs\llama-gen-docs.vcxproj">
+      <Project>{B724B2B2-FA32-39EC-8344-6C1A52A6D2AD}</Project>
+      <Name>llama-gen-docs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\gguf\llama-gguf.vcxproj">
+      <Project>{9213F1A8-9BAD-3474-86F1-F84C5BBE0E1E}</Project>
+      <Name>llama-gguf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\gguf-hash\llama-gguf-hash.vcxproj">
+      <Project>{B467891C-7BEE-398C-8B76-352CD6D0CE05}</Project>
+      <Name>llama-gguf-hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\gguf-split\llama-gguf-split.vcxproj">
+      <Project>{CA5185A2-0A0F-3846-A4DD-ACAFB5ECB735}</Project>
+      <Name>llama-gguf-split</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\idle\llama-idle.vcxproj">
+      <Project>{87AE4EF5-D758-301F-8BC6-E2119C349C38}</Project>
+      <Name>llama-idle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\imatrix\llama-imatrix.vcxproj">
+      <Project>{D23A7559-9217-3059-9417-808849C24E43}</Project>
+      <Name>llama-imatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\mtmd\llama-llava-cli.vcxproj">
+      <Project>{AEDDF42A-005D-3110-BC48-97684C301F83}</Project>
+      <Name>llama-llava-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\lookahead\llama-lookahead.vcxproj">
+      <Project>{631FF338-49A4-3D8A-B2A7-424102CAE1BB}</Project>
+      <Name>llama-lookahead</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\lookup\llama-lookup.vcxproj">
+      <Project>{5F2F1E54-696C-3261-AC3F-89CEBBC1150E}</Project>
+      <Name>llama-lookup</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\lookup\llama-lookup-create.vcxproj">
+      <Project>{9E940BC6-CE75-30F8-8286-859E6CDC42B0}</Project>
+      <Name>llama-lookup-create</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\lookup\llama-lookup-merge.vcxproj">
+      <Project>{3AD60060-5DFA-3007-8AE1-FBC46D3EB685}</Project>
+      <Name>llama-lookup-merge</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\lookup\llama-lookup-stats.vcxproj">
+      <Project>{4FE2CD1D-7418-3635-8C13-06173B190D3C}</Project>
+      <Name>llama-lookup-stats</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\mtmd\llama-minicpmv-cli.vcxproj">
+      <Project>{5DA70B84-4FAD-309D-B0C0-E2674175B1B2}</Project>
+      <Name>llama-minicpmv-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\mtmd\llama-mtmd-cli.vcxproj">
+      <Project>{A2758881-0DB9-37BC-9147-92F6F4DA9AAE}</Project>
+      <Name>llama-mtmd-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\mtmd\llama-mtmd-debug.vcxproj">
+      <Project>{A4B40743-2701-38C8-BBC5-43A93EC46BDB}</Project>
+      <Name>llama-mtmd-debug</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\parallel\llama-parallel.vcxproj">
+      <Project>{7C1C272F-2E5C-330D-A523-329F129286D5}</Project>
+      <Name>llama-parallel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\passkey\llama-passkey.vcxproj">
+      <Project>{031FD6C4-EC18-3407-B83B-A14C4E01302A}</Project>
+      <Name>llama-passkey</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\perplexity\llama-perplexity.vcxproj">
+      <Project>{1FAE245F-430A-3FB4-881E-E608D7D5E134}</Project>
+      <Name>llama-perplexity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\perplexity\llama-perplexity-impl.vcxproj">
+      <Project>{EC3BB21B-2E7F-302F-912E-BBFA2437524F}</Project>
+      <Name>llama-perplexity-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\pocs\vdot\llama-q8dot.vcxproj">
+      <Project>{C682FC4E-20D3-39AA-9E0F-50222FB321A7}</Project>
+      <Name>llama-q8dot</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\quantize\llama-quantize.vcxproj">
+      <Project>{7DA5CAAF-EF82-3C45-B2E7-1277775F7DB3}</Project>
+      <Name>llama-quantize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\quantize\llama-quantize-impl.vcxproj">
+      <Project>{0E4B3142-F7A4-3905-9AF3-18BE087548BC}</Project>
+      <Name>llama-quantize-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\mtmd\llama-qwen2vl-cli.vcxproj">
+      <Project>{72670F48-CEA2-31FD-8E57-A53C23EA1157}</Project>
+      <Name>llama-qwen2vl-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\results\llama-results.vcxproj">
+      <Project>{CE017C25-D2CE-30F6-A788-2F3D1250DA00}</Project>
+      <Name>llama-results</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\retrieval\llama-retrieval.vcxproj">
+      <Project>{B5AF08FA-2840-3BEA-A0D9-C934ED044321}</Project>
+      <Name>llama-retrieval</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\llama-server.vcxproj">
+      <Project>{41FCDBC9-8B33-3499-87DE-7FB8F7872C56}</Project>
+      <Name>llama-server</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\llama-server-impl.vcxproj">
+      <Project>{916F9ECA-AB02-3115-B018-813C22189DBC}</Project>
+      <Name>llama-server-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\simple\llama-simple.vcxproj">
+      <Project>{578D08BF-94A1-3245-B80A-D9C6CB5E7C93}</Project>
+      <Name>llama-simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\simple-chat\llama-simple-chat.vcxproj">
+      <Project>{5073DE31-50AB-3886-9A73-316DD61817F8}</Project>
+      <Name>llama-simple-chat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\speculative\llama-speculative.vcxproj">
+      <Project>{243F9C9E-A252-35E2-8645-11AD16CE3684}</Project>
+      <Name>llama-speculative</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\examples\speculative-simple\llama-speculative-simple.vcxproj">
+      <Project>{A3EC06E7-3A77-3853-94CE-2B4F31D19904}</Project>
+      <Name>llama-speculative-simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\tokenize\llama-tokenize.vcxproj">
+      <Project>{DDCF85A0-E041-353B-AB0B-3535E7B39029}</Project>
+      <Name>llama-tokenize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\tts\llama-tts.vcxproj">
+      <Project>{4C6758FB-966D-305E-A428-9F29366D61A4}</Project>
+      <Name>llama-tts</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\ui\llama-ui.vcxproj">
+      <Project>{B32567FF-78F6-3B94-A689-552A074B5CD7}</Project>
+      <Name>llama-ui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\ui\llama-ui-assets.vcxproj">
+      <Project>{CB2FBE8E-8827-35D8-8A6E-8DFF4DCF12D5}</Project>
+      <Name>llama-ui-assets</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\pocs\vdot\llama-vdot.vcxproj">
+      <Project>{F8D6C787-ABB5-343F-A0D4-892BD22D0C25}</Project>
+      <Name>llama-vdot</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\mtmd\mtmd.vcxproj">
+      <Project>{8F62DB9E-0E1C-39C6-B244-780F47C5CD8A}</Project>
+      <Name>mtmd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tools\server\server-context.vcxproj">
+      <Project>{A532887B-9E39-3B40-9FD6-28CF09E3B9DE}</Project>
+      <Name>server-context</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-alloc.vcxproj">
+      <Project>{1472205C-B299-3C66-BD8D-A93C3D95D7CE}</Project>
+      <Name>test-alloc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-arg-parser.vcxproj">
+      <Project>{3165D32C-20D0-3D59-9A38-217C0415B4CC}</Project>
+      <Name>test-arg-parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-autorelease.vcxproj">
+      <Project>{C3DA133D-7399-3F2F-A61B-8ACCE6844A3B}</Project>
+      <Name>test-autorelease</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-backend-ops.vcxproj">
+      <Project>{FD6FBA59-BB47-3FC0-B5E4-9D2C09282991}</Project>
+      <Name>test-backend-ops</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-backend-sampler.vcxproj">
+      <Project>{9F2EF083-4C99-3204-93E7-7CBFE234FC53}</Project>
+      <Name>test-backend-sampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-barrier.vcxproj">
+      <Project>{11C01FCA-5990-3024-AA26-1969D095082D}</Project>
+      <Name>test-barrier</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-c.vcxproj">
+      <Project>{DCCC5B89-1CC0-3AA1-9249-37BA2A7C392C}</Project>
+      <Name>test-c</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-chat-analysis.vcxproj">
+      <Project>{CD27ACBF-26EE-3BB8-82D4-0A6B7006BF35}</Project>
+      <Name>test-chat-analysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-chat-auto-parser.vcxproj">
+      <Project>{412AA388-C4D3-3A9A-BB23-AC6707360F29}</Project>
+      <Name>test-chat-auto-parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-chat-peg-parser.vcxproj">
+      <Project>{46C8D7CB-0FCA-3FA1-BCC5-00A46DB7E2B0}</Project>
+      <Name>test-chat-peg-parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-chat-template.vcxproj">
+      <Project>{77D15134-8EE3-321C-AB1F-BBE04BDAFEB2}</Project>
+      <Name>test-chat-template</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-col2im-1d.vcxproj">
+      <Project>{96292950-3F1F-35F5-A48F-DE642D4D74B6}</Project>
+      <Name>test-col2im-1d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-export-graph-ops.vcxproj">
+      <Project>{B67E77CD-2C13-39DC-87B0-A2C4F97AB0CE}</Project>
+      <Name>test-export-graph-ops</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-gguf.vcxproj">
+      <Project>{780F9E21-74BA-3CC8-A79F-CEDC08AFF292}</Project>
+      <Name>test-gguf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-jinja.vcxproj">
+      <Project>{1ED940A9-B45A-3337-9901-1640742DD72A}</Project>
+      <Name>test-jinja</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-json-schema.vcxproj">
+      <Project>{5A2D076C-DC2B-378F-8EBA-F5C4927A2DFF}</Project>
+      <Name>test-json-schema</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-log.vcxproj">
+      <Project>{11049A2B-7A2B-3F28-8647-BAFB8085172E}</Project>
+      <Name>test-log</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-model-load-cancel.vcxproj">
+      <Project>{C21FCE15-7C11-39CC-8BFC-7C7860461851}</Project>
+      <Name>test-model-load-cancel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-model-resolution.vcxproj">
+      <Project>{EEEAB1C7-B637-3D3E-9FE0-94D8CFA48D72}</Project>
+      <Name>test-model-resolution</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-mtmd-c-api.vcxproj">
+      <Project>{43D81B8B-31CA-3880-BB79-AD9C8DE9A4E0}</Project>
+      <Name>test-mtmd-c-api</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-mtmd-impl.vcxproj">
+      <Project>{4C0D755E-084C-3649-AA05-2175595FD143}</Project>
+      <Name>test-mtmd-impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-opt.vcxproj">
+      <Project>{FF07D53D-5A3C-3D97-80DE-FD022A066BB8}</Project>
+      <Name>test-opt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-peg-parser.vcxproj">
+      <Project>{D662D322-5FBD-343B-B4B7-73A039FAD8DF}</Project>
+      <Name>test-peg-parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-quantize-fns.vcxproj">
+      <Project>{8EC8F084-83DD-3AAE-BC49-806EB495CFF0}</Project>
+      <Name>test-quantize-fns</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-quantize-perf.vcxproj">
+      <Project>{816ACC04-B263-36C3-A29F-6BDBEB8B5931}</Project>
+      <Name>test-quantize-perf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-recurrent-state-rollback.vcxproj">
+      <Project>{303E187A-1EDA-3EC6-8355-60E957F1C81A}</Project>
+      <Name>test-recurrent-state-rollback</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-rope.vcxproj">
+      <Project>{93636C45-BC4F-3356-82CB-10E679763BC3}</Project>
+      <Name>test-rope</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-save-load-state.vcxproj">
+      <Project>{DCE43172-BAC3-36E7-B416-C02EB69C3A4D}</Project>
+      <Name>test-save-load-state</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-state-restore-fragmented.vcxproj">
+      <Project>{5DDFE6BC-2EE3-3FC5-8C02-DA74CBF70BCF}</Project>
+      <Name>test-state-restore-fragmented</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-thread-safety.vcxproj">
+      <Project>{609AD953-E662-3B8E-BCB6-72E3B1D11050}</Project>
+      <Name>test-thread-safety</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\tests\test-tokenizer-0.vcxproj">
+      <Project>{A041D916-0FDE-3D03-824E-2327BFB26043}</Project>
+      <Name>test-tokenizer-0</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rylan\Desktop\CAE\llama.cpp\build\vendor\hash\vendor-hash.vcxproj">
+      <Project>{B7AC1E0F-82D2-3D53-B781-541FCC4523F4}</Project>
+      <Name>vendor-hash</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
