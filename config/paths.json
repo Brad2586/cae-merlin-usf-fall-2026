@@ -16,7 +16,6 @@
   "MERGED_MODEL_PATH_STRICT": "Models/llamamodel_strict",
   "DATASET_PATH_LENIENT": "DataSet/Lenient/Data_Lenient.jsonl",
   "DATASET_PATH_STRICT": "DataSet/Strict/Data_Strict.jsonl",
-  "MOCK_COMMANDS_PATH": "config/mock_commands.json",
   "TRAINING_OUTPUT_DIR_LENIENT": "LoRA_Training/Lenient/RedPajama-INCITE-Base-3B-v1",
   "TRAINING_OUTPUT_DIR_STRICT": "LoRA_Training/Strict/RedPajama-INCITE-Base-3B-v1",
   "TTS_VOICE_PATH": "Models/TTS-Model/en_US-hfc_male-medium.onnx",
