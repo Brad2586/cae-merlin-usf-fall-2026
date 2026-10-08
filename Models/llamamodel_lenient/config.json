@@ -1,5 +1,5 @@
 {
-  "_name_or_path": "D:\\github\\AI\\test-repo\\Models\\RedPajama-INCITE-Base-3B-v1",
+  "_name_or_path": "Models/llamamodel_lenient",
   "architectures": [
     "GPTNeoXForCausalLM"
   ],
