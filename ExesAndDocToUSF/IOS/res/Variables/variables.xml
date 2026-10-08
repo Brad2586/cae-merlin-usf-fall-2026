@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<variables>
+
+  <variable name="IOS_TOTAL_FREEZE" type="boolean" /><!-- New IOS Total Freeze -->
+  <variable name="ENGINE_1_MALF" type="boolean" /><!-- Engine 1 malf -->
+  <variable name="ENGINE_2_MALF" type="boolean" /><!-- Engine 2 malf -->
+  <variable name="ENGINE_3_MALF" type="boolean" /><!-- Engine 3 malf -->
+  <variable name="ENGINE_4_MALF" type="boolean" /><!-- Engine 4 malf -->
+  <variable name="APPR_1000_ON_GS_LOC" type="boolean" /><!-- Engine 4 malf -->
+
+</variables>

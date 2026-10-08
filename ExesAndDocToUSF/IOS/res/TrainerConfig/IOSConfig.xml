@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config xmlns="http://tempuri.org/IOSConfig.xsd">
+  <IOS_settings>
+    <Host_IP_address>127.0.0.1:10013</Host_IP_address>
+    <Nav_IP_address>127.0.0.1</Nav_IP_address>
+    <MalfFaultSetRoot></MalfFaultSetRoot>
+    <Protocol>IOSCommServer</Protocol>
+    <DatapoolPrefix></DatapoolPrefix>
+    <InitialMainScreenMonitor></InitialMainScreenMonitor>
+    <HelpManual></HelpManual>
+  </IOS_settings>
+</config>

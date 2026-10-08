@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config xmlns="http://tempuri.org/IOSConfig.xsd">
+  <Settings>
+    <Comm_IP_address>Any:10013</Comm_IP_address> <!-- IP:Port - "Any" for IP means listen for any IP not just loopback -->
+    <AutoLoadedVariablesFile></AutoLoadedVariablesFile>
+    <AutoLoadedTestFile></AutoLoadedTestFile>
+    <AutoRun></AutoRun>
+    <HelpManual>.\Help\ISS_Help.docx</HelpManual>
+  </Settings>
+</config>
