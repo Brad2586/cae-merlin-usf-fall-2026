@@ -1,0 +1,6 @@
+{
+  "input": "set mode to selenient",
+  "output": {
+    "Type": "mode_lenient"
+  }
+}

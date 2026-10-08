@@ -1,0 +1,7 @@
+{
+  "input": "set in gen to maximum overdrive.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

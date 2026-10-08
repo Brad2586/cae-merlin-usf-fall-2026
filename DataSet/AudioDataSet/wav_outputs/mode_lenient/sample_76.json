@@ -1,0 +1,6 @@
+{
+  "input": "linea. or start mode? lenient.",
+  "output": {
+    "Type": "mode_lenient"
+  }
+}

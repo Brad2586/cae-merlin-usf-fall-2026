@@ -1,0 +1,6 @@
+{
+  "input": "set mode to linea.",
+  "output": {
+    "Type": "mode_lenient"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "to be and gin 5 fire malfunction.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

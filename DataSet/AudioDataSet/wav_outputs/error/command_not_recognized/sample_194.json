@@ -1,0 +1,7 @@
+{
+  "input": "frees ios",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

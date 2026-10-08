@@ -1,0 +1,15 @@
+{
+  "input": "toggle total freeze and activate engine 1 fire malfunction and approach to little rock at 1000 feet on glideslope and localizer.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "true",
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

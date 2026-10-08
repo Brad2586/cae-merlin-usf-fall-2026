@@ -1,0 +1,7 @@
+{
+  "input": "activate in gin fire malfunction 10.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

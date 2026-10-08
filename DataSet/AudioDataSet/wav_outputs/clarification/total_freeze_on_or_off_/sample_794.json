@@ -1,0 +1,15 @@
+{
+  "input": "total frees and turn off engine 4 fire malfunction and approach to little rock 1000 ft on localizer and glideslope",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_4_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "false",
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

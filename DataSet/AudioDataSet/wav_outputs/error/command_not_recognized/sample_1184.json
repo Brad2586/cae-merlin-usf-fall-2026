@@ -1,0 +1,7 @@
+{
+  "input": "engine firewall my function four.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

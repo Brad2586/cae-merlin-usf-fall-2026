@@ -1,0 +1,19 @@
+{
+  "input": "toggle ios total frees and put me on approach to little rock 1000 ft out on localizer on glideslope and deactivate engine 1, 2 and 3 fire malfunction",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "ENGINE_2_MALF",
+      "ENGINE_3_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "false",
+      "false",
+      "false",
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

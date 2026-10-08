@@ -1,0 +1,7 @@
+{
+  "input": "enable frees mode",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

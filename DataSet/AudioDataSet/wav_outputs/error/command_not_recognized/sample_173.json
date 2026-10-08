@@ -1,0 +1,7 @@
+{
+  "input": "fireman.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

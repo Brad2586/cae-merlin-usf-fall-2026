@@ -1,0 +1,13 @@
+{
+  "input": "activate engine 3 fire malfunction and ios total freeze.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_3_MALF"
+    ],
+    "parameters_values": [
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

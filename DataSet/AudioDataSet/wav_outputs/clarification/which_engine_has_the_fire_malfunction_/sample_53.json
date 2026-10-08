@@ -1,0 +1,7 @@
+{
+  "input": "turn on engine fire my function",
+  "output": {
+    "Type": "clarification",
+    "message": "which engine has the fire malfunction?"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "activate in gin firewall malfunction.",
+  "output": {
+    "Type": "clarification",
+    "message": "which engine has the fire malfunction?"
+  }
+}

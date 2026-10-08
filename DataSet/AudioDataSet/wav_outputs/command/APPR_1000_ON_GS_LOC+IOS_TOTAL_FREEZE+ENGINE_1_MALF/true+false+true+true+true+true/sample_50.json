@@ -1,0 +1,22 @@
+{
+  "input": "a pro to little rock at 1000 feet on wide slope and localizer. and toggle off total frees and activate all in gin fyre malfunctions.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "APPR_1000_ON_GS_LOC",
+      "IOS_TOTAL_FREEZE",
+      "ENGINE_1_MALF",
+      "ENGINE_2_MALF",
+      "ENGINE_3_MALF",
+      "ENGINE_4_MALF"
+    ],
+    "parameters_values": [
+      "true",
+      "false",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  }
+}

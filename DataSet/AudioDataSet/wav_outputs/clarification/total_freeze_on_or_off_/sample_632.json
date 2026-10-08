@@ -1,0 +1,17 @@
+{
+  "input": "activate engine 2 and 3 fire malfunction and deactivate engine 1 fire malfunction and toggle total freeze.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "ENGINE_2_MALF",
+      "ENGINE_3_MALF"
+    ],
+    "parameters_values": [
+      "false",
+      "true",
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

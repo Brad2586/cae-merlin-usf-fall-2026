@@ -1,0 +1,13 @@
+{
+  "input": "turn on total freeze and deactivate engine fire malfunction",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "IOS_TOTAL_FREEZE"
+    ],
+    "parameters_values": [
+      "true"
+    ],
+    "message": "which engine fire malfunction should be disabled?"
+  }
+}

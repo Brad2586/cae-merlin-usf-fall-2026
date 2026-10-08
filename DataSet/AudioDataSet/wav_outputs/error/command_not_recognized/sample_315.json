@@ -1,0 +1,7 @@
+{
+  "input": "activate engine fire malfunction 10",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

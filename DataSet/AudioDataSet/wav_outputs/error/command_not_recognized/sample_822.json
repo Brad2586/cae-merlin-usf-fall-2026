@@ -1,0 +1,7 @@
+{
+  "input": "turn on engine 2",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "fly to the moon",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

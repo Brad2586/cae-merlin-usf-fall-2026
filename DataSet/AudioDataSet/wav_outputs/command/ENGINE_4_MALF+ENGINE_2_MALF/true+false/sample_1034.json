@@ -1,0 +1,14 @@
+{
+  "input": "turn on engine 4 fire malfunction and turn off engine 2 fire malfunction",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_4_MALF",
+      "ENGINE_2_MALF"
+    ],
+    "parameters_values": [
+      "true",
+      "false"
+    ]
+  }
+}

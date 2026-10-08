@@ -1,0 +1,14 @@
+{
+  "input": "deactivate engine 2 fire malfunction and turn off approach to little rock 1000 ft out on localizer on glideslope",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_2_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "false",
+      "false"
+    ]
+  }
+}

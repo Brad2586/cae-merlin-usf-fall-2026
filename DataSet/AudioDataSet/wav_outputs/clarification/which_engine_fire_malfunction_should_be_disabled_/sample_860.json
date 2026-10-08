@@ -1,0 +1,13 @@
+{
+  "input": "approach to little rock at 1000 feet on glideslope and localizer. and turn off engine fireball malfunction.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "true"
+    ],
+    "message": "which engine fire malfunction should be disabled?"
+  }
+}

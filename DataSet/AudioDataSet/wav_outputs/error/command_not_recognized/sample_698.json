@@ -1,0 +1,7 @@
+{
+  "input": "to be self-destruct sequence",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "input": "change mode to convenient.",
+  "output": {
+    "Type": "mode_lenient"
+  }
+}

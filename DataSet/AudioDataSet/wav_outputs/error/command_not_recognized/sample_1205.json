@@ -1,0 +1,7 @@
+{
+  "input": "malfunction",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

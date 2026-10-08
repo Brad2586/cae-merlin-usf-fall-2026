@@ -1,0 +1,7 @@
+{
+  "input": "activate engine won malfucntion.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

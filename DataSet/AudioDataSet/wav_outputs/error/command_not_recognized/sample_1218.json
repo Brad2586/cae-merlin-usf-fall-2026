@@ -1,0 +1,7 @@
+{
+  "input": "approach to little rock 500 ft on localizer and glide slope",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "input": "change mode to correct",
+  "output": {
+    "Type": "mode_strict"
+  }
+}

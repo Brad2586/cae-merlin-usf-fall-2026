@@ -1,0 +1,7 @@
+{
+  "input": "put off frees.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

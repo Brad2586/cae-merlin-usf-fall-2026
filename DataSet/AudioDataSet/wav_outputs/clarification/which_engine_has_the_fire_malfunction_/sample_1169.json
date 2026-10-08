@@ -1,0 +1,13 @@
+{
+  "input": "activate engine fire function and take me off approach to little rock at 1000 feet on glideslope and localizer.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "false"
+    ],
+    "message": "which engine has the fire malfunction?"
+  }
+}

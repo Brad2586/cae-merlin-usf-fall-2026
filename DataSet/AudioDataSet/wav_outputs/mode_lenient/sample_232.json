@@ -1,0 +1,6 @@
+{
+  "input": "lenient or strict mode? lenient.",
+  "output": {
+    "Type": "mode_lenient"
+  }
+}

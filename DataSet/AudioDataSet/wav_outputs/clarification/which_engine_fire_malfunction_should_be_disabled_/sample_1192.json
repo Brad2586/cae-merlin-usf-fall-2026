@@ -1,0 +1,7 @@
+{
+  "input": "turn off in jin fyre malfunction.",
+  "output": {
+    "Type": "clarification",
+    "message": "which engine fire malfunction should be disabled?"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "turn breeze.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

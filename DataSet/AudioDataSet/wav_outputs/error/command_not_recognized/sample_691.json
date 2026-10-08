@@ -1,0 +1,7 @@
+{
+  "input": "i want a pro to little rock 1000 ft on glide slope and localizer.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

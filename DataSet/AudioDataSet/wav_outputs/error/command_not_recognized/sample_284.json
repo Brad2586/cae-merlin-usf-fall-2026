@@ -1,0 +1,7 @@
+{
+  "input": "turn on in jin tree malfunction.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "change mode to.",
+  "output": {
+    "Type": "clarification",
+    "message": "lenient mode or strict mode?"
+  }
+}

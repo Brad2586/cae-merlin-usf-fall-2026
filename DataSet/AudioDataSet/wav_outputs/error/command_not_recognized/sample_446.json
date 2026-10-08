@@ -1,0 +1,7 @@
+{
+  "input": "firewall malfunction four",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

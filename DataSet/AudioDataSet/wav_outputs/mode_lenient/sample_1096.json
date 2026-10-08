@@ -1,0 +1,6 @@
+{
+  "input": "selenient or district mode? lenient",
+  "output": {
+    "Type": "mode_lenient"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "input": "lenient mode or district mode? start",
+  "output": {
+    "Type": "mode_strict"
+  }
+}

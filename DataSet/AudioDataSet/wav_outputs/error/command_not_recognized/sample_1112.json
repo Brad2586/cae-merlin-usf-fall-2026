@@ -1,0 +1,7 @@
+{
+  "input": "enable total freeze.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

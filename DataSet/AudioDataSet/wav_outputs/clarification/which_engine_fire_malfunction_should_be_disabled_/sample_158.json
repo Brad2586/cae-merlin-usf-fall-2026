@@ -1,0 +1,15 @@
+{
+  "input": "put me on approach to little rock 1000 ft out on localizer on glideslope and turn off engine fireball malfunction. and turn off total freeze",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "APPR_1000_ON_GS_LOC",
+      "IOS_TOTAL_FREEZE"
+    ],
+    "parameters_values": [
+      "true",
+      "false"
+    ],
+    "message": "which engine fire malfunction should be disabled?"
+  }
+}

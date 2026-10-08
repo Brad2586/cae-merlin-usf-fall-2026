@@ -1,0 +1,7 @@
+{
+  "input": "turn on in gen to.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

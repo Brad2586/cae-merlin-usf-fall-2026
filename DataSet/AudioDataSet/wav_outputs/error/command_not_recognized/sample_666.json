@@ -1,0 +1,7 @@
+{
+  "input": "activate engine firewall malfunction 0.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

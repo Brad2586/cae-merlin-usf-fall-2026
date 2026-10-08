@@ -1,0 +1,6 @@
+{
+  "input": "linea. mode or start mode? strict.",
+  "output": {
+    "Type": "mode_strict"
+  }
+}

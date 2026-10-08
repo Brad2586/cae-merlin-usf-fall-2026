@@ -1,0 +1,7 @@
+{
+  "input": "deactivate engine 4 my function",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

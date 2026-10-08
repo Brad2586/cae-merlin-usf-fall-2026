@@ -1,0 +1,15 @@
+{
+  "input": "approach to little rock on glideslope on localizer at 1000 ft and toggle total freeze on and and gin fire function on",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "APPR_1000_ON_GS_LOC",
+      "IOS_TOTAL_FREEZE"
+    ],
+    "parameters_values": [
+      "true",
+      "true"
+    ],
+    "message": "which engine has the fire malfunction?"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "a proach to little rock",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

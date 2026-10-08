@@ -1,0 +1,13 @@
+{
+  "input": "and gin fire function on and toggle total freeze off",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "IOS_TOTAL_FREEZE"
+    ],
+    "parameters_values": [
+      "false"
+    ],
+    "message": "which engine has the fire malfunction?"
+  }
+}

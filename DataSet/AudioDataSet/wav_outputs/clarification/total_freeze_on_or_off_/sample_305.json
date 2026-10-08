@@ -1,0 +1,13 @@
+{
+  "input": "total freeze. and activate engine 4 fire malfunction.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_4_MALF"
+    ],
+    "parameters_values": [
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

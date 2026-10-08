@@ -1,0 +1,6 @@
+{
+  "input": "set mode to lenient.",
+  "output": {
+    "Type": "mode_lenient"
+  }
+}

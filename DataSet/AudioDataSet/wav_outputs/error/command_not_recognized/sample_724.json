@@ -1,0 +1,7 @@
+{
+  "input": "to be fireball mal funk shun 6",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

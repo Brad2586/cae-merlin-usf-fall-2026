@@ -1,0 +1,12 @@
+{
+  "input": "turn on engine 3 firewall malfunction",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_3_MALF"
+    ],
+    "parameters_values": [
+      "true"
+    ]
+  }
+}

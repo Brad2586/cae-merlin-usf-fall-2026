@@ -1,0 +1,7 @@
+{
+  "input": "total maybe breeze.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

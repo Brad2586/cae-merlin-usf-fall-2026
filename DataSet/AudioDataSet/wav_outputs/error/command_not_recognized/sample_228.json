@@ -1,0 +1,7 @@
+{
+  "input": "thank you and fly to the moon and deactivate and gin 2 function.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

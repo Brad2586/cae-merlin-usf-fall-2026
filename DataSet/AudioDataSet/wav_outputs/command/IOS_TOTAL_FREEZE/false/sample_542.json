@@ -1,0 +1,12 @@
+{
+  "input": "turn off total freeze.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "IOS_TOTAL_FREEZE"
+    ],
+    "parameters_values": [
+      "false"
+    ]
+  }
+}

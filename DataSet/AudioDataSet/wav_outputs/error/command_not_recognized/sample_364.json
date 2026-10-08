@@ -1,0 +1,7 @@
+{
+  "input": "to be fyre malfunction 6.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "input": "toggle ios total frees and deactivate engine 2 and 4 fire malfunction.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_2_MALF",
+      "ENGINE_4_MALF"
+    ],
+    "parameters_values": [
+      "false",
+      "false"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

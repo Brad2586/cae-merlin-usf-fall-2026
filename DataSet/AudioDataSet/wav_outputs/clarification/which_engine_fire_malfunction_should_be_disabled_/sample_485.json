@@ -1,0 +1,7 @@
+{
+  "input": "engine fireman my function off",
+  "output": {
+    "Type": "clarification",
+    "message": "which engine fire malfunction should be disabled?"
+  }
+}

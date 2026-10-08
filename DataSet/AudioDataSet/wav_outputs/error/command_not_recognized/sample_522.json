@@ -1,0 +1,7 @@
+{
+  "input": "to be in gin 2 malfunction",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

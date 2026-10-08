@@ -1,0 +1,654 @@
+1.wav:
+One.
+
+2.wav:
+to
+
+3.wav:
+Three.
+
+4.wav:
+four
+
+ActivateAllEngineFireMalf.wav:
+Activate all engine fire malfunction.
+
+ActivateEngine1FireMalf.wav:
+Activate Engine 1 fire malfunction.
+
+ActivateEngine1Malf.wav:
+Activate engine one malfunction.
+
+ActivateEngine2FireMalf.wav:
+Activate engine 2 fire malfunction.
+
+ActivateEngine2Malf.wav:
+Activate Engine 2 malfunction.
+
+ActivateEngine3FireMalf.wav:
+Activate engine 3 fire malfunction.
+
+ActivateEngine3Malf.wav:
+Activate engine 3 malfunction.
+
+ActivateEngine4FireMalf.wav:
+Activate Engine 4 Fire malfunction.
+
+ActivateEngine4Malf.wav:
+Activate Engine 4 malfunction.
+
+ActivateEngineFireMalf.wav:
+Activate engine fire malfunction.
+
+ActivateEngineFireMalf1.wav:
+Activate engine fire malfunction 1.
+
+ActivateEngineFireMalf2.wav:
+Activate engine fire malfunction 2.
+
+ActivateEngineFireMalf3.wav:
+Activate engine fire malfunction 3.
+
+ActivateEngineFireMalf4.wav:
+Activate engine fire malfunction 4.
+
+ActivateEngineMalf.wav:
+Activate engine malfunction.
+
+ActivateEngineMalf1.wav:
+Activate engine malfunction 1.
+
+ActivateEngineMalf2.wav:
+Activate engine malfunction 2.
+
+ActivateEngineMalf3.wav:
+Activate engine malfunction 3.
+
+ActivateEngineMalf4.wav:
+Activate engine malfunction 4.
+
+ActivateFreeze.wav:
+Activate freeze.
+
+ActivateSelfDestructSeq.wav:
+Activate self-destruct sequence.
+
+ApproachTo1.wav:
+Put me on approach to Little Rock, 1000 feet out on localizer on Glidescope.
+
+ApproachTo2.wav:
+Approach to Little Rock on localizer on Glidescope at a thousand feet
+
+ApproachTo3.wav:
+Approach to Little Rock on Glidescope on localizer at a thousand feet
+
+ApproachTo4.wav:
+approach to Little Rock, 1000 feet on localizer and Glidescope.
+
+ApproachTo5.wav:
+Approach to Little Rock 1000 feet on Glidescope and localizer.
+
+ApproachTo6.wav:
+Approach to Little Rock at a thousand feet on Glidescope and Localizer
+
+CancelApproach.wav:
+Cancel approach to Little Rock, 1000 feet on localizer and Glidescope.
+
+ChangeModeTo.wav:
+Change mode to
+
+ChangeModeToLenient.wav:
+Change mode to lenient.
+
+ChangeModeToStrict.wav:
+Change mode to strict.
+
+DeactivateAllEngineFireMalf.wav:
+Deactivate all engine fire malfunction.
+
+DeactivateEngine1FireMalf.wav:
+Deactivate engine 1 fire malfunction.
+
+DeactivateEngine1Malf.wav:
+Deactivate engine 1 malfunction.
+
+DeactivateEngine2FireMalf.wav:
+Deactivate engine 2 fire malfunction.
+
+DeactivateEngine2Malf.wav:
+Deactivate engine 2 malfunction.
+
+DeactivateEngine3FireMalf.wav:
+Deactivate engine 3 fire malfunction.
+
+DeactivateEngine3Malf.wav:
+deactivate engine 3 malfunction.
+
+DeactivateEngine4FireMalf.wav:
+Deactivate engine 4 fire malfunction.
+
+DeactivateEngine4Malf.wav:
+Deactivate engine 4 malfunction.
+
+DeactivateEngineFireMalf.wav:
+Deactivate engine fire malfunction.
+
+DeactivateEngineFireMalf1.wav:
+Deactivate engine fire malfunction 1.
+
+DeactivateEngineFireMalf2.wav:
+Deactivate engine fire malfunction 2.
+
+DeactivateEngineFireMalf3.wav:
+Deactivate engine fire malfunction 3.
+
+DeactivateEngineFireMalf4.wav:
+Deactivate engine fire malfunction 4.
+
+DeactivateEngineMalf.wav:
+Deactivate engine malfunction.
+
+DeactivateEngineMalf1.wav:
+Deactivate engine malfunction 1.
+
+DeactivateEngineMalf2.wav:
+Deactivate engine malfunction 2.
+
+DeactivateEngineMalf3.wav:
+Deactivate engine malfunction 3.
+
+DeactivateEngineMalf4.wav:
+Deactivate engine malfunction 4.
+
+DisableApproach1.wav:
+Disable approach to Little Rock on localizer on Glidescope at 1000 feet.
+
+DisableApproach2.wav:
+Disable approach to Little Rock, 1000 feet on localizer and Glidescope.
+
+Engine1.wav:
+Engine 1
+
+Engine2.wav:
+Engine 2
+
+Engine3.wav:
+Engine 3
+
+Engine4.wav:
+Engine 4
+
+EngineFireMalfOff.wav:
+Engine fire malfunction off.
+
+EngineFireMalfOn.wav:
+Engine fire malfunction on.
+
+ExitTheProgram.wav:
+Exit the program.
+
+Fire.wav:
+Fire.
+
+FlyToTheMoon.wav:
+fly to the moon.
+
+FrozenMode.wav:
+Frozen mode.
+
+FullFreezeMode.wav:
+Full freeze mode.
+
+Lenient.wav:
+lenient.
+
+LockTheSim.wav:
+Lock the sim
+
+Malfunction.wav:
+malfunction.
+
+Quit.wav:
+Quit.
+
+SetEngineToMaxOverdrive.wav:
+Set engine to maximum overdrive.
+
+SetModeTo.wav:
+Set mode 2.
+
+SetModeToLenient.wav:
+Set mode to lenient.
+
+SetModeToStrict.wav:
+Set mode to strict.
+
+ShutDownTheProgram.wav:
+shut down the program.
+
+Strict.wav:
+Strict.
+
+ToggleMode.wav:
+toggle mode
+
+ToggleOffTotalFreeze.wav:
+toggle off total freeze.
+
+ToggleOnTotalFreeze.wav:
+Toggle on Total Freeze.
+
+ToggleTotalFreeze.wav:
+toggle total freeze
+
+ToggleTotalFreezeOff.wav:
+Toggle total freeze off.
+
+ToggleTotalFreezeOn.wav:
+Toggle total freeze on.
+
+TotalFreeze.wav:
+Total Freeze
+
+TurnOffAllEngineFireMalf.wav:
+Turn off all engine fire malfunction.
+
+TurnOffApproach1.wav:
+Turn off approach to Little Rock, 1000 feet out on localizer on Glidescope.
+
+TurnOffApproach2.wav:
+Turn off approach to Little Rock on localizer on Glidescope at 1000 feet.
+
+TurnOffApproach3.wav:
+Turn off approach to Little Rock on Glidescope on localizer at 1000 feet.
+
+TurnOffApproach4.wav:
+Turn off approach to Little Rock, 1000 feet on localizer and glide scope.
+
+TurnOffApproach5.wav:
+Turn off approach to Little Rock, 1000 feet on Glidescope and Localizer.
+
+TurnOffEngine1FireMalf.wav:
+Turn off engine 1 fire malfunction.
+
+TurnOffEngine1Malf.wav:
+Turn off engine 1 malfunction.
+
+TurnOffEngine2FireMalf.wav:
+Turn off Engine 2 Fire Malfunction.
+
+TurnOffEngine2Malf.wav:
+Turn off engine 2 malfunction.
+
+TurnOffEngine3FireMalf.wav:
+Turn off engine 3 fire malfunction.
+
+TurnOffEngine3Malf.wav:
+Turn off Engine 3 malfunction.
+
+TurnOffEngine4FireMalf.wav:
+Turn off engine 4 fire malfunction.
+
+TurnOffEngine4Malf.wav:
+Turn off engine 4 malfunction.
+
+TurnOffEngineFireMalf.wav:
+Turn off engine fire malfunction.
+
+TurnOffEngineMalf.wav:
+Turn off engine malfunction.
+
+TurnOffEngineMalf1.wav:
+Turn off engine malfunction 1.
+
+TurnOffEngineMalf2.wav:
+turn off engine malfunction 2.
+
+TurnOffEngineMalf3.wav:
+Turn off engine malfunction 3.
+
+TurnOffEngineMalf4.wav:
+Turn off engine malfunction 4.
+
+TurnOffTotalFreeze.wav:
+Turn off total freeze.
+
+TurnOnAllEngineFireMalf.wav:
+Turn on all engine fire malfunctions.
+
+TurnOnEngine1.wav:
+Turn on engine 1.
+
+TurnOnEngine1FireMalf.wav:
+Turn on engine 1 fire malfunction.
+
+TurnOnEngine1Malf.wav:
+turn on engine one malfunction.
+
+TurnOnEngine2.wav:
+Turn on engine 2.
+
+TurnOnEngine2FireMalf.wav:
+Turn on Engine 2 Fire Malfunction.
+
+TurnOnEngine2Malf.wav:
+Turn on Engine 2 malfunction.
+
+TurnOnEngine3.wav:
+Turn on Engine 3.
+
+TurnOnEngine3FireMalf.wav:
+Turn on engine 3 fire malfunction.
+
+TurnOnEngine3Malf.wav:
+Turn on Engine 3 malfunction.
+
+TurnOnEngine4.wav:
+Turn on engine 4.
+
+TurnOnEngine4FireMalf.wav:
+Turn on Engine 4 Fire Malfunction.
+
+TurnOnEngine4Malf.wav:
+Turn on Engine 4 malfunction.
+
+TurnOnEngineFireMalf.wav:
+turn on engine fire malfunction.
+
+TurnOnEngineMalf.wav:
+Turn on engine malfunction.
+
+TurnOnEngineMalf1.wav:
+Turn on Engine Malfunction 1.
+
+TurnOnEngineMalf2.wav:
+turn on engine malfunction 2.
+
+TurnOnEngineMalf3.wav:
+Turn on Engine Malfunction 3.
+
+TurnOnEngineMalf4.wav:
+Turn on engine malfunction 4.
+
+TurnOnTotalFreeze.wav:
+Turn on Total Freeze.
+
+TurnTotalFreezeOff.wav:
+Turn total freeze off.
+
+TurnTotalFreezeOn.wav:
+Turn total freeze on.
+
+1.wav:
+1
+
+2.wav:
+2
+
+3.wav:
+3
+
+4.wav:
+four
+
+act_all_eng_fire_malf.wav:
+Activate all engine firearm functions.
+
+act_eng_1_fire_malf.wav:
+Activate engine 1 fire malfunction.
+
+act_eng_2_fire_malf.wav:
+Activate engine 2 fire malfunction.
+
+act_eng_3_fire_malf.wav:
+Activate engine 3 fire malfunction.
+
+act_eng_4_fire_malf.wav:
+Activate engine 4 fire malfunction.
+
+act_eng_fire_malf.wav:
+Activate engine fire malfunction.
+
+act_eng_fire_malf_1.wav:
+Activate engine fire malfunction 1.
+
+act_eng_fire_malf_2.wav:
+Activate engine fire malfunction 2.
+
+act_eng_fire_malf_3.wav:
+Activate engine fire malfunction 3.
+
+act_eng_fire_malf_4.wav:
+Activate engine fire malfunction 4.
+
+act_freeze.wav:
+Activate Freeze.
+
+act_self_dest_sequ.wav:
+Activate self destruct sequence.
+
+change_mode_to.wav:
+Change mode to...
+
+change_mode_to_len.wav:
+Change mode to lenient.
+
+change_mode_to_strict.wav:
+Change mode to strict.
+
+deact_all_eng_fire_malf.wav:
+Deactivate all engine firemall functions.
+
+deact_eng_1_fire_malf.wav:
+Deactivate engine 1 fire malfunction.
+
+deact_eng_2_fire_malf.wav:
+Deactivate engine 2 fire malfunction.
+
+deact_eng_3_fire_malf.wav:
+Deactivate Engine 3 Fire malfunction.
+
+deact_eng_4_fire_malf.wav:
+Deactivate Engine 4 Fire Malfunction.
+
+deact_eng_fire_malf.wav:
+Deactivate engine fire malfunction.
+
+deact_eng_fire_malf_1.wav:
+Deactivate engine fire malfunction 1.
+
+deact_eng_fire_malf_2.wav:
+Deactivate engine fire malfunction 2.
+
+deact_eng_fire_malf_3.wav:
+Deactivate engine fire malfunction 3.
+
+deact_eng_fire_malf_4.wav:
+Deactivate engine fire malfunction 4.
+
+eng_1.wav:
+Engine 1
+
+eng_2.wav:
+Engine 2
+
+eng_3.wav:
+Engine 3
+
+eng_4.wav:
+Engine 4
+
+eng_fire_malf_off.wav:
+Engine fire malfunction off.
+
+eng_fire_malf_on.wav:
+Engine fire malfunction on.
+
+exit_the_prog.wav:
+Exit the program.
+
+fire.wav:
+Fire.
+
+fly_to_the_moon.wav:
+fly to the moon
+
+frozen_mode.wav:
+Frozen mode.
+
+full_freeze_mode.wav:
+Full freeze mode.
+
+lenient.wav:
+lenient
+
+lock_the_sim.wav:
+Lock the sim.
+
+LR_off_1.wav:
+Turn off approach to Little Rock a thousand feet out on localizer and glide slope.
+
+LR_off_2.wav:
+Turn off approach to Little Rock on localizer and glide slope at a thousand feet.
+
+LR_off_3.wav:
+Turn off approach to Little Rock on Glide Slope on Localizer at a thousand feet.
+
+LR_off_4.wav:
+Turn off approach to Little Rock 1000 feet on localizer and glide slope.
+
+LR_off_5.wav:
+Turn off approach to Little Rock a thousand feet on Glide Slope and Localizer.
+
+LR_off_6.wav:
+Disable approached a little rock on localizer and glide slope at a thousand feet.
+
+LR_off_7.wav:
+Disable approach to Little Rock a thousand feet on localizer and glide slope.
+
+LR_off_8.wav:
+Cancel approach to Little Rock a thousand feet on localizer and glide slope.
+
+LR_on_1.wav:
+Put me on approach to Little Rock a thousand feet out on localizer on Glideslope.
+
+LR_on_2.wav:
+Put me on approach to Little Rock on localizer on Glide Slope at a thousand feet.
+
+LR_on_3.wav:
+Put me on approach to Little Rock on Glide Slope on localizer at a thousand feet.
+
+LR_on_4.wav:
+Put me on approach to Little Rock a thousand feet on localizer and glide slope.
+
+LR_on_5.wav:
+put me on approach to Little Rock a thousand feet on Glide Slope and localizer
+
+LR_on_6.wav:
+Put me on approach to Little Rock at a thousand feet on glide slope and localizer.
+
+malfunction.wav:
+malfunction
+
+quit.wav:
+Quit.
+
+set_eng_to_max_overdrive.wav:
+Set engine to maximum overdrive.
+
+set_mode_to.wav:
+Set Mode 2
+
+set_mode_to_len.wav:
+Set Mode to Lienient
+
+set_mode_to_strict.wav:
+Set mode to strict.
+
+shut_down_the_prog.wav:
+Shut down the program.
+
+strict.wav:
+strict
+
+tog_mode.wav:
+toggle mode
+
+tog_off_tot_frz.wav:
+Toggle off total freeze.
+
+tog_on_tot_frz.wav:
+toggle on total freeze
+
+tog_tot_frz.wav:
+Toggle total freeze.
+
+tog_tot_frz_on.wav:
+Toggle total freeze on.
+
+tog_total_frz_off.wav:
+Toggle total freeze off.
+
+tot_frz.wav:
+Total Freeze
+
+turn_off_all_eng_fire_malf.wav:
+Turn off all engine firewall functions.
+
+turn_off_eng_1_fire_malf.wav:
+Turn off engine 1 fire malfunction.
+
+turn_off_eng_2_fire_malf.wav:
+Turn off engine 2 FireMofunction.
+
+turn_off_eng_3_fire_malf.wav:
+Turn off engine 3, Firearm malfunction.
+
+turn_off_eng_4_fire_malf.wav:
+Turn off engine 4 fire malfunction.
+
+turn_off_eng_fire_malf.wav:
+Turn off engine fire malfunction.
+
+turn_off_tot_frz.wav:
+Turn off total freeze.
+
+turn_on_all_eng_fire_malf.wav:
+Turn on all engine fire malfunctions.
+
+turn_on_eng_1.wav:
+Turn on engine 1.
+
+turn_on_eng_1_fire_malf.wav:
+turn on engine 1 fire malfunction
+
+turn_on_eng_2.wav:
+Turn on engine 2.
+
+turn_on_eng_2_fire_malf.wav:
+Turn on engine 2 fire malfunction.
+
+turn_on_eng_3.wav:
+Turn on engine 3.
+
+turn_on_eng_3_fire_malf.wav:
+Turn on engine 3 fire malfunction.
+
+turn_on_eng_4.wav:
+turn on engine 4
+
+turn_on_eng_4_fire_malf.wav:
+Turn on engine 4 fire malfunction.
+
+turn_on_eng_fire_malf.wav:
+Turn on engine fire malfunction.
+
+turn_on_tot_frz.wav:
+turn on total freeze
+
+turn_tot_frz_off.wav:
+turn total freeze off
+
+turn_tot_frz_on.wav:
+Turn Total Freeze on.
+

@@ -1,0 +1,6 @@
+{
+  "input": "please exit the program.",
+  "output": {
+    "Type": "exit"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "deactivate in gen mal funk shun",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

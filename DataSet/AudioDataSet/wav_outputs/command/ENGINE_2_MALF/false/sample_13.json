@@ -1,0 +1,12 @@
+{
+  "input": "which engine fire malfunction should be disabled? too.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_2_MALF"
+    ],
+    "parameters_values": [
+      "false"
+    ]
+  }
+}

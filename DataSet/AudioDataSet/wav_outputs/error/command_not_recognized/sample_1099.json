@@ -1,0 +1,7 @@
+{
+  "input": "total maybe frees.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "deactivate engine malfunction",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

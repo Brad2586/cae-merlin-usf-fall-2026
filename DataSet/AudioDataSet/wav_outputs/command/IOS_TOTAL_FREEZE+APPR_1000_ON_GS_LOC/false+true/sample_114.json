@@ -1,0 +1,14 @@
+{
+  "input": "turn off total freeze and approach to little rock at 1000 feet on glideslope and localizer.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "IOS_TOTAL_FREEZE",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "false",
+      "true"
+    ]
+  }
+}

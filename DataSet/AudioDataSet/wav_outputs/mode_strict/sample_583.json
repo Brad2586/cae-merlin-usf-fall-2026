@@ -1,0 +1,6 @@
+{
+  "input": "set mode to strict.",
+  "output": {
+    "Type": "mode_strict"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "freeze ios",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

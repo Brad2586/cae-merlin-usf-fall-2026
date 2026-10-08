@@ -1,0 +1,7 @@
+{
+  "input": "fireball malfunction were and you.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

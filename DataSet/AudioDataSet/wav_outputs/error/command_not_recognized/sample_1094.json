@@ -1,0 +1,7 @@
+{
+  "input": "deactivate in gin one malfucntion",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

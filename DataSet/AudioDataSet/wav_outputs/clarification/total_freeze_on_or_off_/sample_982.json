@@ -1,0 +1,13 @@
+{
+  "input": "turn off approach to little rock on localizer on glideslope at 1000 ft and total freeze.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "false"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

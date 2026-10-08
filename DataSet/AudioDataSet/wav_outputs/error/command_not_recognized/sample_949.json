@@ -1,0 +1,7 @@
+{
+  "input": "activate fire my function 6.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

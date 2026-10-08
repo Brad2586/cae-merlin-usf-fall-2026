@@ -1,0 +1,7 @@
+{
+  "input": "firewall.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

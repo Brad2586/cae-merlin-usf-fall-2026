@@ -1,0 +1,7 @@
+{
+  "input": "a proach to little rock 500 ft on localizer and wide slope",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "to be engine 4 malfunction",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "thank you.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

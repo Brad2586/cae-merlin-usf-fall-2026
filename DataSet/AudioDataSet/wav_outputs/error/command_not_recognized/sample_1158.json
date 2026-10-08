@@ -1,0 +1,7 @@
+{
+  "input": "activate fireman my function 6.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

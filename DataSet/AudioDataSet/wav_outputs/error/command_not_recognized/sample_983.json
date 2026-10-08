@@ -1,0 +1,7 @@
+{
+  "input": "in jin fyre malfunction 4.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

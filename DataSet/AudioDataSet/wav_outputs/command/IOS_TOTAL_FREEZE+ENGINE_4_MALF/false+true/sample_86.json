@@ -1,0 +1,14 @@
+{
+  "input": "toggle total freeze off and turn on engine 4 fire malfunction.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "IOS_TOTAL_FREEZE",
+      "ENGINE_4_MALF"
+    ],
+    "parameters_values": [
+      "false",
+      "true"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "input": "cancel approach to little rock 1000 ft on localizer and glideslope and remove the and gin fire function",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "false"
+    ],
+    "message": "which engine fire malfunction should be disabled?"
+  }
+}

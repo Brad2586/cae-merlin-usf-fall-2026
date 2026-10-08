@@ -1,0 +1,13 @@
+{
+  "input": "turn off engine 2 fire malfunction and ios total frees.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_2_MALF"
+    ],
+    "parameters_values": [
+      "false"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "input": "ios total freeze and deactivate engine 4 fire malfunction and turn on engine 1 and 2 fire malfunction.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "ENGINE_2_MALF",
+      "ENGINE_4_MALF"
+    ],
+    "parameters_values": [
+      "true",
+      "true",
+      "false"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

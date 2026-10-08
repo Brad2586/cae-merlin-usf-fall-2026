@@ -1,0 +1,7 @@
+{
+  "input": "turn off a proach to little rock 1000 ft out.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

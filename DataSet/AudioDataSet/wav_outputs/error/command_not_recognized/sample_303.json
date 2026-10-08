@@ -1,0 +1,7 @@
+{
+  "input": "turn on and gin 1 mal funk shun and turn on engine mal funk shun 2",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

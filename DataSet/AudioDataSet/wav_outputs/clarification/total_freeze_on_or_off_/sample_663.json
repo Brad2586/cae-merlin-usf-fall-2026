@@ -1,0 +1,15 @@
+{
+  "input": "total frees and turn on engine 2 fire malfunction and deactivate engine 1 fire malfunction",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "ENGINE_2_MALF"
+    ],
+    "parameters_values": [
+      "false",
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

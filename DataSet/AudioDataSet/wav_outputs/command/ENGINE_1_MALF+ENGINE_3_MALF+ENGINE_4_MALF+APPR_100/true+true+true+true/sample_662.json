@@ -1,0 +1,18 @@
+{
+  "input": "turn on engine 1, 3 and 4 fire malfunction and put me on approach to little rock 1000 ft out on localizer on glideslope.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "ENGINE_3_MALF",
+      "ENGINE_4_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  }
+}

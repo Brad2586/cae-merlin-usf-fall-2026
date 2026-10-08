@@ -1,0 +1,16 @@
+{
+  "input": "activate engine 3 fire malfunction and toggle total freeze on and deactivate engine 1 fire malfunction.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_3_MALF",
+      "IOS_TOTAL_FREEZE",
+      "ENGINE_1_MALF"
+    ],
+    "parameters_values": [
+      "true",
+      "true",
+      "false"
+    ]
+  }
+}

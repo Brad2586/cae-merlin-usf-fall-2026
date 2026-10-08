@@ -1,0 +1,7 @@
+{
+  "input": "toggle total freeze.",
+  "output": {
+    "Type": "clarification",
+    "message": "total freeze on or off?"
+  }
+}

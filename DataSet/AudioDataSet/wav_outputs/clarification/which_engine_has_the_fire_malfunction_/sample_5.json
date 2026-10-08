@@ -1,0 +1,9 @@
+{
+  "input": "activate engine firewall function.",
+  "output": {
+    "Type": "clarification",
+    "message": "which engine has the fire malfunction?",
+    "parameters_keys": null,
+    "parameters_values": null
+  }
+}

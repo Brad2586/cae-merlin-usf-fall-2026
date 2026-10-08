@@ -1,0 +1,7 @@
+{
+  "input": "toggle on breeze.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

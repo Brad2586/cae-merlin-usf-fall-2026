@@ -1,0 +1,7 @@
+{
+  "input": "pause the simulator.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

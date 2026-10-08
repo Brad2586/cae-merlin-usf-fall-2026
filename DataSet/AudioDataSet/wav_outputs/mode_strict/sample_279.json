@@ -1,0 +1,6 @@
+{
+  "input": "convenient mode or strict mode? strict",
+  "output": {
+    "Type": "mode_strict"
+  }
+}

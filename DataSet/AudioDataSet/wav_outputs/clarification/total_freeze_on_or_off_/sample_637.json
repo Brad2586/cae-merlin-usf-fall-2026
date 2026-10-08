@@ -1,0 +1,15 @@
+{
+  "input": "activate engine 1 fire malfunction and approach to little rock on glideslope on localizer at 1000 ft and toggle ios total frees",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "true",
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

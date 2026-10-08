@@ -1,0 +1,12 @@
+{
+  "input": "which engine fire my function should be disabled? 1.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_1_MALF"
+    ],
+    "parameters_values": [
+      "false"
+    ]
+  }
+}

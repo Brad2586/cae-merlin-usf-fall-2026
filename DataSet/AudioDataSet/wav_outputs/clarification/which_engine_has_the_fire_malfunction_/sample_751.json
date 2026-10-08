@@ -1,0 +1,7 @@
+{
+  "input": "turn on and gin fire malfunction",
+  "output": {
+    "Type": "clarification",
+    "message": "which engine has the fire malfunction?"
+  }
+}

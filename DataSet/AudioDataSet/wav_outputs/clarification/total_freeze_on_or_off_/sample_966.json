@@ -1,0 +1,15 @@
+{
+  "input": "take me off approach to little rock at 1000 feet on glideslope and localizer. and total freeze and activate engine 1 fire malfunction",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "true",
+      "false"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

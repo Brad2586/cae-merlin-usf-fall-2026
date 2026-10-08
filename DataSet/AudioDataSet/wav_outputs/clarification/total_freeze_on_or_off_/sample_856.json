@@ -1,0 +1,13 @@
+{
+  "input": "total freeze and deactivate engine 3 fire malfunction",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_3_MALF"
+    ],
+    "parameters_values": [
+      "false"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

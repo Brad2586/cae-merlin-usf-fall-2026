@@ -1,0 +1,6 @@
+{
+  "input": "lenient or start mode? lenient.",
+  "output": {
+    "Type": "mode_lenient"
+  }
+}

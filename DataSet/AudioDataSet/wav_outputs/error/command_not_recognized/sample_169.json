@@ -1,0 +1,7 @@
+{
+  "input": "deactivate in jin for malfunction.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

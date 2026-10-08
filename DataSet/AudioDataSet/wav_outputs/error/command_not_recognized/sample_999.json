@@ -1,0 +1,7 @@
+{
+  "input": "fire mal function 3.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

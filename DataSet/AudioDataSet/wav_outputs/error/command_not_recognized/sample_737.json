@@ -1,0 +1,7 @@
+{
+  "input": "put on freeze.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

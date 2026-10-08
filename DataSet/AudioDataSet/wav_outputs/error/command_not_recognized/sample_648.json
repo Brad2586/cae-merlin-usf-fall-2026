@@ -1,0 +1,7 @@
+{
+  "input": "activate in gen 1 malfucntion",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

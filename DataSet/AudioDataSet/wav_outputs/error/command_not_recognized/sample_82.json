@@ -1,0 +1,7 @@
+{
+  "input": "4",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

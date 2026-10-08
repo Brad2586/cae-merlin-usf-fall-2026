@@ -1,0 +1,6 @@
+{
+  "input": "selenient mode or district mode? strict",
+  "output": {
+    "Type": "mode_strict"
+  }
+}

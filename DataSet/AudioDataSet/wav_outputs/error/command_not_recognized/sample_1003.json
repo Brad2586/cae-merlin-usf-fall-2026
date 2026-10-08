@@ -1,0 +1,7 @@
+{
+  "input": "trigger engine one my function.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

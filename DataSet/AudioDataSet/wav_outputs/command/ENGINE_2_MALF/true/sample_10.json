@@ -1,0 +1,12 @@
+{
+  "input": "activate engine 2 fireball function.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_2_MALF"
+    ],
+    "parameters_values": [
+      "true"
+    ]
+  }
+}

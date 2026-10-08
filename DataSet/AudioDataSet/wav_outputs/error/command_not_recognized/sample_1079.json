@@ -1,0 +1,7 @@
+{
+  "input": "enable engine 3 malfunction.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

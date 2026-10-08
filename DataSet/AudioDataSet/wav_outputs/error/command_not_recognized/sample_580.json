@@ -1,0 +1,7 @@
+{
+  "input": "activate in gin firewall malfunction 10.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "to be in jin fire malfunction 10.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

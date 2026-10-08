@@ -1,0 +1,7 @@
+{
+  "input": "function",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

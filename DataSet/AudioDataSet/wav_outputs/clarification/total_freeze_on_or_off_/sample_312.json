@@ -1,0 +1,21 @@
+{
+  "input": "ios total freeze and turn on engine 3 and 4 fire malfunction and deactivate engine 1 and 2 fire malfunction and disable approach to little rock 1000 ft on localizer and glideslope.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "ENGINE_2_MALF",
+      "ENGINE_3_MALF",
+      "ENGINE_4_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "false",
+      "false",
+      "true",
+      "true",
+      "false"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

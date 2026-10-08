@@ -1,0 +1,7 @@
+{
+  "input": "turn off in gen firewall malfunction.",
+  "output": {
+    "Type": "clarification",
+    "message": "which engine fire malfunction should be disabled?"
+  }
+}

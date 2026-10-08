@@ -1,0 +1,15 @@
+{
+  "input": "activate engine 3 fire malfunction and approach to little rock at 1000 feet on glideslope and localizer. and ios total freeze.",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_3_MALF",
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "true",
+      "true"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

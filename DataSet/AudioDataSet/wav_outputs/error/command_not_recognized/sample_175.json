@@ -1,0 +1,7 @@
+{
+  "input": "trigger and gin 1 malfunction.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

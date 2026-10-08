@@ -1,0 +1,7 @@
+{
+  "input": "mal funk shun",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

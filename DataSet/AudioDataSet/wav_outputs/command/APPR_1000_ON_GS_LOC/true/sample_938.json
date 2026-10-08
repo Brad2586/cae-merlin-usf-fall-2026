@@ -1,0 +1,12 @@
+{
+  "input": "a pro to little rock on glideslope on localizer at 1000 ft",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "APPR_1000_ON_GS_LOC"
+    ],
+    "parameters_values": [
+      "true"
+    ]
+  }
+}

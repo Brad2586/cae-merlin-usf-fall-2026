@@ -1,0 +1,12 @@
+{
+  "input": "activate engine to fire mal function.",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_2_MALF"
+    ],
+    "parameters_values": [
+      "true"
+    ]
+  }
+}

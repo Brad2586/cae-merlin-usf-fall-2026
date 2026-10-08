@@ -1,0 +1,511 @@
+{"input": "turn total freeze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "turn total freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "turn on total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "turn off total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "turn total freeze on.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "turn total freeze off.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "turn on total freeze.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "turn off total freeze.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "toggle total freeze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "toggle total freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "toggle on total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "toggle off total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "toggle total freeze on.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "toggle total freeze off.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "toggle on total freeze.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "toggle off total freeze.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "off total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "off total freeze.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "on total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "on total freeze.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "total freeze.", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "total freeze", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "toggle total freeze", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "toggle total freeze.", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "activate engine fire malfunction", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate engine fire malfunction.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate engine fire", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate engine fire.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate malfunction engine fire", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate malfunction engine fire.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "engine fire malfunction.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "engine fire malfunction", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "engine fire", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "engine fire.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate engine firemail function.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate engine fireman function.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "to the engine fire my function.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "which engine has the fire malfunction? you", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "which engine has the fire malfunction? engine 1", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? 1", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? engine 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? engine 2", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? 2", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? 3", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? engine 3", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine 1 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine 2 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine 3 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine 4 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine 1 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine 2 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine 3 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine 4 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine 1 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine 2 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine 3 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine 4 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine 1 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine 2 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine 3 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine 4 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "turn on engine 1 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "turn on engine 2 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "turn on engine three fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "turn on engine four fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine too fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine to fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine two fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate malfunction engine for fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "to a engine fire malfunction 3.", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "to a engine fire malfunction 2.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "to a engine fire malfunction 1.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "to a engine fire malfunction 4.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine fire malfunction 3.", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine fire malfunction 2.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine fire malfunction 1.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine fire malfunction 4.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "deactivate engine 1 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate engine 2 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate engine 3 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate engine 4 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate malfunction engine 1 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate malfunction engine 2 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate malfunction engine 3 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate malfunction engine 4 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "activate in jin 1 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "activate in to fire 2 malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate activate agent fire 3", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "turn off engine 4 fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off malfunction engine 4 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off engine 2 fire.", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "set malfunction engine 3 fire false.", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "set engine 2 fire malfunction falls", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "set engine 3 fire malfunction falls", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "set malfunction engine 4 fire false.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate malfunction engine 1 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off engine 2 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate malfunction engine 3 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off malfunction engine 4 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "set malfunction engine 3 fire false", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "set engine 4 fire malfunction falls", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "put me on approach to little rock 1000 ft out on localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "approach to little rock 1000 ft out on localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "approach little rock 1000 ft out on localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "set approach to little rock 1000 ft out on localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "set approach 1000 ft out on localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "set approach 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "malfunction", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "malfunction.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "fire.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "fire", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "fly to the moon", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "enable hyperdrive", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "turn on unicorn mode", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "please stop time", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "open the black box", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "set engine to maximum overdrive", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "activate self-destruct sequence", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "freeze everything forever", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "start infinite loop", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "give me unlimited fuel", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "you", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "you.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "okay", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "okay.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "please", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "please.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "exit", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "exit.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "quit", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "quit.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "exit the program", "output": {"Type": "exit"}}
+{"input": "please exit the program", "output": {"Type": "exit"}}
+{"input": "exit the program.", "output": {"Type": "exit"}}
+{"input": "please quit the program", "output": {"Type": "exit"}}
+{"input": "quit the program", "output": {"Type": "exit"}}
+{"input": "quit the program.", "output": {"Type": "exit"}}
+{"input": "four.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "4", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "2", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "3", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "1.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "one", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "three", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "two", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "activate engine 1 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true"]}}
+{"input": "activate engine 2 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true"]}}
+{"input": "activate engine 3 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true"]}}
+{"input": "activate engine 4 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true"]}}
+{"input": "activate engine 1 fire malfunction and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "activate engine 2 fire malfunction and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "activate engine 3 fire malfunction and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "activate engine 4 fire malfunction and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "turn off engine 1 fire malfunction and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false"]}}
+{"input": "turn off engine 2 fire malfunction and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false"]}}
+{"input": "turn off engine 3 fire malfunction and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false"]}}
+{"input": "turn off engine 4 fire malfunction and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false"]}}
+{"input": "turn on total freeze and activate engine 1 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "turn on total freeze and activate engine 2 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_2_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "turn on total freeze and activate engine 3 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_3_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "turn on total freeze and activate engine 4 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_4_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "turn off total freeze and activate engine 1 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "turn off total freeze and activate engine 2 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_2_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "turn off total freeze and activate engine 3 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_3_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "turn off total freeze and activate engine 4 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_4_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "turn off total freeze and turn off engine 1 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF"], "parameters_values": ["false", "false"]}}
+{"input": "turn off total freeze and turn off engine 2 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_2_MALF"], "parameters_values": ["false", "false"]}}
+{"input": "turn off total freeze and turn off engine 3 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_3_MALF"], "parameters_values": ["false", "false"]}}
+{"input": "turn off total freeze and turn off engine 4 fire malfunction", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_4_MALF"], "parameters_values": ["false", "false"]}}
+{"input": "activate engine 1 fire malfunction and turn on total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true"]}}
+{"input": "activate engine 2 fire malfunction and turn on total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true"]}}
+{"input": "activate engine 3 fire malfunction and turn on total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true"]}}
+{"input": "activate engine 4 fire malfunction and turn on total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true"]}}
+{"input": "activate engine 1 fire malfunction and turn off total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "false", "true"]}}
+{"input": "activate engine 2 fire malfunction and turn off total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "false", "true"]}}
+{"input": "activate engine 3 fire malfunction and turn off total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "false", "true"]}}
+{"input": "activate engine 4 fire malfunction and turn off total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "false", "true"]}}
+{"input": "turn off engine 1 fire malfunction and turn off total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "true"]}}
+{"input": "turn off engine 2 fire malfunction and turn off total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "true"]}}
+{"input": "turn off engine 3 fire malfunction and turn off total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "true"]}}
+{"input": "turn off engine 4 fire malfunction and turn off total freeze and put me on approach to little rock 1000 ft out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "true"]}}
+{"input": "put me on approach to little rock 1000 ft out on localizer on glideslope and activate engine 1 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_1_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "put me on approach to little rock 1000 ft out on localizer on glideslope and activate engine 2 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_2_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "put me on approach to little rock 1000 ft out on localizer on glideslope and activate engine 3 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_3_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "put me on approach to little rock 1000 ft out on localizer on glideslope and activate engine 4 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "put me on approach 1000 ft out on localizer on glideslope and activate engine 4 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "turn on total freeze and put me on approach at 1000 feet with localizer and glidslope", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true"]}}
+{"input": "turn off total freeze and put me on approach at 1000 feet with localizer and glidslope", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "true"]}}
+{"input": "put me on approach 1000 ft out with localizer and glideslope and activate engine 4 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "put me on approach 1000 ft out with localizer on glideslope and activate engine 4 fire malfunction and turn on total freeze", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "turn on total freeze and put me on approach at 1000 feet with localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "true"]}}
+{"input": "toggle the total freeze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "toggle the total freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "turn the total freeze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "turn the total freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "total freeze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "total freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "total freeze on.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "total freeze off.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "which engine has the fire malfunction? one", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? two", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? three", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? four", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? won", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? too", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? to", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? free", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? for", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? for.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? yes", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate engine won fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine too fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine to fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine free fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "activate engine for fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "engine won fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "engine too fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "engine to fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "engine free fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "engine for fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "turn off engine won fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off engine too fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off engine free fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off engine for fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate engine won fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate engine too fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate engine free fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate engine for fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "engine one fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "engine two fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "engine three fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "engine four fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "turn on engine one fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "turn on engine two fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "turn on engine three fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "turn on engine four fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "turn off engine one fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off engine two fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off engine three fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "turn off engine four fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "in gin one fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "in gin two fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "in gin three fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "in gin four fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "in gin won fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "in gin to fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "in gin free fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "in gin for fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "and gin 1 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "and gin 2 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "and gin 3 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "and gin 4 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "deactivate in gin 1 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate in gin 2 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate in gin 3 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["false"]}}
+{"input": "deactivate in gin 4 fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["false"]}}
+{"input": "engine to fire malfunction on", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "engine for fire malfunction on", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "engine 3 fire mall function", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "engine 3 fire mal function", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "engine to fire mal function off", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["false"]}}
+{"input": "engine 1 fire malt function", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "put me on a pro to little rock 1000 feet out on localizer on glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "put me on a pro 1000 feet out on the localizer and glide slope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "put me on a pro to little rock 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "put me on approach to little rock 1000 feet out on local lizer and glide slope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "put me on approach to little rock 1000 ft out on local eyes her and glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "put me on approach to little rock 1000 ft out on local eyes her and glide slope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "set approach little rock 1000 feet out on loc and gs", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "little rock approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "put me on approach little rock 1000 feet on loc and glide", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "approach little rock 1000 foot final on localizer glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "total freeze off and engine 2 fire malfunction on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_2_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "total freeze on and engine 2 fire malfunction on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_2_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "total freeze off and engine 1 fire malfunction on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "total freeze off and engine 3 fire malfunction on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_3_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "total freeze off and engine 4 fire malfunction on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_4_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "engine 1 fire off and total freeze off and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "true"]}}
+{"input": "engine 2 fire off and total freeze off and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "true"]}}
+{"input": "engine 3 fire off and total freeze off and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "true"]}}
+{"input": "engine 4 fire off and total freeze off and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "true"]}}
+{"input": "approach little rock 1000 ft on localizer glideslope and engine 4 fire on and freeze on", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "approach little rock 1000 ft on localizer glideslope and engine 1 fire on and freeze on", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_1_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "approach little rock 1000 ft on localizer glideslope and engine 2 fire on and freeze on", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_2_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "approach little rock 1000 ft on localizer glideslope and engine 3 fire on and freeze on", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_3_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true"]}}
+{"input": "engine won fire malfunction on and tote all freeze on and put me on approach 1000 feet localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true"]}}
+{"input": "engine too fire malfunction on and total freeze on and put me on approach 1000 feet localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true"]}}
+{"input": "told a freeze on and in gin to fire malfunction on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_2_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "activate engine free fire and freeze on and put me on approach 1000 feet out on local eyes her and glide slope", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true"]}}
+{"input": "turn on total freeze turn on engine 3 fire malfunction and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_3_MALF", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true"]}}
+{"input": "activate engine fire malfunctions 1 and 2", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "activate engine fire malfunctions 2 and 3", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "ENGINE_3_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "activate engine fire malfunctions 3 and 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "activate engine fire malfunctions 1 and 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true"]}}
+{"input": "fire malfunction", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "activate a fire malfunction", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "turn on the fire malfunction", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "and gin fire malfunction", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "in gin fire", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "enable total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "disable total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "told a freeze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "told a freeze on.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "tote all freeze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "told a freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "tote all freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "total frees on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "total frees off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "total frieze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "total frieze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "told al freeze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "told al freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "what about total freeze", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "total freeze own", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "total freeze of", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "total freezeawn", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "close the program", "output": {"Type": "exit"}}
+{"input": "close program", "output": {"Type": "exit"}}
+{"input": "stop the program", "output": {"Type": "exit"}}
+{"input": "total freeze on and engine 1 fire malfunction off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF"], "parameters_values": ["true", "false"]}}
+{"input": "engine 3 fire off and total freeze on", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "true"]}}
+{"input": "landing lights on.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "landing lights on", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "put me on approach 1000 ft out on localizer and glideslope and turn off total freeze", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "put me on approach 1000 ft out on localizer and glideslope and turn off total freeze.", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "which engine has the fire malfunction?for", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "and gin for fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "and gin for fire malfunction.", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "tote all freeze.", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "tote all freeze", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "told a freeze", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "told a freeze.", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "total freeze of.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "which engine has the fire malfunction? okay.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "which engine has the fire malfunction? okay", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "total freeze please.", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "total freeze please", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "turn on the total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "turn on the total freeze.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "turn on engine fire malfunction and put me on approach at 1000 feet on glide slope and localizer.", "output": {"Type": "clarification", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "activate total engine freeze.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "turn off ios engine freeze 1.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "activate ios total freeze and engine one my fire malfunction and engine fire three malfunction and put me on approach at 1000 feet on glide slope and localizer.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF", "ENGINE_3_MALF", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true", "true"]}}
+{"input": "activate engine fire malfunctions 1, 2, 3, and 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true", "true", "true"]}}
+{"input": "activate engine fire malfunctions 1 and 2 and turn off 3 and 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true", "false", "false"]}}
+{"input": "activate engine fire malfunctions 1 and turn off 3 and 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "false", "false"]}}
+{"input": "activate engine fire malfunctions 1 and turn off 3, 4, and 2", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "ENGINE_2_MALF"], "parameters_values": ["true", "false", "false", "false"]}}
+{"input": "activate engine fire malfunctions 3 and turn off 1, 2, and 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "false", "false", "false"]}}
+{"input": "turn off engine fire malfunctions 3 and turn on 1", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "ENGINE_1_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "toggle ios total freeze and put me on approach at 1000 feet on glide slope and localizer.", "output": {"Type": "clarification", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"], "message": "total freeze on or off?"}}
+{"input": "toggle total freeze and put me on approach at 1000 feet on glide slope and localizer.", "output": {"Type": "clarification", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"], "message": "total freeze on or off?"}}
+{"input": "turn off ios total freeze and engine fire one malfunction and engine fire two malfunction.", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF", "ENGINE_2_MALF"], "parameters_values": ["false", "false", "false"]}}
+{"input": "gear up.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "gear up", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "gear down", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "no", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "on", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "off", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "of", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "on.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": ".", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": " ", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "attempt", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "put me on", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "try to do", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "why do you", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "change", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "activate engine fire malfunction and toggle total freeze", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "deactivate engine fire malfunction and toggle total freeze", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "toggle total freeze and activate engine fire malfunction", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "toggle total freeze and activate in gen fire malfunction", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "toggle total freeze and activate in gen fire my function", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "toggle total freeze on and activate in gen fire my function", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle total freeze on and activate engine fire my function", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle total freeze on and activate engine fire malfunction", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle total freeze off and activate engine fire my function", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle off total freeze and activate engine fire malfunction", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"], "message": "which engine has the fire malfunction?"}}
+{"input": "turn on total freeze and activate engine fire my function", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle off total freeze on and activate engine fire malfunction", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "activate engine 2 fire malfunction and toggle off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "activate in gen 2 fire malfunction and toggle off total freeze", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "engine fire malfunction off and toggle total freeze and put me on approach 1000 ft localizer glideslope", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "engine 1 malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "turn off all malfunctions", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["false", "false", "false", "false"]}}
+{"input": "turn off all malfunctions.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["false", "false", "false", "false"]}}
+{"input": "turn on all malfunctions.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true", "true", "true"]}}
+{"input": "turn on all malfunctions", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true", "true", "true"]}}
+{"input": "turn on all malfunctions and turn on total freeze.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true", "true", "true"]}}
+{"input": "turn off all malfunctions and turn on total freeze.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false", "false", "false", "true"]}}
+{"input": "activate all malfunctions and turn on total freeze.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true", "true", "true"]}}
+{"input": "deactivate all malfunctions and turn on total freeze.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false", "false", "false", "true"]}}
+{"input": "turn on all malfunctions and turn off total freeze.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true", "true", "false"]}}
+{"input": "activate all malfunctions and turn total freeze off", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true", "true", "false"]}}
+{"input": "deactivate all malfunctions and turn total freeze on.", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false", "false", "false", "true"]}}
+{"input": "turn off all malfunctions and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "false", "false", "true"]}}
+{"input": "deactivate all malfunctions and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "false", "false", "true"]}}
+{"input": "turn on all malfunctions and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true", "true", "true"]}}
+{"input": "activate all malfunctions and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true", "true", "true"]}}
+{"input": "total freeze off and turn off all malfunctions", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["false", "false", "false", "false", "false"]}}
+{"input": "total freeze off and deactivate all malfunctions", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["false", "false", "false", "false", "false"]}}
+{"input": "approach little rock 1000 ft localizer glideslope and turn on all malfunctions and total freeze on", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true", "true", "true", "true"]}}
+{"input": "approach little rock 1000 ft localizer glideslope and turn off all malfunctions and total freeze off", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false", "false", "false", "false", "false"]}}
+{"input": "activate engine fire malfunctions 1 and 2 and total freeze on and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "true", "true"]}}
+{"input": "activate engine fire malfunctions 3 and 4 and total freeze off and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true", "false", "true"]}}
+{"input": "glideslope", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "glideslope.", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "turn it on", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "in gin fire malfunction and toggle total freeze", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "activate in gin fire malfunction and toggle total freeze", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "toggle total freeze and activate engine fire malfunction and put me on approach 1000 ft localizer glideslope", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "toggle total freeze and activate engine fire malfunction and put me on approach 1000 ft localizer glideslope.", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "toggle total freeze and engine fire malfunction and approach 1000 ft localizer glideslope", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "toggle ios total freeze on and activate engine fire malfunction", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle ios total freeze off and activate engine fire malfunction", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"], "message": "which engine has the fire malfunction?"}}
+{"input": "turn on total freeze and activate engine fire malfunction", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "turn off total freeze and activate engine fire malfunction", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"], "message": "which engine has the fire malfunction?"}}
+{"input": "all engine fire malfunctions off", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["false", "false", "false", "false"]}}
+{"input": "activate engine fire malfunction and total freeze off and put me on approach 1000 ft localizer glideslope", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "true"], "message": "which engine has the fire malfunction?"}}
+{"input": "turn on engine fire malfunction and total freeze on and put me on approach 1000 ft localizer glideslope", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true"], "message": "which engine has the fire malfunction?"}}
+{"input": "activate engine, fire my function.", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "deactivate engine fire malfunction and put me on approach 1000 ft localizer glideslope", "output": {"Type": "clarification", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle total freeze off and activate engine fire malfunction and put me on approach 1000 ft localizer glideslope", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "true"], "message": "which engine has the fire malfunction?"}}
+{"input": "turn on engine fire malfunction and approach little rock 1000 ft on localizer and glideslope", "output": {"Type": "clarification", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle total freeze on and activate engine fire malfunction and put me on approach 1000 ft localizer glideslope", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["true", "true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle total freeze and little rock approach 1000 ft localizer glideslope", "output": {"Type": "clarification", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"], "message": "total freeze on or off?"}}
+{"input": "toggle total freeze and put me on approach 1000 feet out on loc and gs", "output": {"Type": "clarification", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"], "message": "total freeze on or off?"}}
+{"input": "toggle total freeze and approach little rock 1000 ft on localizer and glideslope", "output": {"Type": "clarification", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"], "message": "total freeze on or off?"}}
+{"input": "activate engine fire malfunction and turn off total freeze", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"], "message": "which engine has the fire malfunction?"}}
+{"input": "activate engine fire malfunction and turn on total freeze", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle ios total freeze and activate engine fire malfunction", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input": "total freeze activate", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "activate total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "all malfunctions on", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true", "true", "true"]}}
+{"input": "deactivate all malfunctions and freeze off", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false", "false", "false", "false"]}}
+{"input": "deactivate all malfunctions and turn off total freeze and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "false", "false", "false", "true"]}}
+{"input": "activate engine fire malfunctions 4 and turn off 1 and 2", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "ENGINE_1_MALF", "ENGINE_2_MALF"], "parameters_values": ["true", "false", "false"]}}
+{"input": "activate all malfunctions and freeze off", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true", "true", "false"]}}
+{"input": "told al frieze on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "engine fire 1", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "which engine has the fire malfunction? never mind", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "which engine has the fire malfunction? cancel", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "total freeze on or off? never mind", "output": {"Type": "clarification", "message": "total freeze on or off?"}}
+{"input": "1000 foot final localizer glideslope", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "put me on the ils 1000 feet out", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "turn on engine fire malfunctions 1 and 3 and turn off 2 and 4", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_3_MALF", "ENGINE_2_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true", "false", "false"]}}
+{"input": "remove all malfunctions and total freeze on", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false", "false", "false", "true"]}}
+{"input": "clear all malfunctions and put me on approach 1000 ft localizer glideslope and total freeze on", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "APPR_1000_ON_GS_LOC", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false", "false", "false", "true", "true"]}}
+{"input": "activate all malfunctions and approach 1000 ft localizer glideslope and total freeze off", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "APPR_1000_ON_GS_LOC", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true", "true", "true", "false"]}}
+{"input": "please stop the program", "output": {"Type": "exit"}}
+{"input": "i want to exit", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "what is total freeze", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "engine 5 fire malfunction", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "engine 0 fire malfunction", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "approach 2000 feet localizer glideslope", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "put me on approach at 500 feet on localizer and glideslope", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "approach little rock 1000 feet", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "approach little rock localizer glideslope", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "approach 1000 feet", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "total freeze on and total freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "false"]}}
+{"input": "activate engine 1 fire malfunction and deactivate engine 1 fire malfunction", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_1_MALF"], "parameters_values": ["true", "false"]}}
+{"input": "toggle total freeze on and put me on approach 1000 ft localizer glideslope and total freeze off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "false"]}}
+{"input": "deactivate engine fire malfunctions 1 and 2 and total freeze on", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["false", "false", "true"]}}
+{"input": "engine 1 on fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["true"]}}
+{"input": "engine 2 on fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_2_MALF"], "parameters_values": ["true"]}}
+{"input": "engine 3 on fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_3_MALF"], "parameters_values": ["true"]}}
+{"input": "engine 4 on fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF"], "parameters_values": ["true"]}}
+{"input": "turn off engine fire malfunctions 4 and turn on 1", "output": {"Type": "command", "parameters_keys": ["ENGINE_4_MALF", "ENGINE_1_MALF"], "parameters_values": ["false", "true"]}}
+{"input": "total freeze on and clear all malfunctions", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "false", "false", "false", "false"]}}
+{"input": "total freeze off and activate all malfunctions", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["false", "true", "true", "true", "true"]}}
+{"input": "both engines on fire", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "put all engines on fire", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF"], "parameters_values": ["true", "true", "true", "true"]}}
+{"input": "engine fire malt function", "output": {"Type": "clarification", "message": "which engine has the fire malfunction?"}}
+{"input": "put me on approach 1000 feet out localizer glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "toggle total freeze on and activate in gen fire malfunction", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"], "message": "which engine has the fire malfunction?"}}
+{"input": "toggle total freeze off and turn on engine fire malfunction and put me on approach at 1000 feet on glide slope and localizer.", "output": {"Type": "clarification", "parameters_keys": ["IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "true"], "message": "which engine has the fire malfunction?"}}
+{"input": "turn off all malfunctions and turn off total freeze and put me on approach 1000 ft localizer glideslope", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false", "false", "false", "false", "true"]}}
+{"input": "turn on ios total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "engine won fire malfunction off", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF"], "parameters_values": ["false"]}}
+{"input": "total freeze on or off? on", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "total freeze on or off? off", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "1000 ft out on the localizer and glideslope", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "approach a thousand feet out on loc and glide", "output": {"Type": "command", "parameters_keys": ["APPR_1000_ON_GS_LOC"], "parameters_values": ["true"]}}
+{"input": "all engine malfunctions on and total freeze on", "output": {"Type": "command", "parameters_keys": ["ENGINE_1_MALF", "ENGINE_2_MALF", "ENGINE_3_MALF", "ENGINE_4_MALF", "IOS_TOTAL_FREEZE"], "parameters_values": ["true", "true", "true", "true", "true"]}}
+{"input": "show me the commands", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "toggle on the total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["true"]}}
+{"input": "toggle off the total freeze", "output": {"Type": "command", "parameters_keys": ["IOS_TOTAL_FREEZE"], "parameters_values": ["false"]}}
+{"input": "turn it off", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "approach 1000 feet ils", "output": {"Type": "error", "message": "command not recognized."}}
+{"input": "toggle ios total freeze and deactivate engine fire malfunction", "output": {"Type": "error", "message": "multiple missing values, please try again."}}
+{"input":"set mode to","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"change mode to","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"toggle mode","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"set mode to.","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"change mode to.","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"toggle mode.","output":{"Type":"clarification","message":"lenient mode or strict mode?"}}
+{"input":"set mode to lenient","output":{"Type":"mode_lenient"}}
+{"input":"change mode to lenient","output":{"Type":"mode_lenient"}}
+{"input":"lenient or strict mode? lenient","output":{"Type":"mode_lenient"}}
+{"input":"set mode to lenient.","output":{"Type":"mode_lenient"}}
+{"input":"change mode to lenient.","output":{"Type":"mode_lenient"}}
+{"input":"lenient or strict mode? lenient.","output":{"Type":"mode_lenient"}}
+{"input":"set mode to strict","output":{"Type":"mode_strict"}}
+{"input":"change mode to strict","output":{"Type":"mode_strict"}}
+{"input":"lenient mode or strict mode? strict","output":{"Type":"mode_strict"}}
+{"input":"set mode to strict.","output":{"Type":"mode_strict"}}
+{"input":"change mode to strict.","output":{"Type":"mode_strict"}}
+{"input":"lenient mode or strict mode? strict.","output":{"Type":"mode_strict"}}

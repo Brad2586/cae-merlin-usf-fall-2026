@@ -1,0 +1,7 @@
+{
+  "input": "trigger in jin won malfunction",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

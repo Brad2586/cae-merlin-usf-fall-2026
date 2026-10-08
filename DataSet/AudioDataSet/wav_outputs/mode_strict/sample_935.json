@@ -1,0 +1,6 @@
+{
+  "input": "set mode to district",
+  "output": {
+    "Type": "mode_strict"
+  }
+}

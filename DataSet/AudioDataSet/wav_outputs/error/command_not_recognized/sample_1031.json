@@ -1,0 +1,7 @@
+{
+  "input": "fyre mal funk shun 3.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

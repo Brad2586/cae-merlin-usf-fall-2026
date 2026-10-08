@@ -1,0 +1,7 @@
+{
+  "input": "to be and gin 1 malfunction plus to be in jin 2 malfunction.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

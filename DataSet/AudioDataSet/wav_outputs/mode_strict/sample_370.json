@@ -1,0 +1,6 @@
+{
+  "input": "change mode to start",
+  "output": {
+    "Type": "mode_strict"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "in gin fireball malfunction 4",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

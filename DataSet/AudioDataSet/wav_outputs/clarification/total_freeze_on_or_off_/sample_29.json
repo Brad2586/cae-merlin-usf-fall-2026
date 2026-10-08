@@ -1,0 +1,13 @@
+{
+  "input": "turn off engine 1 fire malfunction and total freeze",
+  "output": {
+    "Type": "clarification",
+    "parameters_keys": [
+      "ENGINE_1_MALF"
+    ],
+    "parameters_values": [
+      "false"
+    ],
+    "message": "total freeze on or off?"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "input": "open the black box.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

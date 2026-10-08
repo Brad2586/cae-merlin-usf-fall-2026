@@ -1,0 +1,7 @@
+{
+  "input": "frozen mode",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "input": "activate all in jin fire malfunctions and a pro to little rock at 1000 feet on wide slope and localizer. and toggle off total frees",
+  "output": {
+    "Type": "command",
+    "parameters_keys": [
+      "ENGINE_1_MALF",
+      "ENGINE_2_MALF",
+      "ENGINE_3_MALF",
+      "ENGINE_4_MALF",
+      "APPR_1000_ON_GS_LOC",
+      "IOS_TOTAL_FREEZE"
+    ],
+    "parameters_values": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true",
+      "false"
+    ]
+  }
+}

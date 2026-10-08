@@ -1,0 +1,7 @@
+{
+  "input": "activate in gin won malfunction now.",
+  "output": {
+    "Type": "error",
+    "message": "command not recognized"
+  }
+}
