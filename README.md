@@ -2,9 +2,6 @@
 
 > Voice-driven interface for real-time simulator control via natural language commands.
 
-Team members setting up the private source overlay should follow
-[`COLLABORATION.md`](COLLABORATION.md).
-
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Whisper](https://img.shields.io/badge/Whisper-STT-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![llama.cpp](https://img.shields.io/badge/llama.cpp-LLM-green?style=for-the-badge)
@@ -163,71 +160,6 @@ sounddevice==0.5.5
 ```bash
 python Pipeline/main.py
 ```
-
-### Testing Without GGUF Models
-
-If the trained strict and lenient GGUF files are unavailable, Merlin can use
-the existing JSONL command datasets as a deterministic mock model. Start the
-ISS Demo Host first; its default endpoint is `127.0.0.1:10013`.
-
-Start `ISSDemoHost.exe`, then manually open `bin/IOS.exe`. Test typed commands
-before enabling the microphone:
-
-```bash
-python Pipeline/main.py --mock-llm --text-input
-```
-
-Test the microphone and Whisper without a wake-word model:
-
-```bash
-python Pipeline/main.py --mock-llm --push-to-talk
-```
-
-Push-to-talk uses Windows speech for responses by default. Press Enter, speak,
-and pause briefly when finished. To test the original wake-word path, run
-`python Pipeline/main.py --mock-llm`; this requires genuine wake-word model
-binaries. Some source-transfer archives contain Git LFS pointer text files in
-place of those binaries. Files that are only about 130 bytes cannot be loaded
-by ONNX or TensorFlow Lite.
-
-### Defining Mock Commands
-
-Add approved test commands to `config/mock_commands.json`. Custom phrases
-override dataset phrases, and a command can be disabled without deleting it:
-
-```json
-{
-  "commands": [
-    {
-      "id": "engine_1_fire_on",
-      "enabled": true,
-      "phrases": [
-        "activate engine 1 fire malfunction",
-        "turn engine 1 fire on"
-      ],
-      "parameters_keys": ["ENGINE_1_MALF"],
-      "parameters_values": ["true"]
-    }
-  ]
-}
-```
-
-The parameter lists must be non-empty and have the same length. Unknown,
-disabled, malformed, or low-confidence commands fail without setting a host
-variable.
-
-Useful options:
-
-```text
---host HOST             Simulator host (default: 127.0.0.1)
---port PORT             Simulator port (default: 10013)
---mock-threshold VALUE  Fuzzy-match threshold from 0 to 1 (default: 0.78)
---tts BACKEND           auto, windows, console, or piper
-```
-
-Mock mode only emits approved custom outputs or outputs already present in the
-selected strict or lenient dataset. Omit `--mock-llm` once the real GGUF files
-are available.
 
 ---
 

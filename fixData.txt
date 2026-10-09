@@ -1,0 +1,24 @@
+deactivate ios total freeze and engine 1 malfunction and put me on approach.
+Output:
+  {"Type": "command", "message": null, "parameters_keys": ["IOS_TOTAL_FREEZE", "ENGINE_1_MALF"], "parameters_values": ["true", "true"]}
+
+  Transcription:
+reactivate ios total freeze.
+Output:
+  {"Type": "error", "message": "command not recognized.", "parameters_keys": null, "parameters_values": null}
+
+  on ios total freeze.
+Output:
+  {"Type": "command", "message": null, "parameters_keys": ["ENGINE_TOTAL_FREEZE"], "parameters_values": ["true"]}
+
+  turn on engine 1 total freeze malfunction
+Output:
+  {"Type": "command", "message": null, "parameters_keys": ["ENGINE_1_TOTAL_FREEZE"], "parameters_values": ["true"]}
+
+  put me on approach at 1000 feet on glideslope and localizer and turn on engine 4 malfunction and turn off engine 2 malfunction.
+Output:
+  {"Type": "command", "message": null, "parameters_keys": ["APPR_1000_ON_GS_LOC", "ENGINE_4_MALF", "ENGINE_2_MALF"], "parameters_values": ["true", "true", "true"]}
+
+  inactivate engine fire for malfunction and put me on approach at 1000ft on glideslope and localizer and turn off ios total freeze 1.
+Output:
+  {"Type": "command", "message": null, "parameters_keys": ["ENGINE_4_MALF", "APPR_1000_ON_GS_LOC"], "parameters_values": ["false", "false"]}
