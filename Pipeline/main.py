@@ -1,21 +1,25 @@
-import argparse
 import json
 import os
 import sys
 import warnings
+import time 
+import threading
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 warnings.filterwarnings("ignore")
 from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
+from tts import PiperTTS
+from audio_pipeline import AudioPipeline
+from openwakeword.model import Model
+from llama_cpp import Llama
 from parse_llm_output import LLMOutputParser
 from communication_client import CommunicationClient
 from generate_llm import GenerateLLM
 from exit_handler import ExitHandler
+from transcription_normalizer import TranscriptNormalizer
 from logger import log
-from mock_llm import DatasetMockModel
-from text_input import ConsoleTTS, TextInputPipeline
 
 from config.load_paths import load_paths
 
@@ -195,165 +199,71 @@ def load_alias_mappings(mapping_xml_path):
     return alias_to_name
 
 
+voice_model_path = paths["TTS_VOICE_PATH"]
+tts = PiperTTS(voice_model_path)
+
 running = True
 
 if __name__ == "__main__":
-    argument_parser = argparse.ArgumentParser(
-        description="Run the Merlin voice-command pipeline."
-    )
-    argument_parser.add_argument(
-        "--mock-llm",
-        action="store_true",
-        help="Use deterministic dataset matching instead of unavailable GGUF models.",
-    )
-    input_group = argument_parser.add_mutually_exclusive_group()
-    input_group.add_argument(
-        "--text-input",
-        action="store_true",
-        help="Read commands from the console instead of the microphone.",
-    )
-    input_group.add_argument(
-        "--push-to-talk",
-        action="store_true",
-        help="Press Enter and speak; bypasses the unavailable wake-word model.",
-    )
-    argument_parser.add_argument(
-        "--tts",
-        choices=("auto", "windows", "console", "piper"),
-        default="auto",
-        help=(
-            "Response backend. Auto uses console for text input and Windows "
-            "speech otherwise (default: auto)."
-        ),
-    )
-    argument_parser.add_argument(
-        "--host",
-        default="127.0.0.1",
-        help="Simulator communication server address (default: 127.0.0.1).",
-    )
-    argument_parser.add_argument(
-        "--port",
-        default=10013,
-        type=int,
-        help="Simulator communication server port (default: 10013).",
-    )
-    argument_parser.add_argument(
-        "--mock-threshold",
-        default=0.78,
-        type=float,
-        help="Minimum fuzzy-match confidence in mock mode (default: 0.78).",
-    )
-    args = argument_parser.parse_args()
 
-    if not 0.0 <= args.mock_threshold <= 1.0:
-        argument_parser.error("--mock-threshold must be between 0 and 1")
-
-    tts_backend = args.tts
-    if tts_backend == "auto":
-        tts_backend = "console" if args.text_input else "windows"
-
-    if tts_backend == "console":
-        tts = ConsoleTTS()
-    elif tts_backend == "windows":
-        from windows_tts import WindowsTTS
-        tts = WindowsTTS()
-    else:
-        from tts import PiperTTS
-        tts = PiperTTS(paths["TTS_VOICE_PATH"])
-
-    if args.text_input:
-        audio_pipeline = TextInputPipeline()
-
-    print(f"Connecting to simulator at {args.host}:{args.port}...")
-    communication_client = CommunicationClient(args.host, args.port, tts)
+    communication_client = CommunicationClient('127.0.0.1', 10013, tts)
     if not communication_client.connect():
         print("Could not connect to server or initialization handshake failed")
-        sys.exit(1)
+        os._exit(1)
 
-    if not args.text_input:
-        from transcription_normalizer import TranscriptNormalizer
+    oww = Model(
+        wakeword_models=paths["MODEL_PATHS"],
+        inference_framework="tflite"
+    )
+    with open(paths["VARIATIONS_PATH"], "r") as f:
+        variations_data = json.load(f)
 
-        with open(paths["VARIATIONS_PATH"], "r") as f:
-            variations_data = json.load(f)
+    normalizer = TranscriptNormalizer(variations_data)
 
-        normalizer = TranscriptNormalizer(variations_data)
+    import torch
+    device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        import torch
-        device = "cuda" if torch.cuda.is_available() else "cpu"
+    audio_pipeline = AudioPipeline(
+        wakeword_model=oww,
+        thresholds=THRESHOLDS,
+        debounce_time=DEBOUNCE_TIME,
+        whisper_processor=None,
+        whisper_model=None,
+        device=device,
+        whisper_name="small.en",
+        compute_type="float16" if device == "cuda" else "int8",
+        normalizer=normalizer
+    )
 
-        if args.push_to_talk:
-            from push_to_talk import PushToTalkPipeline
+    lenient_model_llm = Llama(
+        model_path=paths["GGUF_MODEL_PATH_LENIENT"],
+        n_ctx=2048,
+        n_threads=10,
+        seed=42,
+        n_gpu_layers=-1,
+        n_batch=512,
+        n_ubatch=512,
+        low_vram=False,
+        cache=True,
+        use_mmap=True,
+        use_mlock=True,
+        verbose=False
+    )
 
-            audio_pipeline = PushToTalkPipeline(
-                device=device,
-                whisper_name="small.en",
-                compute_type="float16" if device == "cuda" else "int8",
-                normalizer=normalizer,
-            )
-        else:
-            from audio_pipeline import AudioPipeline
-            from openwakeword.model import Model
-
-            oww = Model(
-                wakeword_models=paths["MODEL_PATHS"],
-                inference_framework="tflite"
-            )
-            audio_pipeline = AudioPipeline(
-                wakeword_model=oww,
-                thresholds=THRESHOLDS,
-                debounce_time=DEBOUNCE_TIME,
-                whisper_processor=None,
-                whisper_model=None,
-                device=device,
-                whisper_name="small.en",
-                compute_type="float16" if device == "cuda" else "int8",
-                normalizer=normalizer
-            )
-
-    if args.mock_llm:
-        print("Using dataset-backed mock LLM; GGUF files will not be loaded.")
-        lenient_model_llm = DatasetMockModel(
-            paths["DATASET_PATH_LENIENT"],
-            threshold=args.mock_threshold,
-            custom_commands_path=paths["MOCK_COMMANDS_PATH"],
-        )
-        strict_model_llm = DatasetMockModel(
-            paths["DATASET_PATH_STRICT"],
-            threshold=args.mock_threshold,
-            custom_commands_path=paths["MOCK_COMMANDS_PATH"],
-        )
-    else:
-        from llama_cpp import Llama
-
-        lenient_model_llm = Llama(
-            model_path=paths["GGUF_MODEL_PATH_LENIENT"],
-            n_ctx=2048,
-            n_threads=10,
-            seed=42,
-            n_gpu_layers=-1,
-            n_batch=512,
-            n_ubatch=512,
-            low_vram=False,
-            cache=True,
-            use_mmap=True,
-            use_mlock=True,
-            verbose=False
-        )
-
-        strict_model_llm = Llama(
-            model_path=paths["GGUF_MODEL_PATH_STRICT"],
-            n_ctx=2048,
-            n_threads=10,
-            seed=42,
-            n_gpu_layers=-1,
-            n_batch=512,
-            n_ubatch=512,
-            low_vram=False,
-            cache=True,
-            use_mmap=True,
-            use_mlock=True,
-            verbose=False
-        )
+    strict_model_llm = Llama(
+        model_path=paths["GGUF_MODEL_PATH_STRICT"], 
+        n_ctx=2048,
+        n_threads=10,
+        seed=42,
+        n_gpu_layers=-1,
+        n_batch=512,
+        n_ubatch=512,
+        low_vram=False,
+        cache=True,
+        use_mmap=True,
+        use_mlock=True,
+        verbose=False
+    )
     
     variables_to_track = load_variables(paths["XML_PATH"])
 
