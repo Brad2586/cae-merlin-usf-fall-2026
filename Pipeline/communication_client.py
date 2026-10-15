@@ -8,18 +8,52 @@ from logger import log
 
 
 class CommunicationClient:
-    def __init__(self, host='127.0.0.1', port=10013, tts=None):
+    def __init__(
+        self,
+        host='127.0.0.1',
+        port=10013,
+        tts=None,
+        auto_reconnect=True,
+        reconnect_initial_delay=1.0,
+        reconnect_max_delay=15.0,
+        reconnect_backoff=2.0,
+        reconnect_max_attempts=0,
+        keep_alive_interval=5.0,
+        status_store=None,
+    ):
         self.host = host
         self.port = port
         self.sock = None  # socket will be stored here
         self.running = True
         self.tts = tts
+        self.auto_reconnect = bool(auto_reconnect)
+        self.reconnect_initial_delay = max(float(reconnect_initial_delay), 0.1)
+        self.reconnect_max_delay = max(
+            float(reconnect_max_delay), self.reconnect_initial_delay
+        )
+        self.reconnect_backoff = max(float(reconnect_backoff), 1.0)
+        self.reconnect_max_attempts = max(int(reconnect_max_attempts), 0)
+        self.status_store = status_store
+        self._connected = threading.Event()
+        self._io_lock = threading.RLock()
+        self._connect_lock = threading.Lock()
+        self._reconnect_thread = None
+        self._update_page_variables = None
+        self._host_dict_ref = None
 
          # keep-alive related variables
         self._keep_alive_thread = None
-        self._keep_alive_interval = 30.0  # seconds, adjust to be < host idle timeout
+        self._keep_alive_interval = max(float(keep_alive_interval), 1.0)
         self._keep_alive_list_type = 0    
         self._keep_alive_vars = []        # variable metadata list 
+
+    def _publish_status(self, **values):
+        if self.status_store is None:
+            return
+        try:
+            self.status_store.update(**values)
+        except OSError as exc:
+            log("[STATUS]", f"Unable to update dashboard status: {exc}")
 
     # ------------------------------------------------------------------
     # Low-level recv helper
@@ -52,35 +86,17 @@ class CommunicationClient:
 
     def connect(self):
         """Connect to the server and perform initialization handshake."""
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-        try:
-            self.sock.connect((self.host, self.port))
-        except ConnectionRefusedError:
-            log("[COMMUNICATION]", f"ERROR: Connection to {self.host}:{self.port} refused.")
+        self.running = True
+        if not self._connect_once():
+            self._publish_status(
+                server_state="disconnected",
+                message="Could not connect to simulator host",
+            )
             if self.tts:
                 self.tts.say(
                     "Could not connect to server. Please ensure the host application is running and try again."
                 )
-            try:
-                self.sock.close()
-            except Exception:
-                pass
-            self.sock = None
-            self.running = False
             return False
-
-        # Perform initialization handshake and validate ACK.
-        if not self.send_initialization_message():
-            self.running = False
-            try:
-                self.sock.close()
-            except Exception:
-                pass
-            self.sock = None
-            return False
-
-        self.running = True
 
         # Start keep-alive background thread
         if self._keep_alive_thread is None or not self._keep_alive_thread.is_alive():
@@ -92,6 +108,153 @@ class CommunicationClient:
             self._keep_alive_thread.start()
 
         return True
+
+    def _connect_once(self):
+        """Make one connection attempt and complete the host handshake."""
+        with self._connect_lock:
+            if not self.running:
+                return False
+
+            new_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            new_socket.settimeout(5.0)
+            try:
+                new_socket.connect((self.host, self.port))
+            except OSError as exc:
+                log(
+                    "[COMMUNICATION]",
+                    f"Connection to {self.host}:{self.port} failed: {exc}",
+                )
+                new_socket.close()
+                return False
+
+            with self._io_lock:
+                old_socket = self.sock
+                self.sock = new_socket
+                try:
+                    if not self.send_initialization_message():
+                        raise ConnectionError("initialization handshake failed")
+                    self.sock.settimeout(None)
+                except Exception as exc:
+                    log("[COMMUNICATION]", f"Connection handshake failed: {exc}")
+                    self.sock = old_socket
+                    new_socket.close()
+                    return False
+
+                if old_socket is not None:
+                    try:
+                        old_socket.close()
+                    except OSError:
+                        pass
+                self._connected.set()
+                log("[COMMUNICATION]", f"Connected to {self.host}:{self.port}")
+                self._publish_status(
+                    server_state="connected",
+                    server_endpoint=f"{self.host}:{self.port}",
+                    message="Simulator host connected",
+                )
+                return True
+
+    def _mark_disconnected(self, reason):
+        """Record a lost connection and start one reconnect worker."""
+        was_connected = self._connected.is_set()
+        self._connected.clear()
+        log("[COMMUNICATION]", f"Connection lost: {reason}")
+        self._publish_status(
+            server_state="reconnecting" if self.auto_reconnect else "disconnected",
+            message=f"Connection lost: {reason}",
+        )
+
+        with self._io_lock:
+            if self.sock is not None:
+                try:
+                    self.sock.close()
+                except OSError:
+                    pass
+                self.sock = None
+
+        if was_connected and self.tts:
+            self.tts.say(
+                "Simulator connection lost. Attempting to reconnect.",
+                priority="critical",
+            )
+
+        if self.running and self.auto_reconnect:
+            if self._reconnect_thread is None or not self._reconnect_thread.is_alive():
+                self._reconnect_thread = threading.Thread(
+                    target=self._reconnect_loop,
+                    name="CommClientReconnect",
+                    daemon=True,
+                )
+                self._reconnect_thread.start()
+
+    def _reconnect_loop(self):
+        delay = self.reconnect_initial_delay
+        attempt = 0
+        while self.running and not self._connected.is_set():
+            attempt += 1
+            if self.reconnect_max_attempts and attempt > self.reconnect_max_attempts:
+                log("[COMMUNICATION]", "Automatic reconnect attempts exhausted")
+                if self.tts:
+                    self.tts.say(
+                        "Unable to reconnect to the simulator.",
+                        priority="critical",
+                    )
+                return
+
+            log("[COMMUNICATION]", f"Reconnect attempt {attempt}")
+            self._publish_status(
+                server_state="reconnecting",
+                message=f"Reconnect attempt {attempt}",
+            )
+            if self._connect_once():
+                try:
+                    self._restore_host_session()
+                except Exception as exc:
+                    self._mark_disconnected(f"session restore failed: {exc}")
+                else:
+                    log("[COMMUNICATION]", "Simulator connection restored")
+                    self._publish_status(
+                        server_state="connected",
+                        message="Simulator connection restored",
+                    )
+                    if self.tts:
+                        self.tts.say(
+                            "Simulator connection restored.",
+                            priority="critical",
+                        )
+                    return
+
+            if self.running and not self._connected.is_set():
+                time.sleep(delay)
+                delay = min(delay * self.reconnect_backoff, self.reconnect_max_delay)
+
+    def _restore_host_session(self):
+        """Recreate host-side update state after a new TCP connection."""
+        if not self._update_page_variables:
+            return
+
+        restored = self.create_update_page(
+            self._update_page_variables,
+            remember=False,
+        )
+        if not restored:
+            raise ConnectionError("host update page could not be recreated")
+
+        if self._host_dict_ref is not None:
+            self._host_dict_ref.clear()
+            self._host_dict_ref.update(restored)
+
+        keep_alive_vars = [
+            {
+                "name": name,
+                "index": metadata["index"],
+                "type": metadata.get("type", 0),
+                "num_dims": metadata.get("num_dims", 0),
+                "dimensions": metadata.get("dimensions", []),
+            }
+            for name, metadata in restored.items()
+        ]
+        self.set_keep_alive_variables(keep_alive_vars, list_type=0)
 
     def send_initialization_message(self) -> bool:
         """Send the 16-byte initialization message and validate the ACK.
@@ -147,7 +310,22 @@ class CommunicationClient:
 
         return True
 
-    def set_variable(self, list_type, var_index, value, dimensions=None):  # will need to make a dictionary with the variables and their index
+    def set_variable(self, list_type, var_index, value, dimensions=None):
+        if not self._connected.is_set():
+            raise ConnectionError("simulator is disconnected; reconnect is in progress")
+        try:
+            with self._io_lock:
+                return self._set_variable(
+                    list_type,
+                    var_index,
+                    value,
+                    dimensions=dimensions,
+                )
+        except OSError as exc:
+            self._mark_disconnected(exc)
+            raise
+
+    def _set_variable(self, list_type, var_index, value, dimensions=None):
         """Set the value of a variable.
 
         dimensions: optional list of integers indicating the array indices
@@ -192,7 +370,37 @@ class CommunicationClient:
             except Exception:
                 pass
 
-    def create_update_page(self, variables_info, list_type=0, start_index=0):
+    def create_update_page(
+        self,
+        variables_info,
+        list_type=0,
+        start_index=0,
+        remember=True,
+    ):
+        if not self._connected.is_set():
+            raise ConnectionError("cannot create update page while disconnected")
+        try:
+            with self._io_lock:
+                host_dict = self._create_update_page(
+                    variables_info,
+                    list_type=list_type,
+                    start_index=start_index,
+                )
+        except OSError as exc:
+            self._mark_disconnected(exc)
+            raise
+
+        if not host_dict or any("value" not in item for item in host_dict.values()):
+            error = ConnectionError("host did not return a complete update page")
+            self._mark_disconnected(error)
+            raise error
+
+        if remember:
+            self._update_page_variables = [dict(item) for item in variables_info]
+            self._host_dict_ref = host_dict
+        return host_dict
+
+    def _create_update_page(self, variables_info, list_type=0, start_index=0):
         """Create an update page based on XML-derived variable metadata.
 
         variables_info: list of dicts with keys at least
@@ -386,6 +594,22 @@ class CommunicationClient:
         self.sock.sendall(message)
 
     def request_update(self, list_type, variables):
+        if not self._connected.is_set():
+            raise ConnectionError("simulator is disconnected; reconnect is in progress")
+        try:
+            with self._io_lock:
+                update = self._request_update(list_type, variables)
+        except OSError as exc:
+            self._mark_disconnected(exc)
+            raise
+
+        if variables and not update:
+            error = ConnectionError("host did not return a variable update")
+            self._mark_disconnected(error)
+            raise error
+        return update
+
+    def _request_update(self, list_type, variables):
         """Request an update for variables in a list and return values.
 
         Parameters
@@ -522,25 +746,32 @@ class CommunicationClient:
     def _keep_alive_loop(self):
         """Periodically send Request Update messages to keep the TCP connection alive."""
         while self.running:
+            if not self._connected.is_set():
+                time.sleep(0.25)
+                continue
             try:
                 if self.sock is None:
-                    break
+                    self._mark_disconnected("socket is unavailable")
+                    continue
                 if self._keep_alive_vars:
                     self.request_update(self._keep_alive_list_type, self._keep_alive_vars)
             except OSError as e:
                 log("[COMMUNICATION]", f"ERROR in keep-alive loop: {e}")
-                if self.tts:
-                    self.tts.say("Lost connection to simulator.", priority="critical")
-                self.running = False
-                break
+                if self._connected.is_set():
+                    self._mark_disconnected(e)
             except Exception as e:
-                # Non-fatal; just log and try again next cycle
                 log("[COMMUNICATION]", f"Keep-alive exception: {e}")
             time.sleep(self._keep_alive_interval)
 
     def exit(self):
         """Send Exit Message to terminate connection."""
         self.running = False
+        self._connected.clear()
+        self._publish_status(
+            server_state="disconnected",
+            merlin_state="offline",
+            message="Merlin stopped",
+        )
 
         if self.sock:
             try:

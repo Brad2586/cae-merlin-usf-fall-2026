@@ -16,12 +16,15 @@ from openwakeword.model import Model
 from llama_cpp import Llama
 from parse_llm_output import LLMOutputParser
 from communication_client import CommunicationClient
+from command_registry import CommandRegistry
 from generate_llm import GenerateLLM
 from exit_handler import ExitHandler
 from transcription_normalizer import TranscriptNormalizer
 from logger import log
+from runtime_status import runtime_status
 
 from config.load_paths import load_paths
+from config.config import get_audio_settings, get_communication_settings, get_mode
 
 
 paths = load_paths()
@@ -38,12 +41,31 @@ DEBOUNCE_TIME = 0.25
 def run_voice_pipeline():
     # llm and parser are set up once in __main__, reuse them
     while True:
+        runtime_status.update(merlin_state="listening", message="Waiting for wake word")
         text = audio_pipeline.listen_and_transcribe()
+        runtime_status.update(
+            merlin_state="processing",
+            last_transcription=text,
+            message="Processing voice command" if text else "No command detected",
+        )
         print("\nTranscription:")
         print(text)
 
-        prompt = f"input: {text}\noutput:"
-        llm_output = llm.generate_from_llm(prompt, 150)
+        if not text:
+            continue
+
+        generated_command = command_registry.match(text)
+        if generated_command is not None:
+            llm_output = json.dumps(generated_command)
+            runtime_status.record_command(
+                text,
+                generated_command.get("command_name", "Fast command match"),
+            )
+            print("Matched generated voice command.")
+        else:
+            prompt = f"input: {text}\noutput:"
+            llm_output = llm.generate_from_llm(prompt, 150)
+            runtime_status.record_command(text, "language model")
 
         print("Output:\n", llm_output)
         parser.parse_LLM_output(llm_output)
@@ -206,7 +228,19 @@ running = True
 
 if __name__ == "__main__":
 
-    communication_client = CommunicationClient('127.0.0.1', 10013, tts)
+    runtime_status.reset_session(
+        active_model=get_mode(),
+        server_endpoint="127.0.0.1:10013",
+        message="Starting Merlin",
+    )
+    runtime_status.start_heartbeat()
+    communication_client = CommunicationClient(
+        '127.0.0.1',
+        10013,
+        tts,
+        status_store=runtime_status,
+        **get_communication_settings(),
+    )
     if not communication_client.connect():
         print("Could not connect to server or initialization handshake failed")
         os._exit(1)
@@ -219,6 +253,10 @@ if __name__ == "__main__":
         variations_data = json.load(f)
 
     normalizer = TranscriptNormalizer(variations_data)
+    command_registry = CommandRegistry(
+        paths["VOICE_COMMANDS_PATH"],
+        mapping_path=paths["MAPPING_PATH"],
+    )
 
     import torch
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -232,69 +270,49 @@ if __name__ == "__main__":
         device=device,
         whisper_name="small.en",
         compute_type="float16" if device == "cuda" else "int8",
-        normalizer=normalizer
+        normalizer=normalizer,
+        **get_audio_settings(),
     )
 
-    lenient_model_llm = Llama(
-        model_path=paths["GGUF_MODEL_PATH_LENIENT"],
-        n_ctx=2048,
-        n_threads=10,
-        seed=42,
-        n_gpu_layers=-1,
-        n_batch=512,
-        n_ubatch=512,
-        low_vram=False,
-        cache=True,
-        use_mmap=True,
-        use_mlock=True,
-        verbose=False
-    )
+    def load_llama_model(mode):
+        model_path = (
+            paths["GGUF_MODEL_PATH_STRICT"]
+            if mode == "strict"
+            else paths["GGUF_MODEL_PATH_LENIENT"]
+        )
+        return Llama(
+            model_path=model_path,
+            n_ctx=512,
+            n_threads=10,
+            seed=42,
+            n_gpu_layers=-1,
+            n_batch=256,
+            n_ubatch=256,
+            low_vram=False,
+            cache=True,
+            use_mmap=True,
+            use_mlock=True,
+            verbose=False,
+        )
 
-    strict_model_llm = Llama(
-        model_path=paths["GGUF_MODEL_PATH_STRICT"], 
-        n_ctx=2048,
-        n_threads=10,
-        seed=42,
-        n_gpu_layers=-1,
-        n_batch=512,
-        n_ubatch=512,
-        low_vram=False,
-        cache=True,
-        use_mmap=True,
-        use_mlock=True,
-        verbose=False
+    # Load only the selected default model. The other model is loaded on demand
+    # if the user changes modes, reducing startup time and GPU/RAM usage.
+    lenient_model_llm = (
+        load_llama_model("lenient") if get_mode() == "lenient" else None
+    )
+    strict_model_llm = (
+        load_llama_model("strict") if get_mode() == "strict" else None
+    )
+    llm = GenerateLLM(
+        strict_model_llm,
+        lenient_model_llm,
+        model_loader=load_llama_model,
     )
     
     variables_to_track = load_variables(paths["XML_PATH"])
 
-    # DEBUG: print variables in dictionary in requested format
-    print("Variables in dictionary:")
-    for v in variables_to_track:
-        print(
-            f"name={v['name']}, "
-            f"type_code={v['type_code']}, "
-            f"common_name={v['common_name']}, "
-            f"num_dims={v['num_dims']}, "
-            f"dimension={v['dimensions']}, "
-            f"default={v['default']}, "
-            f"alias={v['alias']}"
-        )
-
     # Build host dictionary using spec-compliant Add Update Page / Request Update flow.
     host_dict = communication_client.create_update_page(variables_to_track)
-
-    # DEBUG: print host_dict similar to your example
-    print("=== HOST DICT ===")
-    if isinstance(host_dict, dict):
-        for key, meta in host_dict.items():
-            # meta expected structure: {"index": int, "type": int, "value": bytes or similar}
-            idx = meta.get("index")
-            type_code = meta.get("type")
-            value = meta.get("value")
-            print(f"{key} -> index={idx}, type={type_code}, value={value}")
-    else:
-        print("HOST DICT is not a dict:", host_dict)
-    print("=== END HOST DICT ===")
 
     # Build keep-alive variable list from host_dict
     keep_alive_vars = []
@@ -314,15 +332,6 @@ if __name__ == "__main__":
     mappings = load_mappings(paths["MAPPING_PATH"])
     alias_to_name = load_alias_mappings(paths["MAPPING_PATH"])
 
-    # DEBUG: print all mappings and aliases
-    print("=== MAPPINGS ===")
-    for m in mappings:
-        print(m)
-    print("=== ALIAS_TO_NAME ===")
-    for alias, full_name in alias_to_name.items():
-        print(f"{alias} -> {full_name}")
-    print("=== END ALIAS_TO_NAME ===")
-
     # Makes CommunicationClient also use this mapping
     if hasattr(communication_client, "alias_to_name"):
         communication_client.alias_to_name = alias_to_name
@@ -330,16 +339,11 @@ if __name__ == "__main__":
     exit_handler = ExitHandler(
         tts,
         audio_pipeline,
-        lenient_model_llm,
-        strict_model_llm,
+        llm,
         communication_client
     )
 
-    print("DEBUG main: len(mappings) =", len(mappings))
-    print("DEBUG main: first mapping entry:", mappings[0] if mappings else None)
-
     # Create shared LLM and parser now that host_dict and aliases are ready
-    llm = GenerateLLM(strict_model_llm, lenient_model_llm)
     parser = LLMOutputParser(
         communication_client,
         host_dict,
@@ -349,6 +353,14 @@ if __name__ == "__main__":
         exit_handler,
         mappings=mappings,
         alias_to_name=alias_to_name,
+        status_store=runtime_status,
+    )
+
+    runtime_status.update(
+        merlin_state="ready",
+        server_state="connected",
+        active_model=get_mode(),
+        message="Merlin is ready",
     )
 
     try:
@@ -361,4 +373,6 @@ if __name__ == "__main__":
         print("Unhandled exception:", e)
         traceback.print_exc()
     finally:
+        runtime_status.update(merlin_state="stopping", message="Shutting down")
+        runtime_status.stop_heartbeat()
         exit_handler.exit_program()

@@ -84,14 +84,14 @@
     <!-- Total freeze -->
     <command>
         <name>Enable Total Freeze</name>
-        <variable>MODE_IF.TOT_FRZ_REQ</variable>
+        <variable>MALF_IF.TOT_FRZ_REQ</variable>
         <common_name>Total Freeze</common_name>
         <alias>IOS_TOTAL_FREEZE</alias>
         <value>1</value>
     </command>
     <command>
         <name>Disable Total Freeze</name>
-        <variable>MODE_IF.TOT_FRZ_REQ</variable>
+        <variable>MALF_IF.TOT_FRZ_REQ</variable>
         <common_name>Total Freeze</common_name>
         <alias>IOS_TOTAL_FREEZE</alias>
         <value>0</value>

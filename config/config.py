@@ -71,3 +71,53 @@ def get_variable_ranges():
         return data.get("variable_range", {})
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
+
+
+def get_audio_settings():
+    """Return voice-capture settings with safe defaults."""
+    defaults = {
+        "speech_start_timeout": 5.0,
+        "end_silence_duration": 0.75,
+        "pre_speech_buffer": 0.3,
+        "whisper_beam_size": 3,
+        "noise_reduction_enabled": True,
+        "vad_aggressiveness": 2,
+        "speech_confirmation_frames": 3,
+        "minimum_command_duration": 0.25,
+        "noise_gate_multiplier": 1.8,
+        "highpass_cutoff_hz": 100,
+    }
+    try:
+        with open(_config_file, "r") as f:
+            data = json.load(f)
+        configured = data.get("audio", {})
+        if isinstance(configured, dict):
+            defaults.update(
+                {key: configured[key] for key in defaults if key in configured}
+            )
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    return defaults
+
+
+def get_communication_settings():
+    """Return automatic reconnect settings with safe defaults."""
+    defaults = {
+        "auto_reconnect": True,
+        "reconnect_initial_delay": 1.0,
+        "reconnect_max_delay": 15.0,
+        "reconnect_backoff": 2.0,
+        "reconnect_max_attempts": 0,
+        "keep_alive_interval": 5.0,
+    }
+    try:
+        with open(_config_file, "r") as f:
+            data = json.load(f)
+        configured = data.get("communication", {})
+        if isinstance(configured, dict):
+            defaults.update(
+                {key: configured[key] for key in defaults if key in configured}
+            )
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    return defaults

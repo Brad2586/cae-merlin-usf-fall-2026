@@ -1,6 +1,6 @@
 from logger import log
 class ExitHandler:
-    def __init__(self, tts, audio_pipeline, model_llm, lenient_model_llm, communication_client):
+    def __init__(self, tts, audio_pipeline, model_llm, communication_client):
         self.tts = tts
         self.audio_pipeline = audio_pipeline
         self.model_llm = model_llm

@@ -1,6 +1,7 @@
 {
   "xml_path": "config/variables.xml",
   "mapping_path": "config/mapping.xml",
+  "voice_commands_path": "config/voice_commands.json",
   "gguf_model_path_lenient": "Models/GGUF-LenientModel.Q4_K_M.gguf",
   "gguf_model_path_strict": "Models/GGUF-StrictModel.Q4_K_M.gguf",
   "whisper_path": "Models/Whisper-Large-V3-Turbo",

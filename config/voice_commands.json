@@ -1,0 +1,14 @@
+{
+  "commands": [
+    {
+      "name": "Engine 5 fire",
+      "phrases": [
+        "activate engine 5 fire",
+        "engine 5 fire",
+        "trigger engine 5 fire"
+      ],
+      "variable": "MALF_IF.TOGGLE_REQ",
+      "value": 335
+    }
+  ]
+}

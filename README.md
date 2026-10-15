@@ -161,6 +161,32 @@ sounddevice==0.5.5
 python Pipeline/main.py
 ```
 
+### Companion Dashboard
+
+The sponsor-provided DemoHost and IOS programs are compiled applications, so
+their windows cannot be safely restyled without their source code. Merlin
+provides a modern companion dashboard that launches those programs and
+displays their integration status without modifying either executable.
+
+Start it from the project root:
+
+```bash
+python Dashboard/main.py
+```
+
+The dashboard shows:
+
+- Merlin, simulator-server, and active-model status
+- The latest voice transcription and how it was processed
+- Requested variable changes with timestamps and values
+- Reconnecting/connected server state
+- Buttons for launching Merlin, DemoHost, and IOS
+
+Use **Configure Paths** if the supplied executable locations differ on your
+machine. They are saved in `config/dashboard.json`. Dashboard entries are
+labeled **Requested** because the current host protocol does not provide
+read-back confirmation for every Set Variable operation.
+
 ---
 
 ## Usage
@@ -170,9 +196,85 @@ python Pipeline/main.py
    ```
    "Merlin, activate Engine 1 fire malfunction."
    ```
-3. After ~0.3 seconds of silence, the program processes the command
+3. After ~0.75 seconds of silence, the program processes the command
 4. The command is parsed by the LLM and sent to the ISS host for execution
 5. To close: Use the command: "Merlin, Close the Program"`
+
+After the wake word is detected, Merlin waits up to five seconds for the
+command to begin. You may pause between saying **"Merlin"** and the command.
+The timings and Whisper accuracy setting can be adjusted in the `audio` block
+of `config/config.json`.
+
+### Noise reduction
+
+Merlin measures ambient sound while waiting for the wake word and uses that
+measurement to reject low-level interference during command initiation. It
+also requires sustained speech before recording, ignores very short noise
+events, and filters low-frequency rumble before transcription.
+
+The noise controls are in the `audio` block of `config/config.json`:
+
+- `noise_reduction_enabled`: Enables or disables adaptive filtering.
+- `vad_aggressiveness`: WebRTC speech filtering from `0` to `3`; higher values reject more sound.
+- `speech_confirmation_frames`: Consecutive 30 ms speech frames required to begin a command.
+- `minimum_command_duration`: Rejects events shorter than this number of seconds.
+- `noise_gate_multiplier`: Required loudness relative to measured ambient noise.
+- `highpass_cutoff_hz`: Removes frequencies below this approximate cutoff.
+
+If background noise still starts commands, increase `noise_gate_multiplier`
+gradually (for example, from `1.8` to `2.1`). If Merlin begins missing quiet
+speakers, lower it or reduce `vad_aggressiveness`.
+
+### Automatic server reconnection
+
+If the simulator TCP connection is interrupted after startup, Merlin
+automatically reconnects, repeats the protocol handshake, recreates the host
+update page, refreshes variable indices, and resumes keep-alive requests.
+Commands issued while disconnected report an error instead of writing to a
+stale socket.
+
+Reconnect behavior is configured in the `communication` block of
+`config/config.json`:
+
+- `auto_reconnect`: Enables or disables reconnection.
+- `reconnect_initial_delay`: Delay after the first unsuccessful retry.
+- `reconnect_max_delay`: Maximum delay between retries.
+- `reconnect_backoff`: Multiplier applied to the delay after each failure.
+- `reconnect_max_attempts`: Maximum retries; `0` means retry until shutdown.
+- `keep_alive_interval`: Seconds between connection health checks.
+
+---
+
+## Add a Custom Voice Command
+
+Run the interactive generator from the project root:
+
+```bash
+python Tools/command_generator.py
+```
+
+The generator asks for:
+
+- A readable command name
+- The simulator variable name
+- The value to send
+- One or more spoken phrases (separated with `|`)
+- The variable type and display name if the variable is new
+- Array dimensions and indices when applicable
+
+It updates `config/variables.xml` when a new host variable is needed and stores
+the voice command in `config/voice_commands.json`. Generated phrases are matched
+after speech-to-text and before the LLM, so retraining the model is not required.
+Restart `python Pipeline/main.py` after adding a command.
+
+For example, an Engine 5 toggle request can be generated non-interactively:
+
+```bash
+python Tools/command_generator.py --name "Activate Engine 5 Fire" --variable "MALF_IF.TOGGLE_REQ" --value 335 --phrase "activate engine 5 fire malfunction" --phrase "trigger engine 5 fire"
+```
+
+The variable must be supported by the connected simulator host. The generator
+can configure Merlin, but it cannot create a variable inside the host itself.
 
 ---
 
@@ -199,7 +301,7 @@ For production or public release, it is recommended to **build a custom wake wor
 
 ### Suggested Improvements
 - [ ] Clearing Approach Variables, The Strict Model currently sends an empty string to each of the variables for the "Clear Approach" command, but the code cannot currently accept this input. 
-- [ ] Add a slight sliding audio buffer for the first word after the wake word. Currently when speaking very quickly it can cut off the first word. 
+- [x] Add a slight sliding audio buffer for the first word after the wake word.
 - [ ] Add ability to pull data from the ISS Host. 
 
 ### Accuracy Improvement 

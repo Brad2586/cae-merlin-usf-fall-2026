@@ -15,6 +15,7 @@ class LLMOutputParser:
         exit_handler,
         mappings=None,
         alias_to_name=None,
+        status_store=None,
     ):
         self.communication_client = communication_client
         self.host_dict = host_dict
@@ -22,14 +23,11 @@ class LLMOutputParser:
         self.audio_pipeline = audio_pipeline
         self.tts = tts
         self.exit_handler = exit_handler
+        self.status_store = status_store
 
         # Mapping-related
         self.mappings = mappings or []       # list of mapping dicts
         self.alias_to_name = alias_to_name or {}  # alias -> canonical name
-
-        print("DEBUG LLMOutputParser: number of mappings =", len(self.mappings))
-        for m in self.mappings[:10]:
-            print("DEBUG LLMOutputParser mapping entry:", m)
 
     # ------------------------------------------------------------------
     # Mapping helpers
@@ -66,20 +64,15 @@ class LLMOutputParser:
         if not key:
             return None
         key = key.strip()
-        print(f"resolve_var_key: got key='{key}'")  # debug
-
         # First try alias map
         if key in self.alias_to_name:
             resolved = self.alias_to_name[key]
-            print(f"resolve_var_key: alias mapped '{key}' -> '{resolved}'")
             return resolved
 
         # Fallback: if host_dict already has this key, accept it
         if key in self.host_dict:
-            print(f"resolve_var_key: key '{key}' is directly in host_dict")
             return key
 
-        print(f"resolve_var_key: FAILED for '{key}'")
         return None
 
     # ------------------------------------------------------------------
@@ -88,6 +81,18 @@ class LLMOutputParser:
 
     def _say(self, message, priority="normal"):
         self.tts.say(message, priority=priority)
+
+    def _record_change(self, variable, value, common_name):
+        if self.status_store is None:
+            return
+        try:
+            self.status_store.record_change(
+                variable,
+                value,
+                display_name=common_name,
+            )
+        except OSError as exc:
+            log("[STATUS]", f"Unable to record requested change: {exc}")
 
     def send_variable_updates(self, pairs, list_type=1):
         """
@@ -120,15 +125,12 @@ class LLMOutputParser:
             return False
 
         data = json.loads(match.group())
-        print("DEBUG LLM JSON:", data)
         command_type = data.get("Type")
 
         match command_type:
             case "command":
                 keys = data.get("parameters_keys", [])
                 values = data.get("parameters_values", [])
-                print("DEBUG command keys:", keys)
-                print("DEBUG command values:", values)
                 meta_list = data.get("parameters_meta", []) or []
 
                 key_to_indices: dict[str, list[int] | None] = {}
@@ -150,7 +152,7 @@ class LLMOutputParser:
                     # Resolve alias to base host_dict name
                     resolved_name = self.resolve_var_key(key)
                     if not resolved_name:
-                        print(f"DEBUG: Unknown alias/key from LLM: {key}")
+                        log("[VARIABLE_ERROR]", f"Unknown alias/key from LLM: {key}")
                         continue
 
                     indices = key_to_indices.get(key)  # may be None
@@ -204,11 +206,15 @@ class LLMOutputParser:
             case "mode_strict":
                 from config.config import set_mode
                 set_mode("strict")
+                if self.status_store is not None:
+                    self.status_store.update(active_model="strict")
                 self._say("Mode changed to strict.", priority="normal")
 
             case "mode_lenient":
                 from config.config import set_mode
                 set_mode("lenient")
+                if self.status_store is not None:
+                    self.status_store.update(active_model="lenient")
                 self._say("Mode changed to lenient.", priority="normal")
 
     # ------------------------------------------------------------------
@@ -329,8 +335,6 @@ class LLMOutputParser:
     # ------------------------------------------------------------------
 
     def set_llm_variable(self, var_name, value, list_type=0, indices=None, alias_name=None):
-        print(f"set_llm_variable: called with var_name='{var_name}', value='{value}', alias_name='{alias_name}'")
- 
         # Some LLM keys may be aliases that refer to a specific element of an
         # underlying array variable. For example:
         #   ENGINE_1_MALF -> MALF.FLAME_OUT[0]
@@ -382,9 +386,6 @@ class LLMOutputParser:
             var_index   = var_meta["index"]
             type_code   = var_meta.get("type", 3)
             common_name = var_meta.get("common_name", target_var)
-
-            # print(f"DEBUG (mapping): {target_var} -> {var_meta}")
-            print(f"DEBUG (mapping): value={malf_value}, index={idx}")
 
             # Encode malf_value according to type (MALF_IF.TOGGLE_REQ should be int32)
             try:
@@ -439,6 +440,7 @@ class LLMOutputParser:
                 return False
 
             log("[SET_VARIABLE]", f"Mapped command: Set {target_var} (type_code={type_code}) to {malf_value}")
+            self._record_change(target_var, malf_value, common_name)
             self._say(f"Set {common_name} to mapped value {malf_value}", priority="bulk")
 
             # Optional time delay for this mapped command, if configured in mappings file
@@ -471,13 +473,9 @@ class LLMOutputParser:
             return False
  
         var_meta    = self.host_dict[var_name]
-        print(f"DEBUG: {var_name} -> {var_meta}")
         var_index   = var_meta["index"]
         type_code   = var_meta.get("type", 3)  # default to int32
         common_name = var_meta.get("common_name", var_name)
- 
-        print(type_code)
-        print(value)
  
         # Normalize string values from LLM
         if isinstance(value, str):
@@ -617,6 +615,7 @@ class LLMOutputParser:
             self.communication_client.set_variable(list_type, var_index, value=value_bytes)
  
         log("[SET_VARIABLE]", f"Set {var_name} (type_code={type_code}) to {value}")
+        self._record_change(var_name, value, common_name)
         self._say(f"Set {common_name} to {value}", priority="bulk")
  
         return True

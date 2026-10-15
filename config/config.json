@@ -1,7 +1,27 @@
 {   
     "_comment": "valid values are 'strict' or 'lenient', for tts_mode, valid values are, 'minimal', 'normal', 'fast', fast will say all of the bulk messages and shorten when possible, minimal will only ask for clarification and errors, normal will give all output.",
-    "mode": "strict",
-    "tts_mode": "normal",
+    "mode": "lenient",
+    "tts_mode": "fast",
+    "audio": {
+        "speech_start_timeout": 5.0,
+        "end_silence_duration": 0.75,
+        "pre_speech_buffer": 0.3,
+        "whisper_beam_size": 1,
+        "noise_reduction_enabled": true,
+        "vad_aggressiveness": 2,
+        "speech_confirmation_frames": 3,
+        "minimum_command_duration": 0.25,
+        "noise_gate_multiplier": 1.8,
+        "highpass_cutoff_hz": 100
+    },
+    "communication": {
+        "auto_reconnect": true,
+        "reconnect_initial_delay": 1.0,
+        "reconnect_max_delay": 15.0,
+        "reconnect_backoff": 2.0,
+        "reconnect_max_attempts": 0,
+        "keep_alive_interval": 5.0
+    },
     "variable_range":{
         "char": {
         },
