@@ -42,7 +42,7 @@ def run_voice_pipeline():
         print("\nTranscription:")
         print(text)
 
-        prompt = f"input: {text}\noutput:"
+        prompt = f"Input: {text}\nOutput:"
         llm_output = llm.generate_from_llm(prompt, 150)
 
         print("Output:\n", llm_output)
@@ -132,9 +132,10 @@ def load_mappings(mapping_xml_path):
         variable = (cmd.findtext("variable") or "").strip()
         common_name = (cmd.findtext("common_name") or "").strip()
         alias = (cmd.findtext("alias") or "").strip()
+        action = (cmd.findtext("action") or "").strip().lower() # NEW
         value_text = (cmd.findtext("value") or "").strip()
         index_text = (cmd.findtext("index") or "").strip()
-        time_text = (cmd.findtext("time") or "").strip()  # NEW
+        time_text = (cmd.findtext("time") or "").strip()
 
         if not variable:
             continue
@@ -159,6 +160,7 @@ def load_mappings(mapping_xml_path):
             "variable": variable,      # "MALF_IF.TOGGLE_REQ"
             "common_name": common_name,
             "alias": alias,            # "ENGINE_1_MALF"
+            "action": action,          # enable
             "value": value,            # 331
             "index": idx,              # 0
             "time": delay,             # Per-command delay in seconds, or None
