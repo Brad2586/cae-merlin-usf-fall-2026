@@ -31,6 +31,122 @@ class LLMOutputParser:
         for m in self.mappings[:10]:
             print("DEBUG LLMOutputParser mapping entry:", m)
 
+
+    def check_host_value(self, var_name, desired_bytes, dimensions=None):
+        """
+        Compare a current host value with the requested value.
+
+        Supports scalar variables and indexed arrays.
+        """
+        var_meta = self.host_dict[var_name]
+        num_dims = int(var_meta.get("num_dims", 0) or 0)
+        sizes = list(var_meta.get("dimensions", []))
+        indices = list(dimensions or [])
+
+        variables = [{
+            "name": var_name,
+            "index": var_meta["index"],
+            "type": var_meta["type"],
+            "num_dims": num_dims,
+            "dimensions": sizes
+        }]
+
+        # Validate dimensions before contacting the host.
+        if num_dims != len(indices):
+            return "unknown"
+
+        if num_dims != len(sizes):
+            return "unknown"
+
+        for index, size in zip(indices, sizes):
+            if not isinstance(index, int) or not (0 <= index < size):
+                return "unknown"
+
+        try:
+            updates = self.communication_client.request_update(
+                var_meta["list_type"], variables
+            )
+
+            if var_name not in updates:
+                return "unknown"
+
+            current_bytes = updates[var_name]["value"]
+
+            if num_dims > 0:
+                element_size = len(desired_bytes)
+                total_elements = 1
+
+                for size in sizes:
+                    total_elements *= size
+
+                if len(current_bytes) != total_elements * element_size:
+                    return "unknown"
+
+                # Row-major element offset.
+                flat_index = 0
+                for index, size in zip(indices, sizes):
+                    flat_index = flat_index * size + index
+
+                start = flat_index * element_size
+                current_bytes = current_bytes[
+                    start:start + element_size
+                ]
+
+            elif len(current_bytes) != len(desired_bytes):
+                return "unknown"
+
+            return (
+                "same" if current_bytes == desired_bytes
+                else "different"
+            )
+
+        except (OSError, ValueError, IndexError, KeyError, TypeError) as e:
+            print(f"[R2] Failed to read {var_name}: {e}")
+            return "unknown"
+
+
+
+
+    def set_variable_if_changed(
+        self, var_name, desired_bytes, dimensions=None
+    ):
+        """
+        R2: Only send a SET command if the host value differs.
+
+        Returns:
+            "skipped" - Already correct
+            "sent"    - SET command issued
+            "failed"  - Unable to verify or send
+        """
+        result = self.check_host_value(
+            var_name,
+            desired_bytes,
+             dimensions=dimensions
+        )
+
+        print(f"[R2 LIVE] {var_name}: comparison={result}")
+
+        if result == "unknown":
+            return "failed"
+
+        if result == "same":
+            return "skipped"
+
+        meta = self.host_dict[var_name]
+
+        try:
+            self.communication_client.set_variable(
+                meta["list_type"],
+                meta["index"],
+                value=desired_bytes,
+                dimensions=dimensions or [],
+            )
+        except (OSError, ConnectionError):
+            return "failed"
+
+        return "sent"
+
+
     # ------------------------------------------------------------------
     # Mapping helpers
     # ------------------------------------------------------------------
@@ -603,18 +719,32 @@ class LLMOutputParser:
             # Scalar variable: no indices
             index_list = []
 
-        # ---- SEND VALUE ----
-        try:
-            # New signature with dimensions
-            self.communication_client.set_variable(
-                list_type,
-                var_index,
-                dimensions=index_list,
-                value=value_bytes,
+
+        # ---- R2: CHECK BEFORE SET ----
+        result = self.set_variable_if_changed(
+            var_name,
+            value_bytes,
+            dimensions=index_list
+        )
+
+        if result == "skipped":
+            log("[R2]", f"Skipped {var_name}: already at requested value")
+            self._say(
+                f"{common_name} is already set to {value}",
+                priority="bulk"
             )
-        except TypeError:
-            # Backwards compatibility: if CommunicationClient doesn't support dimensions
-            self.communication_client.set_variable(list_type, var_index, value=value_bytes)
+            return True
+
+        if result == "failed":
+            log("[R2]", f"Unable to verify or set {var_name}")
+            self._say(
+                f"Unable to verify or set {common_name}",
+                priority="critical"
+            )
+            return False
+
+        # result == "sent": continue to existing success logging
+
  
         log("[SET_VARIABLE]", f"Set {var_name} (type_code={type_code}) to {value}")
         self._say(f"Set {common_name} to {value}", priority="bulk")
