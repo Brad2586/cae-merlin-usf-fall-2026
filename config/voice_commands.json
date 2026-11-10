@@ -5,10 +5,22 @@
       "phrases": [
         "activate engine 5 fire",
         "engine 5 fire",
-        "trigger engine 5 fire"
+        "trigger engine 5 fire",
+        "engine 5 fire malfunction"
       ],
       "variable": "MALF_IF.TOGGLE_REQ",
       "value": 335
+    },
+    {
+      "name": "Activate Engine 6 Fire",
+      "phrases": [
+        "Activate Engine 6 Fire",
+        "Activate Engine 6 fire malfunction",
+        "Engine 6 Fire",
+        "Engine 6 Fire Malfunction"
+      ],
+      "variable": "MALF_IF.TOGGLE_REQ",
+      "value": 336
     }
   ]
 }
