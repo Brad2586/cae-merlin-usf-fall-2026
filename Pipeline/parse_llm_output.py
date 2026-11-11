@@ -367,10 +367,31 @@ class LLMOutputParser:
         # print("DEBUG: alias_mappings for", alias_name, "=", alias_mappings)
 
         if alias_mappings:
-            # For now we ignore activate vs deactivate difference in mapping;
-            # both commands use the same 'value' and 'variable'. The simulator
-            # toggles state internally when the same number is written.
-            m = alias_mappings[0]
+            print("alias_mappings: ", alias_mappings)
+            print("value: ", value)
+            print("value_bool: ", value_bool)
+
+            if value_bool is True:
+                requested_action = "enable"
+            elif value_bool is False:
+                requested_action = "disable"
+            else:
+                self._say("Could not determine whether to enable or disable.")
+                return False
+
+            matches = [
+                mapping
+                for mapping in alias_mappings
+                if mapping.get("action") == requested_action
+            ]
+
+            print("matches: ", matches)
+
+            if len(matches) != 1:
+                self._say("Could not find one matching command configuration.")
+                return False
+
+            m = matches[0]
 
             target_var = m["variable"]      # e.g. "MALF_IF.TOGGLE_REQ"
             malf_value = m["value"]         # e.g. 331
