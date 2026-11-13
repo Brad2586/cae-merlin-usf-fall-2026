@@ -10,6 +10,7 @@
         <action>enable</action>
         <value>1</value>
         <index>0</index>
+        <time>0</time>
     </command>
     <command>
         <name>Deactivate Engine 1 Fire Malfunction</name>
@@ -19,6 +20,7 @@
         <action>disable</action>
         <value>0</value>
         <index>0</index>
+        <time>5</time>
     </command>
 
     <command>
@@ -29,6 +31,7 @@
         <action>enable</action>
         <value>1</value>
         <index>1</index>
+        <time>5</time>
     </command>
     <command>
         <name>Deactivate Engine 2 Fire Malfunction</name>
@@ -38,6 +41,7 @@
         <action>disable</action>
         <value>0</value>
         <index>1</index>
+        <time>0</time>
     </command>
 
     <command>
@@ -48,6 +52,7 @@
         <action>enable</action>
         <value>1</value>
         <index>2</index>
+        <time>0</time>
     </command>
     <command>
         <name>Deactivate Engine 3 Fire Malfunction</name>
@@ -57,6 +62,7 @@
         <action>disable</action>
         <value>0</value>
         <index>2</index>
+        <time>0</time>
     </command>
 
     <command>
@@ -67,6 +73,7 @@
         <action>enable</action>
         <value>1</value>
         <index>3</index>
+        <time>0</time>
     </command>
     <command>
         <name>Deactivate Engine 4 Fire Malfunction</name>
@@ -76,6 +83,7 @@
         <action>disable</action>
         <value>0</value>
         <index>3</index>
+        <time>0</time>
     </command>
 
     <!-- Regular engine malfunctions. These send the instructor toggle codes. -->

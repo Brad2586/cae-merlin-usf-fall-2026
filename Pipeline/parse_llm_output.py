@@ -477,10 +477,6 @@ class LLMOutputParser:
         # print("DEBUG: alias_mappings for", alias_name, "=", alias_mappings)
 
         if alias_mappings:
-            print("alias_mappings: ", alias_mappings)
-            print("value: ", value)
-            print("value_bool: ", value_bool)
-
             if value_bool is True:
                 requested_action = "enable"
             elif value_bool is False:
@@ -547,6 +543,29 @@ class LLMOutputParser:
                         log("[INDEX_ERROR]", f"Index {i} out of range for {target_var} dimension {dim_idx} (size {max_size})")
                         self._say(f"Index out of range for {common_name}", priority="critical")
                         return False
+
+            # Check Before Set
+            result = self.set_variable_if_changed(
+                var_name,
+                value_bytes,
+                dimensions=index_list
+            )
+
+            if result == "skipped":
+                log("[R2]", f"Skipped {var_name}: already at requested value")
+                self._say(
+                    f"{common_name} is already set to {value}",
+                    priority="bulk"
+                )
+                return True
+
+            if result == "failed":
+                log("[R2]", f"Unable to verify or set {var_name}")
+                self._say(
+                    f"Unable to verify or set {common_name}",
+                    priority="critical"
+                )
+                return False
 
             # Send mapped value
             try:
@@ -735,33 +754,6 @@ class LLMOutputParser:
             # Scalar variable: no indices
             index_list = []
 
-
-        # ---- R2: CHECK BEFORE SET ----
-        result = self.set_variable_if_changed(
-            var_name,
-            value_bytes,
-            dimensions=index_list
-        )
-
-        if result == "skipped":
-            log("[R2]", f"Skipped {var_name}: already at requested value")
-            self._say(
-                f"{common_name} is already set to {value}",
-                priority="bulk"
-            )
-            return True
-
-        if result == "failed":
-            log("[R2]", f"Unable to verify or set {var_name}")
-            self._say(
-                f"Unable to verify or set {common_name}",
-                priority="critical"
-            )
-            return False
-
-        # result == "sent": continue to existing success logging
-
- 
         log("[SET_VARIABLE]", f"Set {var_name} (type_code={type_code}) to {value}")
         self._record_change(var_name, value, common_name)
         self._say(f"Set {common_name} to {value}", priority="bulk")
