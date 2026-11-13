@@ -110,6 +110,83 @@ class CommandGeneratorTests(unittest.TestCase):
             },
         )
 
+    def test_fire_and_engine_malfunctions_use_different_targets(self):
+        mapping_path = self.root / "mapping.xml"
+        mapping_path.write_text(
+            """
+            <mappings>
+              <command>
+                <name>Activate Engine 1 Fire Malfunction</name>
+                <variable>MALF.FLAME_OUT</variable>
+                <alias>ENGINE_1_FLAME</alias>
+                <action>enable</action>
+                <value>1</value>
+                <index>0</index>
+              </command>
+              <command>
+                <name>Activate Engine 2 Fire Malfunction</name>
+                <variable>MALF.FLAME_OUT</variable>
+                <alias>ENGINE_2_FLAME</alias>
+                <action>enable</action>
+                <value>1</value>
+                <index>1</index>
+              </command>
+              <command>
+                <name>Activate Engine 3 Fire Malfunction</name>
+                <variable>MALF.FLAME_OUT</variable>
+                <alias>ENGINE_3_FLAME</alias>
+                <action>enable</action>
+                <value>1</value>
+                <index>2</index>
+              </command>
+              <command>
+                <name>Activate Engine 4 Fire Malfunction</name>
+                <variable>MALF.FLAME_OUT</variable>
+                <alias>ENGINE_4_FLAME</alias>
+                <action>enable</action>
+                <value>1</value>
+                <index>3</index>
+              </command>
+              <command>
+                <name>Activate Engine 1 Malfunction</name>
+                <variable>MALF_IF.TOGGLE_REQ</variable>
+                <alias>ENGINE_1_MALF</alias>
+                <action>enable</action>
+                <value>331</value>
+              </command>
+            </mappings>
+            """,
+            encoding="utf-8",
+        )
+        registry = CommandRegistry(self.commands_path, mapping_path=mapping_path)
+
+        self.assertEqual(
+            registry.match("activate engine 1 fire malfunction")["parameters_keys"],
+            ["ENGINE_1_FLAME"],
+        )
+        self.assertEqual(
+            registry.match("activate engine 1 fire malfunction")["parameters_values"],
+            [True],
+        )
+        self.assertEqual(
+            registry.match("activate engine fire malfunction")["parameters_keys"],
+            [
+                "ENGINE_1_FLAME",
+                "ENGINE_2_FLAME",
+                "ENGINE_3_FLAME",
+                "ENGINE_4_FLAME",
+            ],
+        )
+        self.assertEqual(
+            registry.match("activate engine 1 malfunction"),
+            {
+                "Type": "command",
+                "command_name": "Activate Engine 1 Malfunction",
+                "parameters_keys": ["MALF_IF.TOGGLE_REQ"],
+                "parameters_values": [331],
+            },
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

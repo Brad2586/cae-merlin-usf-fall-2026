@@ -224,9 +224,86 @@ def test_set_acknowledgment():
 
     print("R2 SET acknowledgment tests passed!")
 
+def test_fire_sets_flameout_and_malfunction_sets_toggle():
+    class RecordingClient:
+        def __init__(self):
+            self.calls = []
+
+        def set_variable(self, list_type, var_index, value, dimensions=None):
+            self.calls.append({
+                "list_type": list_type,
+                "index": var_index,
+                "value": value,
+                "dimensions": dimensions,
+            })
+
+    class SilentTTS:
+        def say(self, message, priority="normal"):
+            pass
+
+    client = RecordingClient()
+    parser = LLMOutputParser(
+        communication_client=client,
+        host_dict={
+            "MALF.FLAME_OUT": {
+                "list_type": 0,
+                "index": 4,
+                "type": 1,
+                "num_dims": 1,
+                "dimensions": [4],
+                "common_name": "Engine Flameout Malfunction",
+            },
+            "MALF_IF.TOGGLE_REQ": {
+                "list_type": 0,
+                "index": 5,
+                "type": 3,
+                "num_dims": 0,
+                "dimensions": [],
+                "common_name": "Malfunction Toggle Request",
+            },
+        },
+        llm=None,
+        audio_pipeline=None,
+        tts=SilentTTS(),
+        exit_handler=None,
+        mappings=[
+            {
+                "alias": "ENGINE_1_FLAME",
+                "action": "enable",
+                "variable": "MALF.FLAME_OUT",
+                "value": 1,
+                "index": 0,
+                "time": None,
+            },
+            {
+                "alias": "ENGINE_1_MALF",
+                "action": "enable",
+                "variable": "MALF_IF.TOGGLE_REQ",
+                "value": 331,
+                "index": None,
+                "time": None,
+            },
+        ],
+    )
+
+    assert parser.set_llm_variable(
+        "MALF.FLAME_OUT", True, alias_name="ENGINE_1_FLAME"
+    )
+    assert parser.set_llm_variable(
+        "MALF_IF.TOGGLE_REQ", True, alias_name="ENGINE_1_MALF"
+    )
+    assert client.calls[0]["value"] == b"\x01"
+    assert client.calls[0]["dimensions"] == [0]
+    assert client.calls[0]["index"] == 4
+    assert client.calls[1]["value"] == (331).to_bytes(4, "little", signed=True)
+    assert client.calls[1]["dimensions"] == []
+    print("Fire versus malfunction routing test passed!")
+
+
 if __name__ == "__main__":
     test_check_host_value()
     test_set_variable_if_changed()
     test_flameout_array_layout()
     test_array_comparison()
     test_set_acknowledgment()
+    test_fire_sets_flameout_and_malfunction_sets_toggle()

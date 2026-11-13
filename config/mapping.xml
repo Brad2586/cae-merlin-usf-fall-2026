@@ -1,91 +1,157 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <mappings>
 
-    <!-- Engine 1 Fire Malfunction -->
+    <!-- Engine fire / flameout. Each flag is one element of MALF.FLAME_OUT. -->
     <command>
         <name>Activate Engine 1 Fire Malfunction</name>
-        <variable>MALF_IF.TOGGLE_REQ</variable>
-        <common_name>Engine 1 Fire Malfunction</common_name>
-        <alias>ENGINE_1_MALF</alias>
+        <variable>MALF.FLAME_OUT</variable>
+        <common_name>Engine 1 Flameout</common_name>
+        <alias>ENGINE_1_FLAME</alias>
         <action>enable</action>
-        <value>331</value>
+        <value>1</value>
         <index>0</index>
-        <time>0.3</time>
     </command>
     <command>
         <name>Deactivate Engine 1 Fire Malfunction</name>
-        <variable>MALF_IF.TOGGLE_REQ</variable>
-        <common_name>Engine 1 Fire Malfunction</common_name>
-        <alias>ENGINE_1_MALF</alias>
+        <variable>MALF.FLAME_OUT</variable>
+        <common_name>Engine 1 Flameout</common_name>
+        <alias>ENGINE_1_FLAME</alias>
         <action>disable</action>
-        <value>331</value>
+        <value>0</value>
         <index>0</index>
-        <time>0.3</time>
     </command>
 
-    <!-- Engine 2 Fire Malfunction -->
     <command>
         <name>Activate Engine 2 Fire Malfunction</name>
-        <variable>MALF_IF.TOGGLE_REQ</variable>
-        <common_name>Engine 2 Fire Malfunction</common_name>
-        <alias>ENGINE_2_MALF</alias>
+        <variable>MALF.FLAME_OUT</variable>
+        <common_name>Engine 2 Flameout</common_name>
+        <alias>ENGINE_2_FLAME</alias>
         <action>enable</action>
-        <value>332</value>
+        <value>1</value>
         <index>1</index>
-        <time>0.3</time>
     </command>
     <command>
         <name>Deactivate Engine 2 Fire Malfunction</name>
-        <variable>MALF_IF.TOGGLE_REQ</variable>
-        <common_name>Engine 2 Fire Malfunction</common_name>
-        <alias>ENGINE_2_MALF</alias>
+        <variable>MALF.FLAME_OUT</variable>
+        <common_name>Engine 2 Flameout</common_name>
+        <alias>ENGINE_2_FLAME</alias>
         <action>disable</action>
-        <value>332</value>
+        <value>0</value>
         <index>1</index>
-        <time>0.3</time>
     </command>
 
-    <!-- Engine 3 Fire Malfunction -->
     <command>
         <name>Activate Engine 3 Fire Malfunction</name>
-        <variable>MALF_IF.TOGGLE_REQ</variable>
-        <common_name>Engine 3 Fire Malfunction</common_name>
-        <alias>ENGINE_3_MALF</alias>
+        <variable>MALF.FLAME_OUT</variable>
+        <common_name>Engine 3 Flameout</common_name>
+        <alias>ENGINE_3_FLAME</alias>
         <action>enable</action>
-        <value>333</value>
+        <value>1</value>
         <index>2</index>
-        <time>0.3</time>
     </command>
     <command>
         <name>Deactivate Engine 3 Fire Malfunction</name>
-        <variable>MALF_IF.TOGGLE_REQ</variable>
-        <common_name>Engine 3 Fire Malfunction</common_name>
-        <alias>ENGINE_3_MALF</alias>
+        <variable>MALF.FLAME_OUT</variable>
+        <common_name>Engine 3 Flameout</common_name>
+        <alias>ENGINE_3_FLAME</alias>
         <action>disable</action>
-        <value>333</value>
+        <value>0</value>
         <index>2</index>
-        <time>0.3</time>
     </command>
 
-    <!-- Engine 4 Fire Malfunction -->
     <command>
         <name>Activate Engine 4 Fire Malfunction</name>
-        <variable>MALF_IF.TOGGLE_REQ</variable>
-        <common_name>Engine 4 Fire Malfunction</common_name>
-        <alias>ENGINE_4_MALF</alias>
+        <variable>MALF.FLAME_OUT</variable>
+        <common_name>Engine 4 Flameout</common_name>
+        <alias>ENGINE_4_FLAME</alias>
         <action>enable</action>
-        <value>334</value>
+        <value>1</value>
         <index>3</index>
-        <time>0.3</time>
     </command>
     <command>
         <name>Deactivate Engine 4 Fire Malfunction</name>
+        <variable>MALF.FLAME_OUT</variable>
+        <common_name>Engine 4 Flameout</common_name>
+        <alias>ENGINE_4_FLAME</alias>
+        <action>disable</action>
+        <value>0</value>
+        <index>3</index>
+    </command>
+
+    <!-- Regular engine malfunctions. These send the instructor toggle codes. -->
+    <command>
+        <name>Activate Engine 1 Malfunction</name>
         <variable>MALF_IF.TOGGLE_REQ</variable>
-        <common_name>Engine 4 Fire Malfunction</common_name>
+        <common_name>Engine 1 Malfunction</common_name>
+        <alias>ENGINE_1_MALF</alias>
+        <action>enable</action>
+        <value>331</value>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Deactivate Engine 1 Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 1 Malfunction</common_name>
+        <alias>ENGINE_1_MALF</alias>
+        <action>disable</action>
+        <value>331</value>
+        <time>0.3</time>
+    </command>
+
+    <command>
+        <name>Activate Engine 2 Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 2 Malfunction</common_name>
+        <alias>ENGINE_2_MALF</alias>
+        <action>enable</action>
+        <value>332</value>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Deactivate Engine 2 Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 2 Malfunction</common_name>
+        <alias>ENGINE_2_MALF</alias>
+        <action>disable</action>
+        <value>332</value>
+        <time>0.3</time>
+    </command>
+
+    <command>
+        <name>Activate Engine 3 Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 3 Malfunction</common_name>
+        <alias>ENGINE_3_MALF</alias>
+        <action>enable</action>
+        <value>333</value>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Deactivate Engine 3 Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 3 Malfunction</common_name>
+        <alias>ENGINE_3_MALF</alias>
+        <action>disable</action>
+        <value>333</value>
+        <time>0.3</time>
+    </command>
+
+    <command>
+        <name>Activate Engine 4 Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 4 Malfunction</common_name>
+        <alias>ENGINE_4_MALF</alias>
+        <action>enable</action>
+        <value>334</value>
+        <time>0.3</time>
+    </command>
+    <command>
+        <name>Deactivate Engine 4 Malfunction</name>
+        <variable>MALF_IF.TOGGLE_REQ</variable>
+        <common_name>Engine 4 Malfunction</common_name>
         <alias>ENGINE_4_MALF</alias>
         <action>disable</action>
         <value>334</value>
-        <index>3</index>
         <time>0.3</time>
     </command>
 

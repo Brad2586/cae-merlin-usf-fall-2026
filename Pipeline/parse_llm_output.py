@@ -421,17 +421,16 @@ class LLMOutputParser:
     def _infer_array_indices(self, alias_name):
         """Infer underlying array variable and indices from an alias.
 
-        This is primarily used for engine malfunction variables where the
+        This is primarily used for engine flameout variables where the
         XML defines a single array variable, e.g. MALF.FLAME_OUT with
-        dims="4", but the LLM is trained to produce ENGINE_1_MALF,
-        ENGINE_2_MALF, etc.
+        dims="4", addressed by ENGINE_1_FLAME, ENGINE_2_FLAME, etc.
 
         Returns:
             tuple (base_var_name, indices_list) or None if no mapping.
         """
 
-        # Example: ENGINE_n_MALF aliases to MALF.FLAME_OUT[n-1]
-        m = re.match(r"ENGINE_(\d+)_MALF", alias_name)
+        # Example: ENGINE_n_FLAME aliases to MALF.FLAME_OUT[n-1]
+        m = re.match(r"ENGINE_(\d+)_FLAME", alias_name)
         if m:
             engine_num = int(m.group(1))
             # Array index is zero-based
@@ -448,8 +447,8 @@ class LLMOutputParser:
     def set_llm_variable(self, var_name, value, list_type=0, indices=None, alias_name=None):
         # Some LLM keys may be aliases that refer to a specific element of an
         # underlying array variable. For example:
-        #   ENGINE_1_MALF -> MALF.FLAME_OUT[0]
-        #   ENGINE_2_MALF -> MALF.FLAME_OUT[1]
+        #   ENGINE_1_FLAME -> MALF.FLAME_OUT[0]
+        #   ENGINE_2_FLAME -> MALF.FLAME_OUT[1]
         # We use host_dict's num_dims/dimensions metadata to determine how to
         # target the correct array element when calling set_variable.
 
@@ -518,10 +517,14 @@ class LLMOutputParser:
             var_index   = var_meta["index"]
             type_code   = var_meta.get("type", 3)
             common_name = var_meta.get("common_name", target_var)
+            list_type   = var_meta.get("list_type", list_type)
 
-            # Encode malf_value according to type (MALF_IF.TOGGLE_REQ should be int32)
+            # Encode malf_value according to type. Flameout flags are booleans.
+            # Instructor toggle requests are int32 codes.
             try:
-                if type_code == 3:  # INT32
+                if type_code == 1:  # boolean / int8
+                    value_bytes = b"\x01" if int(malf_value) else b"\x00"
+                elif type_code == 3:  # INT32
                     value_bytes = int(malf_value).to_bytes(4, "little", signed=True)
                 else:
                     raise ValueError(f"Unsupported type_code {type_code} for mapped command")
@@ -536,10 +539,9 @@ class LLMOutputParser:
 
             index_list = []
             if num_dims > 0:
-                
-                idx_list = [idx] if idx is not None else [0]
+                index_list = [idx] if idx is not None else [0]
 
-                for dim_idx, i in enumerate(idx_list):
+                for dim_idx, i in enumerate(index_list):
                     max_size = dims[dim_idx] if dim_idx < len(dims) else None
                     if max_size is not None and not (0 <= i < max_size):
                         log("[INDEX_ERROR]", f"Index {i} out of range for {target_var} dimension {dim_idx} (size {max_size})")
