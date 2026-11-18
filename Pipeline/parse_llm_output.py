@@ -754,6 +754,29 @@ class LLMOutputParser:
             # Scalar variable: no indices
             index_list = []
 
+        # Check Before Set
+        result = self.set_variable_if_changed(
+            var_name,
+            value_bytes,
+            dimensions=index_list
+        )
+
+        if result == "skipped":
+            log("[R2]", f"Skipped {var_name}: already at requested value")
+            self._say(
+                f"{common_name} is already set to {value}",
+                priority="bulk"
+            )
+            return True
+
+        if result == "failed":
+            log("[R2]", f"Unable to verify or set {var_name}")
+            self._say(
+                f"Unable to verify or set {common_name}",
+                priority="critical"
+            )
+            return False
+
         log("[SET_VARIABLE]", f"Set {var_name} (type_code={type_code}) to {value}")
         self._record_change(var_name, value, common_name)
         self._say(f"Set {common_name} to {value}", priority="bulk")
