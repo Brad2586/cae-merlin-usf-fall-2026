@@ -35,7 +35,6 @@ class CommunicationClient:
         self.reconnect_max_attempts = max(int(reconnect_max_attempts), 0)
         self.status_store = status_store
         self._connected = threading.Event()
-        self._io_lock = threading.RLock()
         self._connect_lock = threading.Lock()
         self._reconnect_thread = None
         self._update_page_variables = None
@@ -45,7 +44,9 @@ class CommunicationClient:
         self._keep_alive_thread = None
         self._keep_alive_interval = max(float(keep_alive_interval), 1.0)
         self._keep_alive_list_type = 0    
-        self._keep_alive_vars = []        # variable metadata list 
+        self._keep_alive_vars = [] # variable metadata list
+        # Serializes set/request so a status read cannot race the keep-alive thread.
+        self._io_lock = threading.Lock()
 
     def _publish_status(self, **values):
         if self.status_store is None:
@@ -326,12 +327,10 @@ class CommunicationClient:
             raise
 
     def _set_variable(self, list_type, var_index, value, dimensions=None):
-        """Set the value of a variable.
-
-        dimensions: optional list of integers indicating the array indices
-        for this variable (per IOS Set Variable Message spec). If omitted,
-        the variable is treated as a scalar.
-        """
+        """Caller must already hold self._io_lock."""
+        self._set_variable_unlocked(list_type, var_index, value, dimensions)
+    
+    def _set_variable_unlocked(self, list_type, var_index, value, dimensions=None):
         if dimensions is None:
             dimensions = []
 
@@ -594,22 +593,17 @@ class CommunicationClient:
         self.sock.sendall(message)
 
     def request_update(self, list_type, variables):
-        if not self._connected.is_set():
-            raise ConnectionError("simulator is disconnected; reconnect is in progress")
-        try:
-            with self._io_lock:
-                update = self._request_update(list_type, variables)
-        except OSError as exc:
-            self._mark_disconnected(exc)
-            raise
-
-        if variables and not update:
-            error = ConnectionError("host did not return a variable update")
-            self._mark_disconnected(error)
-            raise error
-        return update
-
-    def _request_update(self, list_type, variables):
+        """Request an update for variables in a list and return values."""
+        with self._io_lock:
+            return self._request_update_unlocked(list_type, variables)
+        
+    def refresh_tracked_values(self):
+        """Re-read keep-alive variables and return name -> metadata, including value bytes."""
+        if not self._keep_alive_vars or self.sock is None:
+            return {}
+        return self.request_update(self._keep_alive_list_type, self._keep_alive_vars)
+    
+    def _request_update_unlocked(self, list_type, variables):
         """Request an update for variables in a list and return values.
 
         Parameters
